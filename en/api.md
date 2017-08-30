@@ -14,7 +14,7 @@ API endpoints and documentations： [api.altizure.com/graphql](https://api.altiz
 
 ## 3. Try out API in your browser
 
-It is very convenience to test the API in browsers, because it provides instant feedback on the query results and details inline documentations. After the testing, you can easily copy and paste the query string to your code and trigger the API call.
+It is very convenience to test the API in browsers, because it provides instant feedback on the query results and detailed inline documentations. After the testing, you can easily copy and paste the query string to your code and trigger the API call.
 
 We take Google Chrome as an example. Other browsers supporting extensions, e.g. Firefox, should work too.
 
@@ -47,7 +47,7 @@ query {
 }
 ```
 
-Please the action button to get the query results.
+Please click the action button to get the query results.
 
 ![API web UI](img/api_ui.png)
 
@@ -63,7 +63,7 @@ mutation {
 }
 ```
 
-## 4. Integrate the calling of API in your code
+## 4. Integrate the API in your code
 
 The API can be called by any libs and programming languages that can issue a http post request.
 
