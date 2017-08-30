@@ -1,6 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
-* [First Chapter](chapter1.md)
-* [Graphql API](api.md)
-
+* [简介](README.md)
+* [基本概念](concepts.md)
+* [开发者账号申请](dev-account.md)
+* [GraphGL API](api.md)
+* [Javascript SDK](jssdk.md)
