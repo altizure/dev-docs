@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
-* [Graphql API](api.md)
-
+* [Concepts](concepts.md)
+* [Developer Account](dev-account.md)
+* [GraphGL API](api.md)
+* [Javascript SDK](jssdk.md)

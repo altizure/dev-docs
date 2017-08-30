@@ -1,8 +1,16 @@
 {
-    "plugins": ["ga"],
+    "plugins": [
+      "ga"
+      ,"language-picker"
+      ,"custom-favicon"
+    ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-70332606-7"
-        }
+        },
+        "language-redirect": {
+            "baseurl": "https://docs.altizure.com/"
+        },
+        "favicon": "favicon.ico"
     }
 }

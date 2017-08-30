@@ -30,7 +30,7 @@ API 调用和文档的入口： [api.altizure.com/graphql](https://api.altizure.
 
 ![设置应用令牌](img/set_key.png)
 
-设置完成后访问 [api.altizure.com/graphql](https://api.altizure.com/graphql)，可以看到一下界面，集成了“查询区”，“查询结果”和“文档”三个模块。
+设置完成后访问 [api.altizure.com/graphql](https://api.altizure.com/graphql)，可以看到以下界面，集成了“查询区”，“查询结果”和“文档”三个模块。
 
 试着在查询区输入一下字段查询现在公开的项目的 ID 和名字。
 
