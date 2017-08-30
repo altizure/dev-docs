@@ -1,6 +1,5 @@
-\# Languages
+# Languages
 
-\* \[English\]\(en/\)
-
-\* \[Chinese\]\(zh-cn/\)
+* [English](en/)
+* [Chinese](zh-cn/)
 
