@@ -1,6 +1,6 @@
 {
     "links": {
-        "home": false
+        "home": null
     },
     "plugins": [
         "ga",
