@@ -2,6 +2,8 @@
 
 GraphQL API 是一组以 [GraphQL](http://graphql.org/learn/) 为协议提供的在线 API。这套 API 提供了获取和修改 Altizure 上基础数据的能力。
 
+您如果在找如何快速加载和渲染 Altizure 上的三维数据，请查看我们的 [Javascript SDK](jssdk.md) 页面。
+
 ## 1. 使用前准备
 
 * Altizure 开发者账号 (必须)
@@ -26,7 +28,7 @@ API 调用和文档的入口： [api.altizure.com/graphql](https://api.altizure.
 
 ##### 设置插件修改 http header
 
-在 request header，添加`key`字段，填入应用令牌 (App key)。
+在 http request header，添加`key`字段，填入应用令牌 (App key)。
 
 ![设置应用令牌](img/set_key.png)
 
