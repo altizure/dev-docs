@@ -1,8 +1,11 @@
 {
+    "links": {
+        "home": false,
+    },
     "plugins": [
-      "ga"
-      ,"language-picker"
-      ,"custom-favicon"
+        "ga",
+        "language-picker",
+        "custom-favicon"
     ],
     "pluginsConfig": {
         "ga": {
