@@ -5,6 +5,7 @@
     "plugins": [
         "ga",
         "language-picker",
+        "toolbar@git+https://github.com/hamishwillee/gitbook-plugin-toolbar.git",
         "custom-favicon"
     ],
     "pluginsConfig": {
@@ -13,6 +14,24 @@
         },
         "language-redirect": {
             "baseurl": "https://docs.altizure.com/"
+        },
+        "toolbar": {
+            "buttons":
+            [
+                {
+                    "label": "Bug tracker",
+                    "icon": "fa fa-bug",
+                    "position" : "left",
+                    "url": "https://github.com/altizure/dev-docs/issues/new?title=Doc+Bug:+{{title}}&body=DESCRIBE+PROBLEM+WITH+DOCS+HERE%0A%0ABug+Page:+[{{title}}]({{url}})"
+
+                },
+                {
+                    "label": "Edit page on github",
+                    "icon": "fa fa-pencil-square-o",
+                    "position" : "left",
+                    "url": "https://github.com/altizure/dev-docs/edit/master/{{filepath_lang}}"
+                }
+            ]
         },
         "favicon": "favicon.ico"
     }
