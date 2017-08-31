@@ -1,6 +1,6 @@
 {
     "links": {
-        "home": null
+        "home": "https://docs.altizure.com"
     },
     "plugins": [
         "ga",
