@@ -19,3 +19,5 @@ Learn more about Altizure at:
 * Explore the 3D world on Altizure: [altizure.com/explore](https://altizure.com/explore)
 * [Facebook page](https://www.facebook.com/altizure.everest/)
 * Official blog: [blog.altizure.com](https://blog.altizure.com)
+
+Contact us [support@altizure.com](mailto:support@altizure.com)
