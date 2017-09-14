@@ -70,7 +70,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src="https://www.altizure.com/sdk"></script>
 </head>
 <body>
   <div id="page-content"></div>
@@ -97,7 +97,7 @@
 </html>
 ```
 
-可以访问 [演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html) 观看代码效果。
+可以访问 [演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html) 观看这段代码的实际效果。
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
@@ -105,7 +105,7 @@
 
 ## 2. 范例
 
-可以直接访问 [altizure.github.io/sdk-demo/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试尝试各种范例的效果。
+您可以直接访问 [altizure.github.io/sdk-demo/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试尝试各种范例的效果。
 
 也可以把这部分代码下载下来，在您本地建立服务器进行尝试。请参考 [altizure.github.io/sdk-demo](https://altizure.github.io/sdk-demo/) 的教程。
 
