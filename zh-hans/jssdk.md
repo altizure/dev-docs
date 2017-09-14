@@ -14,7 +14,6 @@
 
 在网页的 head 部分，引用我们的 SDK。
 
-
 ```html
 <!-- 设置编码，确保 utf8 字符的正确显示 -->
 <meta charset="utf-8">
@@ -39,24 +38,16 @@
 我们的三维引擎是以最新的 Altizure 地球的引擎作为基础，新建对象时需要把它附着在一个作为显示容器的 `div` 里。
 
 ```javascript
-    // 创建一个参数配置对象
-    let options = {
-      altlonglat: {
-        longitude: 127.55201053062397,
-        latitude: 45.024293080277,
-        altitude: 100
-      }, // 设置视点位置
-      orientation: {
-        northing: 6.6,
-        tilt: 60
-      }, // 设置视点角度
-      renderItems: {
-        featureInView: true
-      },
-      develop: true // 显示鼠标点击与地球交点
-    }
-    // 创建地球渲染引擎对象，附着在 page-content 这个 div 上
-    let earth = new altizure.Earth('page-content', options)
+// 创建一个参数配置对象
+let options = {
+  altizureApi:{
+    // 填入您的 app key
+    key: 'your-app-key'
+  }
+}
+
+// 创建地球渲染引擎对象，附着在 page-content 这个 div 上
+let earth = new altizure.Sdk('page-content', options)
 ```
 
 其中 page-content 是上面创建三维显示容器的 div 的 id。options 用于配置新建的引擎对象，更多参数可以参考以下的返利和详细文档。
@@ -76,19 +67,10 @@
   <div id="page-content"></div>
   <script>
     let options = {
-      altlonglat: {
-        longitude: 127.55201053062397,
-        latitude: 45.024293080277,
-        altitude: 100
-      },
-      orientation: {
-        northing: 6.6,
-        tilt: 60
-      },
-      renderItems: {
-        featureInView: true
-      },
-      develop: true
+      altizureApi:{
+        // 填入您的 app key
+        key: 'your-app-key'
+      }
     }
 
     let earth = new altizure.Earth('page-content', options)
@@ -122,3 +104,6 @@ Coming soon...
 * [OpenGL](https://www.opengl.org/)
 * [Vulkan](https://www.khronos.org/registry/vulkan/)
 * 详解 OpenGL 坐标变换 [OpenGL Transformation](http://www.songho.ca/opengl/gl_transform.html)
+
+
+
