@@ -12,7 +12,7 @@
 
 ##### 引用 SDK
 
-在网页的 head 部分，引用我们的 sdk js 文件。
+在网页的 head 部分，引用我们的 SDK。
 
 
 ```html
@@ -21,7 +21,7 @@
 <!-- 设置 viewport，确保移动端的正确渲染 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <!-- 引用sdk -->
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="https://www.altizure.com/sdk"></script>
 ```
 
 ##### 创建三维显示容器
@@ -97,22 +97,23 @@
 </html>
 ```
 
+可以访问 [演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html) 观看代码效果。
+
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
 接下来我们直接通过范例代码来学习 sdk 的丰富功能。
 
 ## 2. 范例
 
-1. 用户交互
-  * Coming soon
-2. 数据融合
-  * Coming soon
-3. 场景编辑
-  * Coming soon
+可以直接访问 [altizure.github.io/sdk-demo/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试尝试各种范例的效果。
+
+也可以把这部分代码下载下来，在您本地建立服务器进行尝试。请参考 [altizure.github.io/sdk-demo](https://altizure.github.io/sdk-demo/) 的教程。
+
+对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk-demo/issues) 进行提问和交流。
 
 ## 3. 详细文档
 
-Coming soon
+Coming soon...
 
 ## 4. 了解更多
 
@@ -120,4 +121,4 @@ Coming soon
 * [WebGL](https://www.khronos.org/webgl/)
 * [OpenGL](https://www.opengl.org/)
 * [Vulkan](https://www.khronos.org/registry/vulkan/)
-* 详解 OpenGL 坐标变换 [OpenGL Transforamtion](http://www.songho.ca/opengl/gl_transform.html)
+* 详解 OpenGL 坐标变换 [OpenGL Transformation](http://www.songho.ca/opengl/gl_transform.html)
