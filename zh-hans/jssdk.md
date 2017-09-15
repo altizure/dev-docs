@@ -88,6 +88,12 @@ let earth = new altizure.Earth('page-content', options)
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
+接下来我们直接通过范例代码来学习 sdk 的丰富功能。
+
+## 2. 范例
+
+您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
+
 **概念释义**
 
 以下我们简单解释一下出现在范例里的元素的概念
@@ -95,13 +101,7 @@ let earth = new altizure.Earth('page-content', options)
 * Sandbox \(沙盒\)： altizure.Sandbox \(沙盒\) 是整个三维应用的核心，它负责管理整个三维场景的数据和绘制。通过对沙盒进行定制和添加数据，可以定制出非常强大的三维应用。这是编写三维应用的主要入口。
 * Earth \(地球\)：altizure.Earth \(地球\) 是负责渲染管理整个 Altizure 地球的核心，通常它是作为沙盒的底图。我们提供丰富的选项来方便您定义这个地球的外观。
 
-接下来我们直接通过范例代码来学习 sdk 的丰富功能。
-
-## 2. 范例
-
-您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
-
-也可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这部分代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
+您可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这部分代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
