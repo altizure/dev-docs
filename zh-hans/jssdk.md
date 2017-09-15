@@ -25,7 +25,7 @@
 
 其中我们提供两个版本的 sdk 引用链接：
 
-* 稳定版：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script> `
+* 稳定版：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
 * 最新版：`<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
 
 ##### 创建三维显示容器
@@ -92,7 +92,7 @@ let earth = new altizure.Earth('page-content', options)
 
 ## 2. 范例
 
-您可以直接访问 [altizure.github.io/sdk-demo/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试各种范例的效果。
+您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试各种范例的效果。
 
 也可以参考 [altizure.github.io/sdk-demo](https://altizure.github.io/sdk-demo/) 的教程把这部分代码下载下来，在您本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
