@@ -23,6 +23,11 @@
 <script type="text/javascript" src="https://www.altizure.com/sdk"></script>
 ```
 
+其中我们提供两个版本的 sdk 引用链接：
+
+* 稳定版：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script> `
+* 最新版：`<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
+
 ##### 创建三维显示容器
 
 我们的 sdk 会完全接管三维数据的下载和渲染，用户需要创建一个 `div` 指定相关用于渲染的容器的位置和大小。
@@ -47,7 +52,7 @@ let options = {
 }
 
 // 创建地球渲染引擎对象，附着在 page-content 这个 div 上
-let earth = new altizure.Sdk('page-content', options)
+let earth = new altizure.Earth('page-content', options)
 ```
 
 其中 page-content 是上面创建三维显示容器的 div 的 id。options 用于配置新建的引擎对象，更多参数可以参考以下的范例和详细文档。
@@ -73,7 +78,7 @@ let earth = new altizure.Sdk('page-content', options)
       }
     }
 
-    let earth = new altizure.Sdk('page-content', options)
+    let earth = new altizure.Earth('page-content', options)
   </script>
 </body>
 </html>
