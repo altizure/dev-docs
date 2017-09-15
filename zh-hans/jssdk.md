@@ -55,7 +55,7 @@ let options = {
 let earth = new altizure.Earth('page-content', options)
 ```
 
-其中 page-content 是上面创建三维显示容器的 div 的 id。options 用于配置新建的引擎对象，更多参数可以参考以下的范例和详细文档。
+其中 `'page-content'` 是上面创建三维显示容器的 `div` 的 id。`options` 用于配置新建的引擎对象，更多参数可以参考下面的范例和详细文档。
 
 ##### 小结
 
