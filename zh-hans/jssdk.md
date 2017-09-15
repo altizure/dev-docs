@@ -96,7 +96,7 @@ let earth = new altizure.Earth('page-content', options)
 
 也可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这部分代码下载下来，在您本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
-对范例和使用方法有任何疑问可以 [issue page](https://github.com/altizure/sdk-dfs/issues) 进行提问和交流。
+对范例和使用方法有任何疑问可以 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
 ## 3. 详细文档
 
