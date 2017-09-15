@@ -90,7 +90,16 @@ let earth = new altizure.Earth('page-content', options)
 
 接下来我们直接通过范例代码来学习 sdk 的丰富功能。
 
-## 2. 范例
+## 2. 基本概念
+
+* Sandbox \(沙盒\) 
+  altizure.Sandbox \(沙盒\) 是整个三维应用的核心，他负责管理整个三维场景的数据和绘制。您
+* Earth \(地球\)
+* Marker \(标记\)
+  * AltizureProject
+  * 
+
+## 3. 范例
 
 您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
 
@@ -98,11 +107,11 @@ let earth = new altizure.Earth('page-content', options)
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
-## 3. 详细文档
+## 4. 详细文档
 
 Coming soon...
 
-## 4. 了解更多
+## 5. 了解更多
 
 * [ThreeJS](https://threejs.org/)
 * [WebGL](https://www.khronos.org/webgl/)
