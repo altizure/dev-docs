@@ -8,7 +8,7 @@
 
 使用 Altizure Javascript 3D SDK 并结合 Electron 和 React Native 等混合开发的工具，开发者可以轻松开发出高质量的实景三维桌面和移动应用，助力你的商业应用。
 
-## 1. 基本使用方法
+## 1. 快速开始指南
 
 ##### 引用 SDK
 
