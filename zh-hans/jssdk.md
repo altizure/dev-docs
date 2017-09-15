@@ -25,8 +25,8 @@
 
 其中我们提供两个版本的 sdk 引用链接：
 
-* 稳定版：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
 * 最新版：`<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
+* 稳定版：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
 
 ##### 创建三维显示容器
 
@@ -84,7 +84,7 @@ let earth = new altizure.Earth('page-content', options)
 </html>
 ```
 
-可以访问[演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html)观看这段代码的实际效果。
+可以访问[[演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html)](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的实际效果。
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
@@ -99,9 +99,9 @@ let earth = new altizure.Earth('page-content', options)
 以下我们简单解释一下出现在范例里的元素的概念
 
 * Sandbox \(沙盒\)： altizure.Sandbox \(沙盒\) 是整个三维应用的核心，它负责管理整个三维场景的数据和绘制。通过对沙盒进行定制和添加数据，可以定制出非常强大的三维应用。这是编写三维应用的主要入口。
-* Earth \(地球\)：altizure.Earth \(地球\) 是负责渲染管理 Altizure 地球的核心，通常它是作为沙盒的底图。我们提供丰富的选项来方便您定义这个地球的外观。一般来说，如果创建了 Sandbox 就无需在特地创建一个 Earth 对象。
+* Earth \(地球\)：altizure.Earth \(地球\) 是负责渲染管理 Altizure 地球的核心，通常它是作为沙盒的底图。我们提供丰富的选项来方便您定义这个地球的外观。一般来说，如果创建了 Sandbox 就无需再创建一个 Earth 对象。
 
-您可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这部分代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
+您可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这范例代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
