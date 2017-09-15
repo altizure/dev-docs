@@ -92,12 +92,8 @@ let earth = new altizure.Earth('page-content', options)
 
 ## 2. 基本概念
 
-* Sandbox \(沙盒\) 
-  altizure.Sandbox \(沙盒\) 是整个三维应用的核心，他负责管理整个三维场景的数据和绘制。您
-* Earth \(地球\)
-* Marker \(标记\)
-  * AltizureProject
-  * 
+* Sandbox \(沙盒\)： altizure.Sandbox \(沙盒\) 是整个三维应用的核心，它负责管理整个三维场景的数据和绘制。
+* Earth \(地球\)：altizure.Earth \(地球\) 是负责渲染管理整个 Altizure 地球的核心，通常它是作为沙盒的底图。我们提供丰富的选项来方便您定义这个地球的外观。
 
 ## 3. 范例
 
