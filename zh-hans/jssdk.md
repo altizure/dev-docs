@@ -1,10 +1,10 @@
 # Altizure Javascript SDK
 
-这是一个以 Javacript 为开发语言的 SDK。提供了丰富的三维浏览和编辑的功能。主要为解决以下几个问题而设计：
+这是一个以 Javacript 为开发语言的 SDK。提供了丰富的三维浏览和编辑的功能。SDK 的主要目的是：
 
-* 如何简化加载和渲染海量三维数据的开发工作
-* 如何把各种数据源的数据在实景三维底图上进行整合和高效显示
-* 如何简化实景三维数据和行业应用的开发工作
+* 简化加载和渲染海量三维数据的开发工作
+* 简化各种数据源的数据在实景三维底图上的整合和高效显示
+* 简化实景三维数据和行业应用的开发工作
 
 使用 Altizure Javascript 3D SDK 并结合 Electron 和 React Native 等混合开发的工具，开发者可以轻松开发出高质量的实景三维桌面和移动应用，助力你的商业应用。
 
@@ -50,7 +50,7 @@ let options = {
 let earth = new altizure.Sdk('page-content', options)
 ```
 
-其中 page-content 是上面创建三维显示容器的 div 的 id。options 用于配置新建的引擎对象，更多参数可以参考以下的返利和详细文档。
+其中 page-content 是上面创建三维显示容器的 div 的 id。options 用于配置新建的引擎对象，更多参数可以参考以下的范例和详细文档。
 
 ##### 小结
 
@@ -73,13 +73,13 @@ let earth = new altizure.Sdk('page-content', options)
       }
     }
 
-    let earth = new altizure.Earth('page-content', options)
+    let earth = new altizure.Sdk('page-content', options)
   </script>
 </body>
 </html>
 ```
 
-可以访问 [演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html) 观看这段代码的实际效果。
+可以访问[演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html)观看这段代码的实际效果。
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
@@ -87,7 +87,7 @@ let earth = new altizure.Sdk('page-content', options)
 
 ## 2. 范例
 
-您可以直接访问 [altizure.github.io/sdk-demo/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试尝试各种范例的效果。
+您可以直接访问 [altizure.github.io/sdk-demo/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试各种范例的效果。
 
 也可以把这部分代码下载下来，在您本地建立服务器进行尝试。请参考 [altizure.github.io/sdk-demo](https://altizure.github.io/sdk-demo/) 的教程。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
