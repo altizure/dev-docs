@@ -66,7 +66,7 @@ let earth = new altizure.Earth('page-content', options)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <script type="text/javascript" src="https://www.altizure.com/sdk"></script>
+  <script type="text/javascript" src="https://beta.altizure.com/sdk"></script>
 </head>
 <body>
   <div id="page-content"></div>
