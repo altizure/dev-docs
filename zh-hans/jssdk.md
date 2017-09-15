@@ -20,7 +20,7 @@
 <!-- 设置 viewport，确保移动端的正确渲染 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <!-- 引用sdk -->
-<script type="text/javascript" src="https://www.altizure.com/sdk"></script>
+<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>
 ```
 
 其中我们提供两个版本的 sdk 引用链接：
@@ -109,3 +109,6 @@ Coming soon...
 * [OpenGL](https://www.opengl.org/)
 * [Vulkan](https://www.khronos.org/registry/vulkan/)
 * 详解 OpenGL 坐标变换 [OpenGL Transformation](http://www.songho.ca/opengl/gl_transform.html)
+
+
+
