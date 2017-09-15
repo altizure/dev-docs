@@ -88,14 +88,16 @@ let earth = new altizure.Earth('page-content', options)
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
-接下来我们直接通过范例代码来学习 sdk 的丰富功能。
+**概念释义**
 
-## 2. 基本概念
+以下我们简单解释一下出现在范例里的元素的概念
 
-* Sandbox \(沙盒\)： altizure.Sandbox \(沙盒\) 是整个三维应用的核心，它负责管理整个三维场景的数据和绘制。
+* Sandbox \(沙盒\)： altizure.Sandbox \(沙盒\) 是整个三维应用的核心，它负责管理整个三维场景的数据和绘制。通过对沙盒进行定制和添加数据，可以定制出非常强大的三维应用。这是编写三维应用的主要入口。
 * Earth \(地球\)：altizure.Earth \(地球\) 是负责渲染管理整个 Altizure 地球的核心，通常它是作为沙盒的底图。我们提供丰富的选项来方便您定义这个地球的外观。
 
-## 3. 范例
+接下来我们直接通过范例代码来学习 sdk 的丰富功能。
+
+## 2. 范例
 
 您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
 
@@ -103,11 +105,11 @@ let earth = new altizure.Earth('page-content', options)
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
-## 4. 详细文档
+## 3. 详细文档
 
 Coming soon...
 
-## 5. 了解更多
+## 4. 了解更多
 
 * [ThreeJS](https://threejs.org/)
 * [WebGL](https://www.khronos.org/webgl/)
