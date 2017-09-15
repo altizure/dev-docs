@@ -42,7 +42,7 @@
 
 我们的三维引擎是以最新的 Altizure 地球的引擎作为基础，新建对象时需要把它附着在一个作为显示容器的 `div` 里。
 
-```javascript
+```js
 // 创建一个参数配置对象
 let options = {
   altizureApi:{
@@ -92,9 +92,9 @@ let earth = new altizure.Earth('page-content', options)
 
 ## 2. 范例
 
-您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试各种范例的效果。
+您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
 
-也可以参考 [altizure.github.io/sdk-demo](https://altizure.github.io/sdk-demo/) 的教程把这部分代码下载下来，在您本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
+也可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这部分代码下载下来，在您本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
 对范例和使用方法有任何疑问可以 [issue page](https://github.com/altizure/sdk-demo/issues) 进行提问和交流。
 
