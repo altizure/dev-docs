@@ -89,9 +89,9 @@ let earth = new altizure.Sdk('page-content', options)
 
 您可以直接访问 [altizure.github.io/sdk-demo/examples.sdk.html](https://altizure.github.io/sdk-demo/examples.sdk.html) 来直接尝试各种范例的效果。
 
-也可以把这部分代码下载下来，在您本地建立服务器进行尝试。请参考 [altizure.github.io/sdk-demo](https://altizure.github.io/sdk-demo/) 的教程。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
+也可以参考 [altizure.github.io/sdk-demo](https://altizure.github.io/sdk-demo/) 的教程把这部分代码下载下来，在您本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
-对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk-demo/issues) 进行提问和交流。
+对范例和使用方法有任何疑问可以 [issue page](https://github.com/altizure/sdk-demo/issues) 进行提问和交流。
 
 ## 3. 详细文档
 
