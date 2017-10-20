@@ -23,10 +23,11 @@
 <script type="text/javascript" src="https://beta.altizure.com/sdk"></script>
 ```
 
-其中我们提供两个版本的 sdk 引用链接：
+其中我们提供三个版本的 sdk 引用链接：
 
 * 最新版：`<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
 * 稳定版：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
+* 中国版：`<script type=”text/javascript“ src=”https://www.altizure.cn/sdk“></script>`
 
 ##### 创建三维显示容器
 
@@ -84,7 +85,16 @@ let earth = new altizure.Earth('page-content', options)
 </html>
 ```
 
-可以访问[[演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html)](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的实际效果。
+把这段代码保存成一个 html 文件放在一个文件夹如 `<path>\altizure-sdk-tes\earth.html` 中，然后在控制台中键入：
+
+```bash
+cd <path>\altizure-sdk-tes\
+python -m SimpleHTTPServer
+```
+
+再通过浏览器访问 `http://127.0.0.1:8000/earth.html` 就可以加载这个 Altizure 地球了。
+
+你也可以访问[[演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html)](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的效果。
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
@@ -104,6 +114,30 @@ let earth = new altizure.Earth('page-content', options)
 您可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这范例代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
+
+**范例详解**
+
+* Altizure 地球基本加载范例
+    * [默认地球加载](https://altizure.github.io/sdk.examples/1-1-altizure-earth)
+    * [设置地球加载开场动画]()
+    * [设置地球加载图层]()
+    * [设置月球为底图]()
+* 插入 Marker 范例
+    * [插入 Altizure 项目]()
+        * [设置水面]()
+    * [插入自定义标签]()
+    * [插入多边形和体块]()
+    * [插入折线]()
+    * [插入 obj 模型]()
+* 交互事件
+    * [鼠标事件]()
+* 点选坐标获取
+    * [获取地球表面坐标]()
+    * [获取模型表面坐标]()
+* 相机视点姿态操作
+    * [相机姿态设置]()
+    * [相机飞行设置]()
+    * [设置相机移动限制]()
 
 ## 3. 详细文档
 
