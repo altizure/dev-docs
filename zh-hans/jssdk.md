@@ -131,7 +131,7 @@ python -m SimpleHTTPServer
     * [插入 obj 模型](https://altizure.github.io/sdk.examples/2-5-add-obj-model)
 * 交互事件
     * [鼠标事件](https://altizure.github.io/sdk.examples/3-1-mouse-events)
-* 点选坐标获取
+* 获取坐标
     * [获取地球表面坐标](https://altizure.github.io/sdk.examples/4-1-earth-pickpoint)
     * [获取模型表面坐标](https://altizure.github.io/sdk.examples/4-2-project-pickpoint)
 * 相机操作
@@ -139,9 +139,50 @@ python -m SimpleHTTPServer
     * [相机飞行设置](https://altizure.github.io/sdk.examples/5-2-camera-fly)
     * [设置相机移动限制](https://altizure.github.io/sdk.examples/5-3-camera-range)
 
-## 3. 详细文档
+## 3. 常见问题
 
-Coming soon...
+#### 3.1 使用相关
+
+###### 3.1.1 能否提供测试？
+
+您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。把代码仓库 clone 到本地后即可修改其中的代码进行测试。
+
+###### 3.1.2 本地测试时无法访问相关模型？
+
+请检查以下配置是否正确：
+
+* 是否已经启动一个 http 服务器？最方便的方法是参考 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 教程中用 python 建立 http 服务器的方法。
+* 本地测试请用 `127.0.0.1` 作为地址来访问，而不要使用 `localhost`。
+
+###### 3.1.3 无法访问 sdk script 链接？
+
+如果无法访问 `https://www.altizure.com/sdk` 或 `https://beta.altizure.com/sdk`，请使用中国站点 `https://www.altizure.cn/sdk`。
+
+#### 3.2 常见用例
+
+###### 3.2.1 点击模型中某个建筑物，怎么来获取对应的信息，如建筑物的名称？
+
+可以通过鼠标事件获得经纬度，再去相关数据库中查建筑物名称。相关建筑物数据库由开发者自行管理。
+
+###### 3.2.2 能否直接插入 obj 模型？
+
+可以。如果网络下载带宽不高，过大的 obj 文件可能导致下载时间过长。而且因为受限于浏览器的性能，过大的 obj 也会导致浏览器崩溃。我们一般推荐 obj 模型连同纹理文件不要超过 2 MB。
+
+obj 模型需要满足一下要求：
+
+* obj 模型需要由开发者自行找网络空间存储并获取直接访问的 https 链接。
+* 其中 obj 对应的 mtl 文件内的纹理路径需要是相对路径。
+* obj 只有三角形面。
+* obj 模型里没有非2-流形的点和边，并且没有面积为0的面。
+
+###### 如果需要更换一个标签的click事件，应该怎么操作？需要把前一个绑定事件解绑吗？
+
+最好解绑，用.off（event, func）
+
+###### 如何实现分图层显示不同的标签及其他的模型？
+
+可以再打开和关闭图层的时候从图层数据库中读取相关信息，然后动态将相关标签插入到 Sandbox 或者从中删除。如果不想每次开关图层都都重复插入和删除相关标签，可以用 `marker.visible=true` 或者 `marker.visible=false` 控制每个标签现实与否。
+
 
 ## 4. 了解更多
 
