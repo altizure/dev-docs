@@ -4,7 +4,7 @@
 
 ## 1. 开发者账号
 
-如果您还没有一个 altizure 账号，请马上在[注册页面](https://www.altizure.com/signup/china?lang=zh-cn)免费申请一个。
+如果您还没有一个 altizure 账号，请马上在[注册页面](https://www.altizure.cn/signup/china?lang=zh-cn)免费申请一个。
 
 然后您需要按照[开发者账号申请指示](dev-account.md)，并把它升级为开发者账号。所有开发的权限都会和这个账号关联。请确保这个账号的安全和保密。
 

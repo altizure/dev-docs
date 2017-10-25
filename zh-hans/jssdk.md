@@ -158,6 +158,10 @@ python -m SimpleHTTPServer
 
 如果无法访问 `https://www.altizure.com/sdk` 或 `https://beta.altizure.com/sdk`，请使用中国站点 `https://www.altizure.cn/sdk`。
 
+###### 3.1.4 详细文档在哪儿？
+
+请直接参考范例的代码，里面有详细注释。我们会持续更新相关范例，展示最新功能。
+
 #### 3.2 常见用例
 
 ###### 3.2.1 点击模型中某个建筑物，怎么来获取对应的信息，如建筑物的名称？

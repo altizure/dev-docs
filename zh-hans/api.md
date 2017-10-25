@@ -12,7 +12,9 @@ GraphQL API 是一组以 [GraphQL](http://graphql.org/learn/) 为协议提供的
 
 ## 2. API 网址和文档
 
-API 调用和文档的入口： [api.altizure.com/graphql](https://api.altizure.com/graphql) 。
+API 调用和文档的入口：
+* 国际站 [api.altizure.com/graphql](https://api.altizure.com/graphql) 。
+* 中国站 [api.altizure.cn/graphql](https://api.altizure.cn/graphql) 。
 
 ## 3. 在浏览器中测试 API
 
@@ -32,7 +34,7 @@ API 调用和文档的入口： [api.altizure.com/graphql](https://api.altizure.
 
 ![设置应用令牌](img/set_key.png)
 
-设置完成后访问 [api.altizure.com/graphql](https://api.altizure.com/graphql)，可以看到以下界面，集成了“查询区”，“查询结果”和“文档”三个模块。
+设置完成后访问 [api.altizure.cn/graphql](https://api.altizure.cn/graphql)，可以看到以下界面，集成了“查询区”，“查询结果”和“文档”三个模块。
 
 试着在查询区输入一下字段查询现在公开的项目的 ID 和名字。
 
@@ -76,7 +78,7 @@ mutation {
 ```
 $.ajax({
     type: 'POST',
-    url: 'https://api.altizure.com/graphql',
+    url: 'https://api.altizure.cn/graphql',
     headers: {
       altitoken: '用户令牌',
       key: '应用令牌'
@@ -85,7 +87,18 @@ $.ajax({
   })
 ```
 
-## 5. 了解更多
+## 5. 常见问题
+
+###### 5.1 国际站和中国站如何选择？
+
+请选择与您链接最快的一个。可以在程序中做些自动判断，如果一个站点掉线了可以切换成另外一个。
+
+###### 5.2 GraphQL API 详细文档在哪儿？
+
+请直接用浏览器参照以上教程访问 [api.altizure.cn/graphql](https://api.altizure.cn/graphql)，即可直接看到所有查询接口的文档。
+
+
+## 6. 了解更多
 
 * 深入学习 [GraphQL](http://graphql.org/learn/)
 * 通过 [Altizure Javascript SDK](jssdk.md) 实现丰富的三维浏览编辑功能

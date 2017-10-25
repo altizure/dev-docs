@@ -16,7 +16,7 @@
 
 更多了解 Altizure 欢迎访问：
 
-* 探索 Altizure 的三维世界：[altizure.com/explore](https://altizure.com/explore)
+* 探索 Altizure 的三维世界：[altizure.cn/explore](https://altizure.cn/explore)
 * 关注微信公众号：altizure_info
 * 关注官方博客：[blog.altizure.cn](https://blog.altizure.cn)
 
