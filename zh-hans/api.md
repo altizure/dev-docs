@@ -57,15 +57,7 @@ query {
 
 ##### 用户相关信息
 
-如需访问用户相关信息，需要在 request header 添加 `altitoken`字段，输入用户令牌 (User token)。
-
-可以通过以下 mutation 获取用户令牌：
-
-```
-mutation {
-  getUserToken(email: "用户邮件", password: "用户密码")
-}
-```
+需要使用 Oauth 接口。
 
 ## 4. 在代码中集成 API 调用
 

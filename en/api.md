@@ -51,17 +51,6 @@ Please click the action button to get the query results.
 
 ![API web UI](img/api_ui.png)
 
-##### Get user authentication
-
-To acccess and modify user related information, app should get users' authentication by getting the user token. Then put the user token into the `altitoken` field in http request header.
-
-Please use the following mutation to get user token:
-
-```
-mutation {
-  getUserToken(email: "user email", password: "user password")
-}
-```
 
 ## 4. Integrate the API in your code
 
