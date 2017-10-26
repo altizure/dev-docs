@@ -85,10 +85,10 @@ let earth = new altizure.Earth('page-content', options)
 </html>
 ```
 
-把这段代码保存成一个 html 文件放在一个文件夹如 `<path>\altizure-sdk-tes\earth.html` 中，然后在控制台中键入：
+把这段代码保存成一个 html 文件放在一个文件夹如 `<path>/altizure-sdk-test/earth.html` 中，然后在控制台中键入：
 
 ```bash
-cd <path>\altizure-sdk-tes\
+cd <path>/altizure-sdk-test/
 python -m SimpleHTTPServer
 ```
 
@@ -104,7 +104,7 @@ python -m SimpleHTTPServer
 
 您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
 
-**概念释义**
+#### 2.1 概念释义
 
 以下我们简单解释一下出现在范例里的元素的概念
 
@@ -115,33 +115,32 @@ python -m SimpleHTTPServer
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
-**范例详解**
+#### 2.2 范例详解
 
-* Altizure 地球基本加载范例
+* 2.2.1 Altizure 地球基本加载范例
     * [默认地球加载](https://altizure.github.io/sdk.examples/1-1-altizure-earth)
     * [设置地球加载开场动画](https://altizure.github.io/sdk.examples/1-2-open-animation)
     * [设置地球加载图层](https://altizure.github.io/sdk.examples/1-3-render-items)
     * [设置月球为底图](https://altizure.github.io/sdk.examples/1-4-lunar)
-* 插入 Marker 范例
+* 2.2.2 插入 Marker 范例
     * [插入 Altizure 项目](https://altizure.github.io/sdk.examples/2-1-add-project)
         * [设置水面](https://altizure.github.io/sdk.examples/2-1-add-project-water)
     * [插入自定义标签](https://altizure.github.io/sdk.examples/2-2-add-tag)
     * [插入多边形和体块](https://altizure.github.io/sdk.examples/2-3-add-polygon)
     * [插入折线](https://altizure.github.io/sdk.examples/2-4-add-polyline)
     * [插入 obj 模型](https://altizure.github.io/sdk.examples/2-5-add-obj-model)
-* 交互事件
+* 2.2.3 交互事件
     * [鼠标事件](https://altizure.github.io/sdk.examples/3-1-mouse-events)
-* 获取坐标
+* 2.2.4 获取坐标
     * [获取地球表面坐标](https://altizure.github.io/sdk.examples/4-1-earth-pickpoint)
     * [获取模型表面坐标](https://altizure.github.io/sdk.examples/4-2-project-pickpoint)
-* 相机操作
+* 2.2.5 相机操作
     * [相机姿态设置](https://altizure.github.io/sdk.examples/5-1-camera-pose)
     * [相机飞行设置](https://altizure.github.io/sdk.examples/5-2-camera-fly)
     * [设置相机移动限制](https://altizure.github.io/sdk.examples/5-3-camera-range)
 
 
 ## 3. 常见问题
-
 
 #### 3.1 使用相关
 
@@ -200,23 +199,21 @@ obj 模型需要满足以下要求：
 
 ###### 3.2.6 如何加入一个带格式的文本标签
 
-用 js 创建一个 canvas, 写入带格式的文本，把 canvas 转为 image, 传给Tag。(可以把文字和图标都画到这张canvas上。)
+用 js 创建一个 canvas, 写入带格式的文本，把 canvas 转为 image, 传给 Tag。(可以把文字和图标都画到这张canvas上。)
 
-###### 3.2.7 如何获得地图拖动事件
+###### 3.2.7 如何获得三维场景拖动事件
 
-```
-sandbox.on('cameraChange', callback)
-```
+响应 Sandbox 对象的 `cameraChange` 事件，`sandbox.on('cameraChange', callback)`。
 
 ###### 3.2.8 地图框选的功能，希望能够在地图上画个方形或圆形，然后可以获取到画的图形的范围值
 
-pick鼠标down 和up的点,
-* pick到的两个点作为矩形的对角两个端点，矩形的边平行于经纬方向, 使用polygon marker绘制矩形
-* 以pick到的两个点作为直径，中点做圆心，还是用polygon就可以，比如画一个360边行。已知圆心经纬度，和直径，顶点位置可以算出来。
+pick 鼠标 down 和 up 的点,
+* pick 到的两个点作为矩形的对角两个端点，矩形的边平行于经纬方向, 使用 polygon marker 绘制矩形
+* 以 pick 到的两个点作为直径，中点做圆心，还是用 polygon 就可以，比如画一个 360 边形。已知圆心经纬度，和直径，顶点位置可以很容易算出来。
 
 ###### 3.2.9 如何删除一个标注?
 
-marker.destruct()
+`marker.destruct()` 可以完全销毁一个标注，这个标注所用的资源将被释放。如果您想反复显示和隐藏这个标注，可以设定这个参数 `marker.visible=true`。请参考 3.2.4 的解答。
 
 ###### 3.2.10 平台的坐标系是什么？
 
@@ -224,33 +221,31 @@ wgs84
 
 ###### 3.2.11 如果我需要通过方法调用实现放大，或缩小，接口是什么？
 
-更改相机高度alt，参考範例第5章相机操作。
+更改相机高度 `alt`，参考范例`2.2.5 相机操作`部分。
 
 ###### 3.2.12 如果我需要通过方法调用旋转、平移，接口是什么？
 
-更改相机经纬度lat\lng实现平移，tilt更改俯仰视角，north更改旋转视角。请参考範例第5章相机操作。
+更改相机经纬度 `lat/lng` 实现平移，`tilt` 更改俯仰视角，`north` 更改旋转视角。请参考范例`2.2.5 相机操作`。
 
 ###### 3.2.13 flyTo方法，是否有飞行速度参数？
 
-```
-flyTo: function (position, speed)
-```
+有。`flyTo: function (position, speed)`
 
 ###### 3.2.14 水面高度设置？
 
-水面高度是在Altizure主站上定义的, 项目拥有者可以在主站修改，sdk不允许修改。
+水面高度是在 Altizure 主站上定义的, SDK 不允许修改。
 
 ###### 3.2.14 如何加载矢量图层数据？
 
-您需要读取、解析您所使用的矢量数据，转化为sdk提供的点线面，加入场景中。
+您需要读取、解析您所使用的矢量数据，转化为 SDK 提供的点线面，加入场景中。
 
 ###### 3.2.15 如何实现局部区域透明显示设置？
 
-您可以使用Altizure主站的`裁剪`功能
+您可以使用 Altizure 主站的`裁剪`功能。
 
-###### 3.2.16 如何实现消息窗口功能？（类似ifream的弹框，点击弹出信息窗口）
+###### 3.2.16 如何实现消息窗口功能？（类似点击弹出信息窗口）
 
-使用js和html些好您想显示的弹窗，再和marker的鼠标事件绑定，比如mouseover/click时显示。
+使用 javascript 和 html 写好您想显示的弹窗，再和 marker 的鼠标事件绑定，比如 mouseover 或 click 时显示。
 
 
 ## 4. 了解更多
