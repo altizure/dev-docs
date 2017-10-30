@@ -10,7 +10,7 @@ Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.o
 
 ## 2. API Endpoint and Documentations
 
-API endpoints and documentations： [api.altizure.com/graphql](https://api.altizure.com/graphql) 。
+API endpoints and documentations: [api.altizure.com/graphql](https://api.altizure.com/graphql).
 
 ## 3. Try out API in your browser
 
@@ -88,8 +88,17 @@ For mobile application, the **redirect_uri** will be your application's bundle i
 
 For a vanilla JS implementation, please refer to [here](https://github.com/altizure/api-demo-minimal/blob/master/index.html).
 
+## 6. FAQ
 
-## 6. Learn more
+###### 6.1 How to access the api in Mainland China?
+
+Please use `https://api.altizure.cn/graphql`. It is better to choose a reachable and faster endpoint whenever possible in the logic of your application instead of hardcoding the api endpoint.
+
+###### 6.2 Where to find more detailed documentations on GraphQL API
+
+Please follow the above tutorial and browse [api.altizure.cn/graphql](https://api.altizure.cn/graphql) with your browser. All documentations are embedded in the web frontend of our api endpoint.
+
+## 7. Learn more
 
 * Learn more about [GraphQL](http://graphql.org/learn/)
 * Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application
