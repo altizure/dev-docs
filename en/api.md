@@ -60,7 +60,7 @@ For example:
 
 *JQurey in Javascript*
 
-```
+``` js
 $.ajax({
     type: 'POST',
     url: 'https://api.altizure.com/graphql',
@@ -72,7 +72,24 @@ $.ajax({
   })
 ```
 
-## 5. Learn more
+## 5. Obtain user token
+User token is obtained via the standard OAuth 2 flow.
+
+The authorization endpoint is the following url:
+``` js
+`https://api.altizure.com/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
+ ```
+where **appKey** is your application key, and **redirect_uri** is one of the domains associated with your application.
+
+Your application needs to route/open this url. A form will be shown to your users asking for their authorizations.
+After your users have authorized the request, the page will be redirected back to your **redirect_uri** with a url hash variable of key: **access_token**.
+
+For mobile application, the **redirect_uri** will be your application's bundle identifier name (iOS) or your package name (android).
+
+For a vanilla JS implementation, please refer to [here](https://github.com/altizure/api-demo-minimal/blob/master/index.html).
+
+
+## 6. Learn more
 
 * Learn more about [GraphQL](http://graphql.org/learn/)
 * Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application
