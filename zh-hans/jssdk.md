@@ -247,7 +247,6 @@ wgs84
 
 使用 javascript 和 html 写好您想显示的弹窗，再和 marker 的鼠标事件绑定，比如 mouseover 或 click 时显示。
 
-
 ## 4. 了解更多
 
 * [ThreeJS](https://threejs.org/)
