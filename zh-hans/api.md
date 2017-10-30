@@ -95,3 +95,7 @@ $.ajax({
 * 深入学习 [GraphQL](http://graphql.org/learn/)
 * 通过 [Altizure Javascript SDK](jssdk.md) 实现丰富的三维浏览编辑功能
 * 更多 GraphQL 相关工具 [Awesome GraphGL](https://github.com/chentsulin/awesome-graphql)
+
+---
+
+该文档最后修改于 {{ file.mtime }}

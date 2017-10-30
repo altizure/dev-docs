@@ -6,3 +6,7 @@
 
 * 微信公众号：altizure_info
 * 中文官方博客：[blog.altizure.cn](https://blog.altizure.cn)
+
+---
+
+该文档最后修改于 {{ file.mtime }}
