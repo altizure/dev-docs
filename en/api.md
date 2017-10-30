@@ -94,3 +94,7 @@ For a vanilla JS implementation, please refer to [here](https://github.com/altiz
 * Learn more about [GraphQL](http://graphql.org/learn/)
 * Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application
 * More tools on GraphQL: [Awesome GraphGL](https://github.com/chentsulin/awesome-graphql)
+
+---
+
+Last modified at {{ file.mtime }}
