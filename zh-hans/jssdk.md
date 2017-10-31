@@ -53,7 +53,7 @@ let options = {
 }
 
 // 创建地球渲染引擎对象，附着在 page-content 这个 div 上
-let earth = new altizure.Earth('page-content', options)
+let sandbox = new altizure.Sandbox('page-content', options)
 ```
 
 其中 `'page-content'` 是上面创建三维显示容器的 `div` 的 id。`options` 用于配置新建的引擎对象，更多参数可以参考下面的范例和详细文档。
@@ -79,7 +79,7 @@ let earth = new altizure.Earth('page-content', options)
       }
     }
 
-    let earth = new altizure.Earth('page-content', options)
+    let sandbox = new altizure.Sandbox('page-content', options)
   </script>
 </body>
 </html>
@@ -94,7 +94,7 @@ python -m SimpleHTTPServer
 
 再通过浏览器访问 `http://127.0.0.1:8000/earth.html` 就可以加载这个 Altizure 地球了。
 
-你也可以访问[[演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html)](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的效果。
+你也可以访问[演示页面](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的效果。
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
