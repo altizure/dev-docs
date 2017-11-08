@@ -34,3 +34,7 @@ Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.o
 ## 5. Javascript SDK
 
 Altizure Javascript SDK allows you to integrate rich 3D experience with our realistic 3D models to your business workflow. Learn more at [Javascript SDK](jssdk.md)
+
+---
+
+Last modified at {{ file.mtime }}

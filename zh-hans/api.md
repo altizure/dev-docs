@@ -55,18 +55,6 @@ query {
 
 ![API 界面](img/api_ui.png)
 
-##### 用户相关信息
-
-如需访问用户相关信息，需要在 request header 添加 `altitoken`字段，输入用户令牌 (User token)。
-
-可以通过以下 mutation 获取用户令牌：
-
-```
-mutation {
-  getUserToken(email: "用户邮件", password: "用户密码")
-}
-```
-
 ## 4. 在代码中集成 API 调用
 
 您可以使用任何可以发起 http post request 的程序库来调用 GraphQL API。
@@ -87,19 +75,42 @@ $.ajax({
   })
 ```
 
-## 5. 常见问题
+## 5. 获取用户令牌
 
-###### 5.1 国际站和中国站如何选择？
+您需要通过 OAuth 2.0 的标准流程来获取用户令牌。
+
+其中调取 OAuth 窗口的链接为:
+``` js
+`https://api.altizure.cn/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
+```
+
+其中 **appKey** 是您的应用令牌，**redirect_uri** 是您注册该令牌时绑定在上面的域名。
+
+您的应用/网页需要在客户端调出浏览器或者 WebView 来访问这个链接。接下来一个授权窗口会呈献给用户用于输入用户名和密码以便授权您的应用访问该用户的信息。您的应用的说明信息会被现实在这个窗口，便于用户识别开发者的身份。
+
+用户授权之后，登录窗口会重新想到 **redirect_uri** 。重新向的链接会包含一个用户令牌 **access_token**。您既可以在客户端页面处理这个令牌，也可以实现一个服务器端的路由在服务器端接收这个令牌。
+
+对于移动应用，**redirect_uri** 应该填入您的应用的识别符 application bundle identifier name (iOS) 或者包名 package name (android)。这些信息都必须在申请应用令牌时提供给 Altizure 以便记录在册。
+
+您可以访问这个网址 [here](https://github.com/altizure/api-demo-minimal/blob/master/index.html) 查看一个极简的登录实现。
+
+## 6. 常见问题
+
+###### 6.1 国际站和中国站如何选择？
 
 请选择与您链接最快的一个。可以在程序中做些自动判断，如果一个站点掉线了可以切换成另外一个。
 
-###### 5.2 GraphQL API 详细文档在哪儿？
+###### 6.2 GraphQL API 详细文档在哪儿？
 
 请直接用浏览器参照以上教程访问 [api.altizure.cn/graphql](https://api.altizure.cn/graphql)，即可直接看到所有查询接口的文档。
 
 
-## 6. 了解更多
+## 7. 了解更多
 
 * 深入学习 [GraphQL](http://graphql.org/learn/)
 * 通过 [Altizure Javascript SDK](jssdk.md) 实现丰富的三维浏览编辑功能
 * 更多 GraphQL 相关工具 [Awesome GraphGL](https://github.com/chentsulin/awesome-graphql)
+
+---
+
+该文档最后修改于 {{ file.mtime }}

@@ -10,7 +10,7 @@ Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.o
 
 ## 2. API Endpoint and Documentations
 
-API endpoints and documentations： [api.altizure.com/graphql](https://api.altizure.com/graphql) 。
+API endpoints and documentations: [api.altizure.com/graphql](https://api.altizure.com/graphql).
 
 ## 3. Try out API in your browser
 
@@ -51,17 +51,6 @@ Please click the action button to get the query results.
 
 ![API web UI](img/api_ui.png)
 
-##### Get user authentication
-
-To acccess and modify user related information, app should get users' authentication by getting the user token. Then put the user token into the `altitoken` field in http request header.
-
-Please use the following mutation to get user token:
-
-```
-mutation {
-  getUserToken(email: "user email", password: "user password")
-}
-```
 
 ## 4. Integrate the API in your code
 
@@ -71,7 +60,7 @@ For example:
 
 *JQurey in Javascript*
 
-```
+``` js
 $.ajax({
     type: 'POST',
     url: 'https://api.altizure.com/graphql',
@@ -83,8 +72,38 @@ $.ajax({
   })
 ```
 
-## 5. Learn more
+## 5. Obtain user token
+User token is obtained via the standard OAuth 2 flow.
+
+The authorization endpoint is the following url:
+``` js
+`https://api.altizure.com/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
+ ```
+where **appKey** is your application key, and **redirect_uri** is one of the domains associated with your application.
+
+Your application needs to route/open this url. A form will be shown to your users asking for their authorizations.
+After your users have authorized the request, the page will be redirected back to your **redirect_uri** with a url hash variable of key: **access_token**.
+
+For mobile application, the **redirect_uri** will be your application's bundle identifier name (iOS) or your package name (android).
+
+For a vanilla JS implementation, please refer to [here](https://github.com/altizure/api-demo-minimal/blob/master/index.html).
+
+## 6. FAQ
+
+###### 6.1 How to access the api in Mainland China?
+
+Please use `https://api.altizure.cn/graphql`. It is better to choose a reachable and faster endpoint whenever possible in the logic of your application instead of hardcoding the api endpoint.
+
+###### 6.2 Where to find more detailed documentations on GraphQL API
+
+Please follow the above tutorial and browse [api.altizure.cn/graphql](https://api.altizure.cn/graphql) with your browser. All documentations are embedded in the web frontend of our api endpoint.
+
+## 7. Learn more
 
 * Learn more about [GraphQL](http://graphql.org/learn/)
 * Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application
 * More tools on GraphQL: [Awesome GraphGL](https://github.com/chentsulin/awesome-graphql)
+
+---
+
+Last modified at {{ file.mtime }}

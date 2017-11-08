@@ -36,3 +36,7 @@ GraphQL API 是一组以 GraphQL 为协议提供的在线 API。这套 API，提
 ## 5. Javascript SDK
 
 这是一个以 Javacript 为开发语言的 SDK。提供了丰富的三维浏览和编辑的功能。详情可以浏览：[Javascript SDK](jssdk.md)
+
+---
+
+该文档最后修改于 {{ file.mtime }}

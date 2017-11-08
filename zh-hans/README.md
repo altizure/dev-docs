@@ -19,6 +19,11 @@
 * 探索 Altizure 的三维世界：[altizure.cn/explore](https://altizure.cn/explore)
 * 关注微信公众号：altizure_info
 * 关注官方博客：[blog.altizure.cn](https://blog.altizure.cn)
+* 离线文档：[pdf](https://altizure.github.io/dev-docs-site/download/altizure-dev-docs_zh-hans.pdf), [epub](https://altizure.github.io/dev-docs-site/download/altizure-dev-docs_zh-hans.epub)
 
 
 联系我们 [support@altizure.com](mailto:support@altizure.com)
+
+---
+
+该文档最后修改于 {{ file.mtime }}

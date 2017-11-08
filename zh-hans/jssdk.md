@@ -53,7 +53,7 @@ let options = {
 }
 
 // 创建地球渲染引擎对象，附着在 page-content 这个 div 上
-let earth = new altizure.Earth('page-content', options)
+let sandbox = new altizure.Sandbox('page-content', options)
 ```
 
 其中 `'page-content'` 是上面创建三维显示容器的 `div` 的 id。`options` 用于配置新建的引擎对象，更多参数可以参考下面的范例和详细文档。
@@ -79,22 +79,22 @@ let earth = new altizure.Earth('page-content', options)
       }
     }
 
-    let earth = new altizure.Earth('page-content', options)
+    let sandbox = new altizure.Sandbox('page-content', options)
   </script>
 </body>
 </html>
 ```
 
-把这段代码保存成一个 html 文件放在一个文件夹如 `<path>\altizure-sdk-tes\earth.html` 中，然后在控制台中键入：
+把这段代码保存成一个 html 文件放在一个文件夹如 `<path>/altizure-sdk-test/earth.html` 中，然后在控制台中键入：
 
 ```bash
-cd <path>\altizure-sdk-tes\
+cd <path>/altizure-sdk-test/
 python -m SimpleHTTPServer
 ```
 
 再通过浏览器访问 `http://127.0.0.1:8000/earth.html` 就可以加载这个 Altizure 地球了。
 
-你也可以访问[[演示页面](https://altizure.github.io/sdk-demo/1-1-altizure-earth/index.html)](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的效果。
+你也可以访问[演示页面](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的效果。
 
 只需要简单几行代码，我们便可以创建出一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
@@ -104,7 +104,7 @@ python -m SimpleHTTPServer
 
 您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
 
-**概念释义**
+#### 2.1 概念释义
 
 以下我们简单解释一下出现在范例里的元素的概念
 
@@ -115,29 +115,30 @@ python -m SimpleHTTPServer
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
-**范例详解**
+#### 2.2 范例详解
 
-* Altizure 地球基本加载范例
+* 2.2.1 Altizure 地球基本加载范例
     * [默认地球加载](https://altizure.github.io/sdk.examples/1-1-altizure-earth)
     * [设置地球加载开场动画](https://altizure.github.io/sdk.examples/1-2-open-animation)
     * [设置地球加载图层](https://altizure.github.io/sdk.examples/1-3-render-items)
     * [设置月球为底图](https://altizure.github.io/sdk.examples/1-4-lunar)
-* 插入 Marker 范例
+* 2.2.2 插入 Marker 范例
     * [插入 Altizure 项目](https://altizure.github.io/sdk.examples/2-1-add-project)
         * [设置水面](https://altizure.github.io/sdk.examples/2-1-add-project-water)
     * [插入自定义标签](https://altizure.github.io/sdk.examples/2-2-add-tag)
     * [插入多边形和体块](https://altizure.github.io/sdk.examples/2-3-add-polygon)
     * [插入折线](https://altizure.github.io/sdk.examples/2-4-add-polyline)
     * [插入 obj 模型](https://altizure.github.io/sdk.examples/2-5-add-obj-model)
-* 交互事件
+* 2.2.3 交互事件
     * [鼠标事件](https://altizure.github.io/sdk.examples/3-1-mouse-events)
-* 获取坐标
+* 2.2.4 获取坐标
     * [获取地球表面坐标](https://altizure.github.io/sdk.examples/4-1-earth-pickpoint)
     * [获取模型表面坐标](https://altizure.github.io/sdk.examples/4-2-project-pickpoint)
-* 相机操作
+* 2.2.5 相机操作
     * [相机姿态设置](https://altizure.github.io/sdk.examples/5-1-camera-pose)
     * [相机飞行设置](https://altizure.github.io/sdk.examples/5-2-camera-fly)
     * [设置相机移动限制](https://altizure.github.io/sdk.examples/5-3-camera-range)
+
 
 ## 3. 常见问题
 
@@ -161,6 +162,10 @@ python -m SimpleHTTPServer
 ###### 3.1.4 详细文档在哪儿？
 
 请直接参考范例的代码，里面有详细注释。我们会持续更新相关范例，展示最新功能。
+
+###### 3.1.5 如何获取用户令牌？
+
+请直接参考 [GraphQL API](api.md) 的 `5. 获取用户令牌` 章节。
 
 #### 3.2 常见用例
 
@@ -191,36 +196,87 @@ obj 模型需要满足以下要求：
 
 通过鼠标事件分别获取两次点击的坐标点，然后求两点距离。
 
-###### 3.2.6 如何移动标注，或者绑定 GPS 设备的坐标？
+###### 3.2.6 如何加入一个带格式的文本标签
+
+2017-11-08 更新：`TextTagMarker` 是一个带简单格式的文字标签，参考[範例2.6](https://altizure.github.io/sdk.examples/2-6-add-textTag/)。
+
+用 js 创建一个 canvas, 写入带格式的文本，把 canvas 转为 image, 传给 Tag。(可以把文字和图标都画到这张canvas上。)
+
+###### 3.2.7 如何获得三维场景拖动事件
+
+响应 Sandbox 对象的 `cameraChange` 事件，`sandbox.on('cameraChange', callback)`。
+
+###### 3.2.8 地图框选的功能，希望能够在地图上画个方形或圆形，然后可以获取到画的图形的范围值
+
+pick 鼠标 down 和 up 的点,
+* pick 到的两个点作为矩形的对角两个端点，矩形的边平行于经纬方向, 使用 polygon marker 绘制矩形
+* 以 pick 到的两个点作为直径，中点做圆心，还是用 polygon 就可以，比如画一个 360 边形。已知圆心经纬度，和直径，顶点位置可以很容易算出来。
+
+###### 3.2.9 如何删除一个标注?
+
+`marker.destruct()` 可以完全销毁一个标注，这个标注所用的资源将被释放。如果您想反复显示和隐藏这个标注，可以设定这个参数 `marker.visible=true`。请参考 3.2.4 的解答。
+
+###### 3.2.10 平台的坐标系是什么？
+
+wgs84
+
+###### 3.2.11 如果我需要通过方法调用实现放大，或缩小，接口是什么？
+
+更改相机高度 `alt`，参考范例第五章。
+
+###### 3.2.12 如果我需要通过方法调用旋转、平移，接口是什么？
+
+更改相机经纬度 `lat/lng` 实现平移，`tilt` 更改俯仰视角，`north` 更改旋转视角。请参考范例第五章。
+
+###### 3.2.13 flyTo方法，是否有飞行速度参数？
+
+有。`flyTo: function (position, speed)`
+
+###### 3.2.14 水面高度设置？
+
+水面高度是在 Altizure 主站上定义的, SDK 目前不允许修改。
+
+###### 3.2.14 如何加载矢量图层数据？
+
+您需要读取、解析您所使用的矢量数据，转化为 SDK 提供的点线面，加入场景中。
+
+###### 3.2.15 如何实现局部区域透明显示设置？
+
+您可以使用 Altizure 主站的 [裁剪](https://blog.altizure.cn/2017/03/08/altizure-cropping-3D-models/index.html) 功能。
+
+###### 3.2.16 如何实现消息窗口功能？（类似点击弹出信息窗口）
+
+使用 javascript 和 html 写好您想显示的弹窗，再和 marker 的鼠标事件绑定，比如 mouseover 或 click 时显示。
+
+###### 3.2.17 如何移动标注，或者绑定 GPS 设备的坐标？
 
 只需要修改标注的坐标即可移动标注。需要开发者通过客户端或者服务器和不同设备通信获取设备的 GPS 坐标，便可直接把该坐标设做相关标注的坐标，便确保标注反映了设备的 GPS 位置。
 
-###### 3.2.7 项目如果没有camera的参数是不是没办法在https://altizure.github.io/sdk.examples/2-1-add-project/这里显示出来
+###### 3.2.18 sandbox 里的 pid 是什么？
+
+pid 是 project id 的简写。 浏览Altizure的url （例如， https://www.altizure.com/project/59fe68cebb619d03c446fe85/model）里面的 59fe68cebb619d03c446fe85 也是pid。
+
+###### 3.2.19 如何初始化sandbox的相机(camera)参数？
 
 这里的camera参数，是指sandbox初始化的时候填的相机位置。它可以通过sdk得到，参考範例 5.1。camera的参数是以经纬度，高度定义的。经纬度可以从谷歌/百度地图拾取，或者更简单的，从範例 4.1拾取，点击想要的地方，就会显示了。console里有log, 要离地面近一点也能看到文字标签。
-（可选）如果您也在使用Altizure API, project那个函数中有存地理位置的参数。在 geoInfo 里的 centerLat, centerLong， 可以分别赋值给 lat, lng。高度你可以自己定义，比如1000(米)。
+如果您也在使用Altizure [GraphQL API](api.md), project函数中有存地理位置的参数。在 geoInfo 里的 centerLat, centerLong， 可以分别赋值给 lat, lng。高度你可以自己定义，比如1000(米)。
 
-###### 3.2.8 sandbox 里的 pid 于 project那里的 id 不是同一个东西吗？
+###### 3.2.20 平台支持BIM格式的文件吗？
 
-是一个东西。pid 是 project id 的简写。 浏览Altizure的url （例如， https://www.altizure.com/project/59fe68cebb619d03c446fe85/model）里面的 59fe68cebb619d03c446fe85 也是pid。
+目前不支持，有指定需要再开发。
 
-###### 3.2.9 平台支持BIM格式的文件吗？
+###### 3.2.21 创建的标签，有没有方法修改position坐标/同一个标签，不销毁重建的情况下，修改其位置/通过鼠标点击地图来设置标签的位置？
 
-目前不支持，有指定需要再开发
+```
+marker.setPose (position, orientation, scale)
+```
+这里 position: {lng, lat, alt}, orientation: {x, y, z, w}, scale: number。
+如果只改position,另外两个可以设`undefined`。
 
-###### 3.2.10 创建的标签，有没有方法修改position坐标/同一个标签，不销毁重建的情况下，修改其位置/通过鼠标点击地图来设置标签的位置？
-
-marker.setPose (position, orientation, scale)。这里 position: {lng, lat, alt}, orientation: {x, y, z, w}, scale: number。
-如果只改position,另外两个可以设undefined
-
-###### 3.2.12 ObjMarker导入的obj文件有什么要求？
-
-如果网络下载带宽不高，过大的 obj 文件可能导致下载时间过长。而且因为受限于浏览器的性能，过大的 obj 也会导致浏览器崩溃。我们一般推荐 obj 模型连同纹理文件不要超过 2 MB。
-obj 模型需要满足以下要求：obj 模型需要由开发者自行找网络空间存储并获取直接访问的 https 链接。其中 obj 对应的 mtl 文件内的纹理路径需要是相对路径。obj 只有三角形面。
-
-###### 3.2.12 将obj转成server端的金字塔（LOD）数据，有什么要求？
+###### 3.2.22 将obj转成server端的金字塔（LOD）数据，有什么要求？
 
 obj需要符合一些数学规则，才可以做LOD。包括：obj 只有三角形面。obj 模型里没有非2-流形的点和边，并且没有面积为0的面。详情需联系技术人员测试。
+
 
 ## 4. 了解更多
 
@@ -229,3 +285,7 @@ obj需要符合一些数学规则，才可以做LOD。包括：obj 只有三角�
 * [OpenGL](https://www.opengl.org/)
 * [Vulkan](https://www.khronos.org/registry/vulkan/)
 * 详解 OpenGL 坐标变换 [OpenGL Transformation](http://www.songho.ca/opengl/gl_transform.html)
+
+---
+
+该文档最后修改于 {{ file.mtime }}
