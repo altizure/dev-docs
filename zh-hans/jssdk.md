@@ -195,7 +195,32 @@ obj 模型需要满足以下要求：
 
 只需要修改标注的坐标即可移动标注。需要开发者通过客户端或者服务器和不同设备通信获取设备的 GPS 坐标，便可直接把该坐标设做相关标注的坐标，便确保标注反映了设备的 GPS 位置。
 
+###### 3.2.7 项目如果没有camera的参数是不是没办法在https://altizure.github.io/sdk.examples/2-1-add-project/这里显示出来
 
+这里的camera参数，是指sandbox初始化的时候填的相机位置。它可以通过sdk得到，参考範例 5.1。camera的参数是以经纬度，高度定义的。经纬度可以从谷歌/百度地图拾取，或者更简单的，从範例 4.1拾取，点击想要的地方，就会显示了。console里有log, 要离地面近一点也能看到文字标签。
+（可选）如果您也在使用Altizure API, project那个函数中有存地理位置的参数。在 geoInfo 里的 centerLat, centerLong， 可以分别赋值给 lat, lng。高度你可以自己定义，比如1000(米)。
+
+###### 3.2.8 sandbox 里的 pid 于 project那里的 id 不是同一个东西吗？
+
+是一个东西。pid 是 project id 的简写。 浏览Altizure的url （例如， https://www.altizure.com/project/59fe68cebb619d03c446fe85/model）里面的 59fe68cebb619d03c446fe85 也是pid。
+
+###### 3.2.9 平台支持BIM格式的文件吗？
+
+目前不支持，有指定需要再开发
+
+###### 3.2.10 创建的标签，有没有方法修改position坐标/同一个标签，不销毁重建的情况下，修改其位置/通过鼠标点击地图来设置标签的位置？
+
+marker.setPose (position, orientation, scale)。这里 position: {lng, lat, alt}, orientation: {x, y, z, w}, scale: number。
+如果只改position,另外两个可以设undefined
+
+###### 3.2.12 ObjMarker导入的obj文件有什么要求？
+
+如果网络下载带宽不高，过大的 obj 文件可能导致下载时间过长。而且因为受限于浏览器的性能，过大的 obj 也会导致浏览器崩溃。我们一般推荐 obj 模型连同纹理文件不要超过 2 MB。
+obj 模型需要满足以下要求：obj 模型需要由开发者自行找网络空间存储并获取直接访问的 https 链接。其中 obj 对应的 mtl 文件内的纹理路径需要是相对路径。obj 只有三角形面。
+
+###### 3.2.12 将obj转成server端的金字塔（LOD）数据，有什么要求？
+
+obj需要符合一些数学规则，才可以做LOD。包括：obj 只有三角形面。obj 模型里没有非2-流形的点和边，并且没有面积为0的面。详情需联系技术人员测试。
 
 ## 4. 了解更多
 
