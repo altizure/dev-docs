@@ -254,12 +254,12 @@ wgs84
 
 ###### 3.2.18 sandbox 里的 pid 是什么？
 
-pid 是 project id 的简写。 浏览Altizure的url （例如， https://www.altizure.com/project/59fe68cebb619d03c446fe85/model）里面的 59fe68cebb619d03c446fe85 也是pid。
+pid 是 project id 的简写。 浏览 Altizure 的 url (例如，[https://www.altizure.com/project/59fe68cebb619d03c446fe85/model](https://www.altizure.com/project/59fe68cebb619d03c446fe85/model) ) 里面的 `59fe68cebb619d03c446fe85` 就是 pid。
 
-###### 3.2.19 如何初始化sandbox的相机(camera)参数？
+###### 3.2.19 如何初始化 sandbox 的相机 (camera) 参数？
 
-这里的camera参数，是指sandbox初始化的时候填的相机位置。它可以通过sdk得到，参考範例 5.1。camera的参数是以经纬度，高度定义的。经纬度可以从谷歌/百度地图拾取，或者更简单的，从範例 4.1拾取，点击想要的地方，就会显示了。console里有log, 要离地面近一点也能看到文字标签。
-如果您也在使用Altizure [GraphQL API](api.md), project函数中有存地理位置的参数。在 geoInfo 里的 centerLat, centerLong， 可以分别赋值给 lat, lng。高度你可以自己定义，比如1000(米)。
+这里的 camera 参数，是指 sandbox 初始化的时候填的相机位置。它可以通过 sdk 得到，参考 [范例 5.1](https://altizure.github.io/sdk.examples/5-1-camera-pose)。camera的参数是以经纬度，高度定义的。经纬度可以从谷歌/百度地图拾取，或者更简单的，从[范例 4.1](https://altizure.github.io/sdk.examples/4-1-earth-pickpoint)拾取，点击想要的地方，就会显示了。console 里有日志, 要离地面近一点也能看到文字标签。
+如果您也在使用 Altizure [GraphQL API](api.md), project 函数中有存地理位置的参数。在 geoInfo 里的 centerLat, centerLong， 可以分别赋值给 lat, lng。高度你可以自己定义，比如 1000(米)。
 
 ###### 3.2.20 平台支持BIM格式的文件吗？
 
@@ -270,12 +270,13 @@ pid 是 project id 的简写。 浏览Altizure的url （例如， https://www.al
 ```
 marker.setPose (position, orientation, scale)
 ```
-这里 position: {lng, lat, alt}, orientation: {x, y, z, w}, scale: number。
-如果只改position,另外两个可以设`undefined`。
 
-###### 3.2.22 将obj转成server端的金字塔（LOD）数据，有什么要求？
+这里 `position: {lng, lat, alt}`, `orientation: {x, y, z, w}`, `scale: number`。
+如果只改 `position`,另外两个可以设`undefined`。
 
-obj需要符合一些数学规则，才可以做LOD。包括：obj 只有三角形面。obj 模型里没有非2-流形的点和边，并且没有面积为0的面。详情需联系技术人员测试。
+###### 3.2.22 将 obj 转成类似 Altizure 原生项目那样的金字塔分层（LOD）数据，有什么要求？
+
+obj 需要符合一些数学规则，才可以做LOD。包括：obj 只有三角形面。obj 模型里没有非2-流形的点和边，并且没有面积为0的面。详情需联系技术人员测试。
 
 
 ## 4. 了解更多
