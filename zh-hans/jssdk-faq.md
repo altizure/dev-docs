@@ -153,3 +153,6 @@ obj 需要符合一些数学规则，才可以做LOD。包括：obj 只有三角
 * [基础范例列表](https://altizure.github.io/sdk.examples/examples.sdk.html)
 * [演示应用](jssdk-demo.md) 展示了更加复杂的应用范例。
 
+—
+
+该文档最后修改于 {{ file.mtime }}

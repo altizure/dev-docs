@@ -29,3 +29,7 @@ python -m SimpleHTTPServer
 
 * [Altizure Javascript SDK](altizure.github.io/dev-docs-site)
 * [Altizure Javascript SDK 常见问题](jssdk-faq.md)
+
+—
+
+该文档最后修改于 {{ file.mtime }}
