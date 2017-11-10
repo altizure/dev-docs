@@ -15,7 +15,7 @@
 
 # 2. 如何获取这些演示的代码
 
-这些演示应用都是开源的，您可以通过以下简单的命令把代码复制到您的电脑查看并运行。
+这些演示应用都是开源的，您可以通过以下的命令把代码复制到您的电脑查看并运行。
 
 ```bash
 git clone https://github.com/altizure/experimental-demo.git

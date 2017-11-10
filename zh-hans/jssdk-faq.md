@@ -84,7 +84,7 @@ pick 鼠标 down 和 up 的点,
 
 #### 2.9 如何删除一个标注?
 
-`marker.destruct()` 可以完全销毁一个标注，这个标注所用的资源将被释放。如果您想反复显示和隐藏这个标注，可以设定这个参数 `marker.visible=true`。请参考 3.2.4 的解答。
+`marker.destruct()` 可以完全销毁一个标注，这个标注所用的资源将被释放。如果您想反复显示和隐藏这个标注，可以设定这个参数 `marker.visible=true`。请参考 2.4 的解答。
 
 #### 2.10 平台的坐标系是什么？
 
@@ -135,14 +135,14 @@ pid 是 project id 的简写。 浏览 Altizure 的 url (例如，[https://www.a
 
 目前不支持，有指定需要再开发。
 
-#### 2.21 创建的标签，有没有方法修改position坐标/同一个标签，不销毁重建的情况下，修改其位置/通过鼠标点击地图来设置标签的位置？
+#### 2.21 创建的标签，有没有方法修改 position 坐标？同一个标签，不销毁重建的情况下，修改其位置/通过鼠标点击地图来设置标签的位置？
 
 ```
 marker.setPose (position, orientation, scale)
 ```
 
 这里 `position: {lng, lat, alt}`, `orientation: {x, y, z, w}`, `scale: number`。
-如果只改 `position`,另外两个可以设`undefined`。
+如果只改 `position`,另外两个可以设 `undefined`。
 
 #### 2.22 将 obj 转成类似 Altizure 原生项目那样的金字塔分层（LOD）数据，有什么要求？
 
