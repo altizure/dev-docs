@@ -10,7 +10,7 @@
 
 请检查以下配置是否正确：
 
-* 是否已经启动一个 http 服务器？最方便的方法是参考 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 教程中用 python 建立 http 服务器的方法。
+* 是否已经启动一个 http 服务器？最方便的方法是参考 [altizure.github.io/sdk.examples/](https://altizure.github.io/sdk.examples/) 教程中用 python 建立 http 服务器的方法。
 * 本地测试请用 `127.0.0.1` 作为地址来访问，而不要使用 `localhost`。
 
 #### 1.3 无法访问 sdk script 链接？
@@ -68,9 +68,9 @@ obj 模型需要满足以下要求：
 
 #### 2.6 如何加入一个带格式的文本标签
 
-2017-11-08 更新：`TextTagMarker` 是一个带简单格式的文字标签，参考[範例2.6](https://altizure.github.io/sdk.examples/2-6-add-textTag/)。
+`TextTagMarker` 是一个带简单格式的文字标签，参考 [范例2.6](https://altizure.github.io/sdk.examples/2-6-add-textTag/)。
 
-用 js 创建一个 canvas, 写入带格式的文本，把 canvas 转为 image, 传给 Tag。(可以把文字和图标都画到这张canvas上。)
+如果您需要更复杂的格式定义，您可以用 js 创建一个 canvas, 写入带格式的文本，把 canvas 转为 image, 传给 Tag。(可以把文字和图标都画到这张canvas上。)
 
 #### 2.7 如何获得三维场景拖动事件
 
