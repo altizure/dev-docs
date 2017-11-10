@@ -12,6 +12,8 @@
 * [开发者账号申请](dev-account.md)
 * [GraphGL API](api.md)
 * [Javascript SDK](jssdk.md)
+  * [演示应用](jssdk-demo.md)
+  * [常见问题](jssdk-faq.md)
 
 
 更多了解 Altizure 欢迎访问：
