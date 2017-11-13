@@ -129,7 +129,7 @@ pid 是 project id 的简写。 浏览 Altizure 的 url (例如，[https://www.a
 #### 2.19 如何初始化 sandbox 的相机 (camera) 参数？
 
 这里的 camera 参数，是指 sandbox 初始化的时候填的相机位置。它可以通过 sdk 得到，参考 [范例 5.1](https://altizure.github.io/sdk.examples/5-1-camera-pose)。camera的参数是以经纬度，高度定义的。经纬度可以从谷歌/百度地图拾取，或者更简单的，从[范例 4.1](https://altizure.github.io/sdk.examples/4-1-earth-pickpoint)拾取，点击想要的地方，就会显示了。console 里有日志, 要离地面近一点也能看到文字标签。
-如果您也在使用 Altizure [GraphQL API](api.md), project 函数中有存地理位置的参数。在 geoInfo 里的 centerLat, centerLong， 可以分别赋值给 lat, lng。高度你可以自己定义，比如 1000(米)。
+如果您也在使用 Altizure [GraphQL API](api.md), project 函数中有存地理位置的参数。在 geoInfo 里的 centerLat, centerLng， 可以分别赋值给 lat, lng。高度你可以自己定义，比如 1000(米)。
 
 #### 2.20 平台支持BIM格式的文件吗？
 
@@ -142,7 +142,7 @@ marker.setPose (position, orientation, scale)
 ```
 
 这里 `position: {lng, lat, alt}`, `orientation: {x, y, z, w}`, `scale: number`。
-如果只改 `position`,另外两个可以设 `undefined`。
+如果只改 `position`，另外两个可以设 `setPose(position, undefined, undefined)`。
 
 #### 2.22 将 obj 转成类似 Altizure 原生项目那样的金字塔分层（LOD）数据，有什么要求？
 
