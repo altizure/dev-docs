@@ -74,7 +74,7 @@ obj 模型需要满足以下要求：
 
 #### 2.7 如何获得三维场景拖动事件
 
-响应 Sandbox 对象的 `cameraChange` 事件，`sandbox.on(’cameraChange‘, callback)`。
+响应 Sandbox 对象的 `cameraChange` 事件，`sandbox.on('cameraChange', callback)`。
 
 #### 2.8 地图框选的功能，希望能够在地图上画个方形或圆形，然后可以获取到画的图形的范围值
 
@@ -142,11 +142,21 @@ marker.setPose (position, orientation, scale)
 ```
 
 这里 `position: {lng, lat, alt}`, `orientation: {x, y, z, w}`, `scale: number`。
-如果只改 `position`，另外两个可以设 `setPose(position, undefined, undefined)`。
+如果只改 `position`，另外两个可以设为 `undefined`，如 `setPose(position, undefined, undefined)`。
 
 #### 2.22 将 obj 转成类似 Altizure 原生项目那样的金字塔分层（LOD）数据，有什么要求？
 
 obj 需要符合一些数学规则，才可以做LOD。包括：obj 只有三角形面。obj 模型里没有非2-流形的点和边，并且没有面积为0的面。详情需联系技术人员测试。
+
+#### 2.23 如何给一个已有的 `PolyLineMarker` 添加更多的点？
+
+使用 `altizure.PolyLineMarker::addPointMarker` 如：
+
+```
+polylineMarker.addPointMarker(new altizure.LngLatAlt(
+  lng, lat, alt
+))
+```
 
 ## 3. 阅读更多
 
