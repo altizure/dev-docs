@@ -100,7 +100,7 @@ wgs84
 
 #### 2.13 flyTo方法，是否有飞行速度参数？
 
-有。`flyTo: function (position, speed)`
+有。`flyTo: function (position, speed)`。`speed` 是一个速度的相对倍率，例如设做 2 的话，就是默认速度的 2 倍。
 
 #### 2.14 水面高度设置？
 
