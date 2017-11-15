@@ -44,7 +44,7 @@ python -m SimpleHTTPServer
 
 # 4. 了解更多
 
-* [Altizure Javascript SDK](altizure.github.io/dev-docs-site)
+* [Altizure Javascript SDK](jssdk.md)
 * [Altizure Javascript SDK 常见问题](jssdk-faq.md)
 
 —
