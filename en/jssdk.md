@@ -1,6 +1,6 @@
 # Altizure Javascript SDK
 
-Altizure Javascript SDK allows you to integrate rich 3D experience with our realistic 3D models to your business workflow. Combined with tools like Elctron and React Native, you can easily develop high quality 3D applications with realistic models for desktop and mobile apps.
+Altizure Javascript SDK allows you to integrate rich 3D experience with our realistic 3D models to your business workflow. Combined with tools like Electron and React Native, you can easily develop high quality 3D applications with realistic models for desktop and mobile apps.
 
 ## 1. Basics
 

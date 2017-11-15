@@ -1,8 +1,8 @@
-# Altizure Open Platform
+# Altizure Development Platform
 
-Welcome to Altizure Open Platform！
+Welcome to Altizure Development Platform！
 
-On Altizure, you can not only experience the most advanced 3D reconstruction technology to turn 2D photos to realsitc 3D models, but also use the online 3D publishing service to share and enjoy the 3D models.
+On Altizure, you can not only experience the most advanced 3D reconstruction technology to turn 2D photos to realistic 3D models, but also use the online 3D publishing service to share and enjoy the 3D models.
 
 Join Altizure open platform to integrate the powerful 3D reconstruction and publishing services on Altizure to your business workflow. Unleash the power of realistic 3D models!
 
