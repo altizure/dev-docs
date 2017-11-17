@@ -27,10 +27,17 @@
 #### 2.1 GPS 轨迹记录
 
 * 演示链接：[altizure.github.io/experimental-demo/gps-tracker.html](https://altizure.github.io/experimental-demo/gps-tracker.html)
-* 演示重点：图片标签加载，标签位置移动，相机跟随动画，地理坐标与屏幕坐标转换，Canvas 二维元素与实景三维元素结合。
+* 演示重点：图片标签加载，标签位置移动，相机跟随动画，地理坐标与屏幕坐标转换，Canvas 二维元素与实景三维元素结合，获取模型表面高程。
 * 演示简介：该演示推荐用手机打开。在演示中，你可以打开轨迹记录，这样你的位置就会以演示中的模型的中心点为基准点，实时以一个 Altizure 图标的形式显示在实景三维模型中。同时您的移动轨迹也会用折线显示出来。移动轨迹的折线的渲染模式可以在三维渲染或者 canvas 二维渲染模式之间切换。您还可以打开相机跟踪模式，让相机在您移动的过程中使用跟随你移动。
 
-# 3. 如何获取这些演示的代码
+# 3. 性能测试
+
+* 演示链接：[altizure.github.io/experimental-demo/performance-test.html](https://altizure.github.io/experimental-demo/performance-test.html)
+* 演示重点：文字标签加载和删除，测试三维渲染性能，获取模型表面高程
+* 演示简介：演示默认加载 1000 个文字标签。可以通过修改标签数目，并点击 `Generate` 生成不同数目的标签。可以同时显示的标签数目越多，说明您的电脑的渲染能力越强。
+
+
+# 4. 如何获取这些演示的代码
 
 这些演示应用都是开源的，您可以通过以下的命令把代码复制到您的电脑查看并运行。
 
@@ -42,7 +49,7 @@ python -m SimpleHTTPServer
 
 打开您的浏览器，访问 `http://127.0.0.1:8000/` 便可运行和查看这些演示应用。
 
-# 4. 了解更多
+# 5. 了解更多
 
 * [Altizure Javascript SDK](jssdk.md)
 * [Altizure Javascript SDK 常见问题](jssdk-faq.md)
