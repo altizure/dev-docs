@@ -1,4 +1,4 @@
-# 如何使用 GraphQL API 上传用三维重建的图像
+# 上传图像
 
 ## 概况
 
@@ -24,29 +24,29 @@ As filename is the only identifier in the buckets, the image is required to be u
 
 ##### 3.1 上传到阿里云的OSS
 
-If an OSS bucket is chosen, obtain STS and the related meta image info (e.g. id and hashed filename) by calling mutation `uploadImageOSS(pid, bucket, filename, type, checksum)`. STS is a temporary (1 hour) security token for the write only permission on the `/pid` prefix.
-If it has expired, renew with the same mutation. Otherwise, only request the `image` gql fragment from the result, and re-use the same STS for performance reason. As signing from Aliyun is slow, one should not sign a new STS for each image.
+在选择了最近的 OSS bucket 后，我们需要按照以下流程进行上传：
 
-Given the STS, images could be uploaded via any compatible protocol or library to OSS. It is required to upload with the specific hashed filename according to the image info returned from the `uploadImageOSS` mutation. Specifically, it is required to be put to the path `${pid}/${image.filename}` inside the bucket.
-
-In order to keep track of the state, just before an image is uploaded, call mutation `startImageUpload(id)` to signal the start of the process. When the upload is done, call mutation `doneImageUpload(id)`.
+* 通过 `uploadImageOSS(pid, bucket, filename, type, sha1sum)` 获取 **STS** 令牌及其他上传所需的图像 meta info，包括上传 **图像的 id** 和 **哈希化的文件名**。STS 令牌的有效期只有 1 小时，对相关 bucket 的 `/pid` 只有写权限。如果 STS 令牌过期了，开发者必须利用同样的 mutation `uploadImageOSS(pid, bucket, filename, type, sha1sum)` 进行更新。如果令牌还未过期，开发者在上传新的图像时无需请求新的令牌，只需用同样的 STS 请求 `uploadImageOSS` 中的 `image` 项。虽然开发者可以每上传一张图像都请求新的 STS 令牌，但是由于阿里云的签发令牌的相应很慢每次都请求新的令牌会导致上传不太稳定，所以我们推荐在 STS 令牌未过期前，不要重复申请新的令牌。
+* 获取了 STS 令牌后和相应的 meta image info 后，调用 mutation `startImageUpload(id)` 通知服务器一张图像即将开始上传。
+* 使用相应的 STS 令牌把图像上传到 OSS 的 bucket 里 `${pid}/${image.filename}` 的路径下。其中 `${image.filename}` 是上传前调用 `uploadImageOSS` 所返回的图像 meta info。
+* 上传完成后调用 mutation `doneImageUpload(id)` 通知服务器，一张图像的上传完成了。
 
 
 ##### 3.2 上传到亚马逊的S3
 
-If a S3 bucket is chosen, uploading is much simpler.
-For each image, call the mutation `uploadImageS3(pid, bucket, filename, type, checksum)` to obtain a temporary (3 hours) signed url and the related meta image info.
+** 我们未能在中国大陆区提供亚马逊 S3 的节点，请中国大陆的开发者使用阿里云的 OSS 节点。**
 
-Given the signed url, use the standard HTTP put to put the file to this url with `Content-type: JPEG` or other formats accordingly.
+如果最近的上传节点是在 S3，开发者可以使用 S3 上传图像。
 
-Just before each upload, it is required to call mutation `startImageUpload(id)`. There is no need to signal the end of uploading.
+* 在每张图像上传前，调用 mutation `uploadImageS3(pid, bucket, filename, type, checksum)` 获取一个有效期为 3 小时的加密 url 和相关的图像 meta info。
+* 调用 `startImageUpload(id)` 通知服务器一张图像的上传即将开始。
+* 通过标准的 HTTP PUT 命令把图像的文件上传到加密的 url 上。上传时需要把传输的内容标记为 `Content-type: JPEG`。相片上传后无需调用 mutation `doneImageUpload(id)`
 
 ### 4. 等待图像预处理
 
-Uploaded images will be copied, verified and processed. Eventually, the image state will become either `Ready` or `Invalid`.
-If the total count of `Ready` matches the desired number, you may call mutation `startReconstructionWithError(id, options)` to start the reconstruction. Otherwise, you may consider re-uploading any outstanding image as indicated by the mutation `hasImage`.
+图像上传到 OSS 或者 S3 后，Altizure 的服务器会对图像进行验证和预处理，确保图像都是正确有效的。最终每个图像都会被标记为 `Ready` 或者 `Invalid`。如果 `Ready` 的图像数目和你想上传的图像数目一样，就可以继续调用 mutation `startReconstructionWithError(id, options)` 来开始三维重建。如果有效图像的数目不对，开发者可以通知用户重新上传图像确保图像正确，重新上传中可以利用 mutation `hasImage` 来判断图像是否已经存在服务器上来决定是否重新上传，只上传服务器上不完整或者不存在的图像。
 
-If you do not concern about a few number of missing images and want to start the reconstruction immediately once all the images are ready, you could call mutation `preStartReconstruction(id, options)`.
+开发者也可以不等待 Altizure 服务器对图像进行验证，在图像上传完后，便调用 mutation `preStartReconstruction(id, options)`。如果这样，服务器在验证完所有图像后，就会用已有的有效图像开始三维重建。
 
 ## 了解更多
 
