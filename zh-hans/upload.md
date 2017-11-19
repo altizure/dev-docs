@@ -4,9 +4,7 @@
 
 为了获得最佳的上传速度，用于三维重建的图像将直接从客户电脑传输到我们的亚马逊或者阿里云的存储空间里。
 传输和存储中，你的图像将被严格保密，其他任何人都不可以读取和修改你的图像。
-所以上传开始前需要开发者通过我们的 API 获取一个临时的鉴权令牌。
-
-As filename is the only identifier in the buckets, the image is required to be uploaded to a specific url (S3) or prefix (OSS) so that Altizure knows which image is which.
+所以上传开始前需要开发者通过我们的 API 获取一个临时的加密 url (亚马逊 S3) 或者 STS 鉴权令牌  (阿里云 OSS)。因为在 altizure 上每个项目中不允许有同名文件，所以我们的 API 会根据你所上传文件的校验码分配一个唯一的文件名，而不是直接使用原文件的名字作为上传的名字。
 
 ### 1. 选择最近的 bucket
 
@@ -22,7 +20,7 @@ As filename is the only identifier in the buckets, the image is required to be u
 
 ### 3. 上传
 
-##### 3.1 上传到阿里云的OSS
+##### 3.1 上传到阿里云的 OSS
 
 在选择了最近的 OSS bucket 后，我们需要按照以下流程进行上传：
 
@@ -32,7 +30,7 @@ As filename is the only identifier in the buckets, the image is required to be u
 * 上传完成后调用 mutation `doneImageUpload(id)` 通知服务器，一张图像的上传完成了。
 
 
-##### 3.2 上传到亚马逊的S3
+##### 3.2 上传到亚马逊的 S3
 
 ** 我们未能在中国大陆区提供亚马逊 S3 的节点，请中国大陆的开发者使用阿里云的 OSS 节点。**
 
@@ -40,7 +38,7 @@ As filename is the only identifier in the buckets, the image is required to be u
 
 * 在每张图像上传前，调用 mutation `uploadImageS3(pid, bucket, filename, type, checksum)` 获取一个有效期为 3 小时的加密 url 和相关的图像 meta info。
 * 调用 `startImageUpload(id)` 通知服务器一张图像的上传即将开始。
-* 通过标准的 HTTP PUT 命令把图像的文件上传到加密的 url 上。上传时需要把传输的内容标记为 `Content-type: JPEG`。相片上传后无需调用 mutation `doneImageUpload(id)`
+* 通过标准的 HTTP PUT 命令把图像的文件上传到加密的 url 上，文件名为 `${image.filename}`。上传时需要把传输的内容标记为 `Content-type: JPEG`。相片上传后无需调用 mutation `doneImageUpload(id)`
 
 ### 4. 等待图像预处理
 
