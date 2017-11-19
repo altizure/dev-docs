@@ -11,6 +11,7 @@ Let's start the journey.
 * [Concepts](concepts.md)
 * [Developer Account](dev-account.md)
 * [GraphGL API](api.md)
+  * [Images Upload](upload.md)
 * [Javascript SDK](jssdk.md)
 
 
