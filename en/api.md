@@ -20,13 +20,13 @@ We take Google Chrome as an example. Other browsers supporting extensions, e.g. 
 
 ##### Install extension
 
-First, please install an extension that can modify the http request header. Here ModHelper is used. Please search and install `ModHelper` in the extension store of Google Chrome.
+First, please install an extension that can modify the http request header. Here ModHeader is used. Please search and install `ModHeader` in the extension store of Google Chrome.
 
 ![Install extension](img/install_extension.png)
 
 ##### Modify http header
 
-Please use ModHelper to add `key` field in request header with app key as the value.
+Please use ModHeader to add `key` field in request header with app key as the value.
 
 ![Set app key](img/set_key.png)
 
@@ -77,7 +77,7 @@ User token is obtained via the standard OAuth 2 flow.
 
 The authorization endpoint is the following url:
 ``` js
-`https://api.altizure.com/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
+`https://api.altizure.com/auth/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
  ```
 where **appKey** is your application key, and **redirect_uri** is one of the domains associated with your application.
 

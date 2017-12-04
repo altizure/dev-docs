@@ -24,7 +24,7 @@ API 调用和文档的入口：
 
 ##### 安装插件
 
-安装一个可以修改 http 访问请求 header 的插件。这里我们以 ModHelper 为例。在谷歌 Chrome 扩展商店里面搜索 `ModHelper`，并点击安装即可。
+安装一个可以修改 http 访问请求 header 的插件。这里我们以 ModHeader 为例。在谷歌 Chrome 扩展商店里面搜索 `ModHeader`，并点击安装即可。
 
 ![安装插件](img/install_extension.png)
 
@@ -81,7 +81,7 @@ $.ajax({
 
 其中调取 OAuth 窗口的链接为:
 ``` js
-`https://api.altizure.cn/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
+`https://api.altizure.cn/auth/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
 ```
 
 其中 **appKey** 是您的应用令牌，**redirect_uri** 是您注册该令牌时绑定在上面的域名。
