@@ -111,7 +111,7 @@ python -m SimpleHTTPServer
 * Sandbox \(沙盒\)： altizure.Sandbox \(沙盒\) 是整个三维应用的核心，它负责管理整个三维场景的数据和绘制。通过对沙盒进行定制和添加数据，可以定制出非常强大的三维应用。这是编写三维应用的主要入口。
 * Earth \(地球\)：altizure.Earth \(地球\) 是负责渲染管理 Altizure 地球的核心，通常它是作为沙盒的底图。我们提供丰富的选项来方便您定义这个地球的外观。一般来说，如果创建了 Sandbox 就无需再创建一个 Earth 对象。
 
-您可以参考 [altizure.github.io/sdk.examples](https://altizure.github.io/sdk.examples) 的教程把这范例代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
+您可以参考 [github.com/altizure/sdk.examples](https://github.com/altizure/sdk.examples/) 的教程把这范例代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
@@ -122,6 +122,7 @@ python -m SimpleHTTPServer
     * [设置地球加载开场动画](https://altizure.github.io/sdk.examples/1-2-open-animation)
     * [设置地球加载图层](https://altizure.github.io/sdk.examples/1-3-render-items)
     * [设置月球为底图](https://altizure.github.io/sdk.examples/1-4-lunar)
+    * [改变背景](https://altizure.github.io/sdk.examples/1-5-background)
 * 2.2.2 插入 Marker 范例
     * [插入 Altizure 项目](https://altizure.github.io/sdk.examples/2-1-add-project)
         * [设置水面](https://altizure.github.io/sdk.examples/2-1-add-project-water)
@@ -130,18 +131,27 @@ python -m SimpleHTTPServer
     * [插入折线](https://altizure.github.io/sdk.examples/2-4-add-polyline)
     * [插入 obj 模型](https://altizure.github.io/sdk.examples/2-5-add-obj-model)
     * [插入文字标签](https://altizure.github.io/sdk.examples/2-6-add-textTag)
+    * [插入带标签折线](https://altizure.github.io/sdk.examples/2-7-add-label-line)
+    * [插入圆柱形折线](https://altizure.github.io/sdk.examples/2-8-polycylinder)
+    * [插入 canvas 标签](https://altizure.github.io/sdk.examples/2-9-add-canvasTag)
 * 2.2.3 交互事件
     * [鼠标事件](https://altizure.github.io/sdk.examples/3-1-mouse-events)
+    * [解绑事件](https://altizure.github.io/sdk.examples/3-2-event-off)
 * 2.2.4 获取坐标
     * [获取地球表面坐标](https://altizure.github.io/sdk.examples/4-1-earth-pickpoint)
     * [获取模型表面坐标](https://altizure.github.io/sdk.examples/4-2-project-pickpoint)
     * [窗口坐标获取地球坐标](https://altizure.github.io/sdk.examples/4-3-window-to-lnglatalt)
     * [地球经纬度转换窗口坐标](https://altizure.github.io/sdk.examples/4-4-window-from-lnglatalt)
+    * [读取高程](https://altizure.github.io/sdk.examples/4-5-lnglat-to-alt)
 * 2.2.5 相机操作
     * [相机姿态设置](https://altizure.github.io/sdk.examples/5-1-camera-pose)
     * [相机飞行设置](https://altizure.github.io/sdk.examples/5-2-camera-fly)
     * [设置相机移动限制](https://altizure.github.io/sdk.examples/5-3-camera-range)
-
+    * [控制相机移动](https://altizure.github.io/sdk.examples/5-4-camera-control)
+    * [设置相机矩阵](https://altizure.github.io/sdk.examples/5-5-camera-mat)
+* 2.2.6 其他
+    * [裁剪项目](https://altizure.github.io/sdk.examples/6-1-crop-project)
+    * [体积测量](https://altizure.github.io/sdk.examples/6-2-measurement-volume)
 
 ## 3. 常见问题
 
