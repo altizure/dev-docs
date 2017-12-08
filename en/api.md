@@ -32,7 +32,7 @@ Please use ModHeader to add `key` field in request header with app key as the va
 
 Visit [api.altizure.com/graphql](https://api.altizure.com/graphql) after setting the key. You can find three sections: "query section", "result section", and "documentation", on the page.
 
-Now please fill the following query string to the query section to get the ID and name of public projects.
+Now please fill the following query string to the query section to calculate how many gigapixels there are in a set of images.
 
 ```
 query {
