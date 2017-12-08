@@ -40,18 +40,13 @@ API 调用和文档的入口：
 
 ```
 query {
-  allProjects {
-    edges {
-      node {
-        id
-        name
-      }
-    }
+  support {
+    sizeToGigaPixel(width: 4000, height: 3000, numImg: 100)
   }
 }
 ```
 
-并按查询按钮，便可获得查询结果。
+并按查询按钮，便可获得查询结果。这个样例 API 调用会计算 100 张 4000x3000 的图像的总 GP 数。
 
 ![API 界面](img/api_ui.png)
 

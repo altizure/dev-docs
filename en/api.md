@@ -36,18 +36,13 @@ Now please fill the following query string to the query section to get the ID an
 
 ```
 query {
-  allProjects {
-    edges {
-      node {
-        id
-        name
-      }
-    }
+  support {
+    sizeToGigaPixel(width: 4000, height: 3000, numImg: 100)
   }
 }
 ```
 
-Please click the action button to get the query results.
+Please click the action button to get the query results. This api call will compute how many giga pixels there are in 100 images at 4000x3000 resolution.
 
 ![API web UI](img/api_ui.png)
 
@@ -60,7 +55,7 @@ For example:
 
 *JQurey in Javascript*
 
-``` js
+```js
 $.ajax({
     type: 'POST',
     url: 'https://api.altizure.com/graphql',
@@ -76,7 +71,7 @@ $.ajax({
 User token is obtained via the standard OAuth 2 flow.
 
 The authorization endpoint is the following url:
-``` js
+```js
 `https://api.altizure.com/auth/start?client_id=${appKey}&response_type=token&redirect_uri=${redirect_uri}`
  ```
 where **appKey** is your application key, and **redirect_uri** is one of the domains associated with your application.
