@@ -93,7 +93,7 @@ Please use `https://api.altizure.cn/graphql`. It is better to choose a reachable
 
 Please follow the above tutorial and browse [api.altizure.cn/graphql](https://api.altizure.cn/graphql) with your browser. All documentations are embedded in the web frontend of our api endpoint.
 
-## 7. Learn more
+## 7. Learn More
 
 * Learn more about [GraphQL](http://graphql.org/learn/)
 * Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application

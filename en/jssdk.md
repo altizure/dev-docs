@@ -152,7 +152,7 @@ Any questions and bugs, please feel free to write on our [issue page](https://gi
 
 ## 3. FAQ
 
-Coming soon...
+Please check [FAQ](jssdk-faq.md) page for more information and [demo](jssdk-demo.md) page for more sophisticated demos.
 
 ## 4. Learn More
 
