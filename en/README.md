@@ -13,6 +13,8 @@ Let's start the journey.
 * [GraphGL API](api.md)
   * [Images Upload](upload.md)
 * [Javascript SDK](jssdk.md)
+  * [Demo](jssdk-demo.md)
+  * [FAQ](jssdk-faq.md)
 
 
 Learn more about Altizure at:

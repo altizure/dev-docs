@@ -6,7 +6,6 @@ If you have any questions, please feel free to write on our [issue page](https:/
 
 # 1. Timeline
 
-时间轴可以非常直观地展示一个场景按照时间的变化。这是工程进度管理等任何与时间相关的应用都必不可少的工具。下面我们就通过几个应用演示几种可视化时间轴的方法。
 Timeline is very useful for presenting a time series of a changing site. This is a essential tool for monitoring the progress of construction. We show several variation of timeline visualization.
 
 #### 1.1 Timeline in Grid Style
@@ -25,7 +24,7 @@ Timeline is very useful for presenting a time series of a changing site. This is
 
 Modern handheld mobile devices contain lots of sensors, measuring positions, poses, and velocities. In this section, we demonstrate how to integrate the information of sensors with 3D models to make the scenes more interactive.
 
-#### 2.1 GPS 轨迹记录
+#### 2.1 GPS Tracking
 
 * Demo link: [altizure.github.io/experimental-demo/gps-tracker.html](https://altizure.github.io/experimental-demo/gps-tracker.html)
 * Keywords: Image tag, tag position, camera following, coordinate transformation, canvas with 3D elements, altitude reading.
