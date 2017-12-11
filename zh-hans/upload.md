@@ -26,7 +26,7 @@
 
 在选择了最近的 OSS bucket 后，我们需要按照以下流程进行上传：
 
-* 通过 `uploadImageOSS(pid, bucket, filename, type, sha1sum)` 获取 **STS** 令牌及其他上传所需的图像 meta info，包括上传 **图像的 id** 和 **哈希化的文件名**。STS 令牌的有效期只有 1 小时，对相关 bucket 的 `/pid` 只有写权限。如果 STS 令牌过期了，开发者必须利用同样的 mutation `uploadImageOSS(pid, bucket, filename, type, sha1sum)` 进行更新。如果令牌还未过期，开发者在上传新的图像时无需请求新的令牌，只需用同样的 STS 请求 `uploadImageOSS` 中的 `image` 项。虽然开发者可以每上传一张图像都请求新的 STS 令牌，但是由于阿里云的签发令牌的相应很慢每次都请求新的令牌会导致上传不太稳定，所以我们推荐在 STS 令牌未过期前，不要重复申请新的令牌。
+* 通过 `uploadImageOSS(pid, bucket, filename, type, sha1sum)` 获取 **STS** 令牌及其他上传所需的图像 meta info，包括上传 **图像的 id** 和 **哈希化的文件名**。STS 令牌的有效期只有 1 小时，对相关 bucket 的 `/pid` 只有写权限。如果 STS 令牌过期了，开发者必须利用同样的 mutation `uploadImageOSS(pid, bucket, filename, type, sha1sum)` 进行更新。如果令牌还未过期，开发者在上传新的图像时无需请求新的令牌，只需用同样的 STS 请求 `uploadImageOSS` 中的 `image` 项。虽然开发者可以每上传一张图像都请求新的 STS 令牌，但是由于阿里云的签发令牌的相应很慢每次都请求新的令牌会导致上传不太稳定，所以我们推荐在 STS 令牌未过期前，不要重复申请新的令牌。如果您使用[阿里云 OSS Javascript SDK](https://github.com/ali-sdk/ali-oss) 中的 `Wrapper`，请注意在 STS 过期前不要重复创建该类型对象，只有在 STS 过期后才需要重新创建。创建过多 `Wrapper` 对象会导致 `The sockets is full` 的错误。
 * 获取了 STS 令牌后和相应的 meta image info 后，调用 mutation `startImageUpload(id)` 通知服务器一张图像即将开始上传。
 * 使用相应的 STS 令牌把图像上传到 OSS 的 bucket 里 `${pid}/${image.filename}` 的路径下。其中 `${image.filename}` 是上传前调用 `uploadImageOSS` 所返回的图像 meta info。
 * 上传完成后调用 mutation `doneImageUpload(id)` 通知服务器，一张图像的上传完成了。
@@ -51,6 +51,7 @@
 ## 了解更多
 
 * 了解更多关于 [STS](https://www.alibabacloud.com/help/doc-detail/31953.htm?spm=a3c0i.o31952en.b99.284.7ab2aa72OYaf6D) 的信息
+* 阿里云 OSS Javascript SDK: [链接](https://github.com/ali-sdk/ali-oss)
 
 ---
 

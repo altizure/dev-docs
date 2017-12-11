@@ -15,7 +15,7 @@ If it is not, proceed to the next step. Otherwise, skip to the next image.
 
 ### 3. Upload to OSS
 If an OSS bucket is chosen, obtain STS and the related meta image info (e.g. id and hashed filename) by calling mutation `uploadImageOSS(pid, bucket, filename, type, checksum)`. STS is a temporary (1 hour) security token for the write only permission on the `/pid` prefix.
-If it has expired, renew with the same mutation. Otherwise, only request the `image` gql fragment from the result, and re-use the same STS for performance reason. As signing from Aliyun is slow, one should not sign a new STS for each image.
+If it has expired, renew with the same mutation. Otherwise, only request the `image` gql fragment from the result, and re-use the same STS for performance reason. As signing from Aliyun is slow, one should not sign a new STS for each image. If the `Wrapper` in [Aliyun OSS Javascript SDK](https://github.com/ali-sdk/ali-oss) is used, please do not recreate new wrappers before STS expires to avoid an error about too many sockets.
 
 Given the STS, images could be uploaded via any compatible protocol or library to OSS. It is required to upload with the specific hashed filename according to the image info returned from the `uploadImageOSS` mutation. Specifically, it is required to be put to the path `${pid}/${image.filename}` inside the bucket.
 
@@ -39,6 +39,7 @@ If you do not concern about a few number of missing images and want to start the
 ## Learn more
 
 * Learn more about [STS](https://www.alibabacloud.com/help/doc-detail/31953.htm?spm=a3c0i.o31952en.b99.284.7ab2aa72OYaf6D)
+* Aliyun OSS Javascript SDK: [link](https://github.com/ali-sdk/ali-oss)
 
 ---
 
