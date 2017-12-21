@@ -155,7 +155,7 @@ python -m SimpleHTTPServer
 
 ## 3. 常见问题
 
-可以访问[常见问题页面](jssdk-faq.md)了解更多问题解答。[演示应用](jssdk-demo.md)页面展示了更加复杂的 Altizure Javascript SDK 应用范例。访问[详细文档](ref://../docs/user_docs/web/index.html)了解更多细节。
+可以访问[常见问题页面](jssdk-faq.md)了解更多问题解答。[演示应用](jssdk-demo.md)页面展示了更加复杂的 Altizure Javascript SDK 应用范例。访问[详细文档](ref://docs/user_docs/web/index.html)了解更多细节。
 
 ## 4. 了解更多
 
