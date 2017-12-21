@@ -152,7 +152,7 @@ Any questions and bugs, please feel free to write on our [issue page](https://gi
 
 ## 3. FAQ
 
-Please check [FAQ](jssdk-faq.md) page for more information and [demo](jssdk-demo.md) page for more sophisticated demos. Please also check the [Reference](ref://docs/user_docs/web/index.html) documents.
+Please check [FAQ](jssdk-faq.md) page for more information and [demo](jssdk-demo.md) page for more sophisticated demos. Please also check the [Reference](ref://docs/user_docs/web/) documents.
 
 ## 4. Learn More
 

@@ -45,7 +45,7 @@ Coming soon
 
 * [List of samples](https://altizure.github.io/sdk.examples/examples.sdk.html)
 * [Demos](jssdk-demo.md) illustrate more sophisticated examples.
-* [Altizure Javascript SDK Reference](ref://docs/user_docs/web/index.html)
+* [Altizure Javascript SDK Reference](ref://docs/user_docs/web/)
 
 —
 
