@@ -53,6 +53,7 @@ Open your browser and access `http://127.0.0.1:8000/` to run and check the demos
 
 * [Altizure Javascript SDK](jssdk.md)
 * [Altizure Javascript SDK FAQ](jssdk-faq.md)
+* [Altizure Javascript SDK Reference](ref://../docs/user_docs/web/index.html)
 
 —
 

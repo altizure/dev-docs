@@ -15,7 +15,7 @@ Let's start the journey.
 * [Javascript SDK](jssdk.md)
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
-
+  * [Reference](ref://../docs/user_docs/web/index.html)
 
 Learn more about Altizure at:
 

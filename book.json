@@ -5,8 +5,9 @@
     "plugins": [
         "ga",
         "language-picker",
-        "toolbar@git+https://github.com/hamishwillee/gitbook-plugin-toolbar.git",
-        "custom-favicon"
+        "toolbar",
+        "custom-favicon",
+        "otherlink"
     ],
     "pluginsConfig": {
         "ga": {

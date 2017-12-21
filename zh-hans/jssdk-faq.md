@@ -162,6 +162,7 @@ polylineMarker.addPointMarker(new altizure.LngLatAlt(
 
 * [基础范例列表](https://altizure.github.io/sdk.examples/examples.sdk.html)
 * [演示应用](jssdk-demo.md) 展示了更加复杂的应用范例。
+* [Altizure Javascript SDK 详细文档](ref://../docs/user_docs/web/index.html)
 
 —
 

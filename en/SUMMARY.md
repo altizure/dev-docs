@@ -8,3 +8,4 @@
 * [Javascript SDK](jssdk.md)
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
+  * [Reference](ref://../docs/user_docs/web/index.html)

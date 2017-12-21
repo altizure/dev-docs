@@ -15,6 +15,7 @@
 * [Javascript SDK](jssdk.md)
   * [演示应用](jssdk-demo.md)
   * [常见问题](jssdk-faq.md)
+  * [详细文档](ref://../docs/user_docs/web/index.html)
 
 
 更多了解 Altizure 欢迎访问：
