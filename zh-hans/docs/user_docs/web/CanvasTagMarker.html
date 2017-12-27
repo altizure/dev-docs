@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Class: OBJMarker | Altizure SDK</title>
+    <title>Class: CanvasTagMarker | Altizure SDK</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -57,9 +57,7 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>OBJMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
-        
-            <div class="class-description"><p>a marker with shape of a specified obj</p></div>
+        <h2><span class="attribs"><span class="type-signature"></span></span>CanvasTagMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
         
     
 </header>
@@ -72,9 +70,9 @@
 
 <dt>
     
-        <h4 class="name" id="OBJMarker">
+        <h4 class="name" id="CanvasTagMarker">
             
-                new <span class="type-signature"></span>OBJMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
+                new <span class="type-signature"></span>CanvasTagMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -134,7 +132,7 @@
 
             
 
-            <td class="description last"><p>options to construct the marker</p>
+            <td class="description last">
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -147,11 +145,7 @@
         <th>Type</th>
 
         
-        <th>Attributes</th>
-        
 
-        
-        <th>Default</th>
         
 
         <th class="last">Description</th>
@@ -163,114 +157,7 @@
 
         <tr>
             
-                <td class="name"><code>shape</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>tag for excution, use 'CUSTOMIZE' for self-defined path</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>objUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>url to the obj file</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>mtlUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>url to the mtl file</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>upDir</code></td>
+                <td class="name"><code>size</code></td>
             
 
             <td class="type">
@@ -283,176 +170,81 @@
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
 
             
-                <td class="default">
+
+            <td class="description last"><p>size of the canvas</p>
+                <h6>Properties</h6>
                 
-                </td>
-            
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
 
-            <td class="description last"><p>up direction, default {x: 0, y: 0, z: 1}</p></td>
-        </tr>
+        <th>Type</th>
 
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>scale</code></td>
+                <td class="name"><code>width</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">integer</span>
 
 
             
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
 
             
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
 
-            <td class="description last"><p>scale the model to bounding sphere with radius scale</p></td>
+            <td class="description last"><p>width of the canvas</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>errHandler</code></td>
+                <td class="name"><code>height</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type">integer</span>
 
 
             
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
 
             
-                <td class="default">
-                
-                </td>
-            
 
-            <td class="description last"><p>the error handler of OBJMarker creation</p></td>
+            <td class="description last"><p>height of the canvas</p></td>
         </tr>
 
     
+    </tbody>
+</table>
 
-        <tr>
-            
-                <td class="name"><code>patrolRoutes</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
             </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>the routes data of marker</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isRollOver</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">bool</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-
-            <td class="description last"><p>whether to reload the obj</p></td>
         </tr>
 
     
@@ -513,35 +305,10 @@
     
 
     
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li>{<a href="Marker.html">Marker</a>}</li>
-        
-            <li>{addMTLOBJ}</li>
-        </ul>
-    </dd>
-    
 
     
 </dl>
 
-
-    
-        <h5>Example</h5>
-        
-        <p class="code-caption"> construction </p>
-    
-    <pre class="prettyprint"><code> let objMarker = new altizure.OBJMarker({
-   sandbox: sandbox,
-   position: new altizure.LngLatAlt(127.55201053062397, 45.024293080277, 0),
-   name: 'Optimus',
-   shape: 'CUSTOMIZE',
-   objUrl: './object/optimus.obj',
-   mtlUrl: './object/optimus.obj.mtl',
-   upDir: {x: 0, y: 0, z: 1},
-   scale: 10
- })</code></pre>
 
     
 
@@ -558,7 +325,7 @@
 
 
     <ul>
-        <li><a href="Marker.html">Marker</a></li>
+        <li><a href="SpriteMarker.html">SpriteMarker</a></li>
     </ul>
 
 
@@ -581,8 +348,8 @@
             
 
 <dt>
-<h4 class="name" id="bboxColor">
-    <span class="type-signature"></span>bboxColor<span class="type-signature"></span>
+<h4 class="name" id="color">
+    <span class="type-signature"></span>color<span class="type-signature"></span>
     
 </h4>
 
@@ -591,7 +358,85 @@
 <dd>
     
     <div class="description">
-        <p>Set the bounding box color of the object marker</p>
+        <p>The pin's color.</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="SpriteMarker.html#color">SpriteMarker#color</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change color </p>
+    
+    <pre class="prettyprint"><code> spriteMarker.color = 0xff0000 // red in number
+ spriteMarker.color = new THREE.Color(0, 1, 0) // green in THREE.Color
+ spriteMarker.color = '#0000FF' // blue in string</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="context">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>context<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Get the 2d context of the canvas to draw on it.</p>
     </div>
     
 
@@ -639,11 +484,81 @@
     
 
     
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="depthTest">
+    <span class="type-signature"></span>depthTest<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Do depth test or not. If false, always in front.</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="SpriteMarker.html#depthTest">SpriteMarker#depthTest</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
     <h5>Example</h5>
     
-        <p class="code-caption"> Change the bounding box color </p>
+        <p class="code-caption"> Change depth test status </p>
     
-    <pre class="prettyprint"><code> objMarker.bboxColor = 0xff0000 // red</code></pre>
+    <pre class="prettyprint"><code> spriteMarker.depthTest = true // do depth test
+ spriteMarker.depthTest = !spriteMarker.depthTest // flip the status</code></pre>
 
     
 </dd>
@@ -749,12 +664,12 @@
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#interactable">Marker#interactable</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -826,12 +741,12 @@
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#name">Marker#name</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -903,12 +818,12 @@
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#orientation">Marker#orientation</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -951,6 +866,83 @@
             
 
 <dt>
+<h4 class="name" id="pinLength">
+    <span class="type-signature"></span>pinLength<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The length of the pin underneath the sprite.</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="SpriteMarker.html#pinLength">SpriteMarker#pinLength</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change pinLength </p>
+    
+    <pre class="prettyprint"><code> spriteMarker.pinLength = 100 // set pinLength to 100 (in meters)
+ spriteMarker.pinLength = 0 // no pinLength, pin will be invisible</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
 <h4 class="name" id="position">
     <span class="type-signature"></span>position<span class="type-signature"></span>
     
@@ -979,12 +971,12 @@
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#position">Marker#position</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -1041,7 +1033,7 @@
 <dd>
     
     <div class="description">
-        <p>Set the scale of the marker.</p>
+        <p>The scale.</p>
     </div>
     
 
@@ -1063,7 +1055,7 @@
     
     <dt class="tag-overrides">Overrides:</dt>
     <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Marker.html#scale">Marker#scale</a>
+        <a href="SpriteMarker.html#scale">SpriteMarker#scale</a>
     </li></ul></dd>
     
 
@@ -1096,10 +1088,165 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> Set scale </p>
+        <p class="code-caption"> Change scale </p>
     
-    <pre class="prettyprint"><code> marker.scale = 2.0 // set scale to 2.0
- marker.scale = marker.scale * 2.0 // make it two times bigger</code></pre>
+    <pre class="prettyprint"><code> spriteMarker.scale = 2.0 // set scale to 2.0</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="size">
+    <span class="type-signature"></span>size<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the size of the canvas.</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change size </p>
+    
+    <pre class="prettyprint"><code> canvasTagMarker.size = {
+   width: 128,
+   height: 64
+ }</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="texture">
+    <span class="type-signature"></span>texture<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Texture to display on sprite.</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="SpriteMarker.html#texture">SpriteMarker#texture</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change texture </p>
+    
+    <pre class="prettyprint"><code> let loader = new THREE.TextureLoader()
+ loader.load('../public/assets/img/meta_description.png', (loadedTexture) => {
+   spriteMarker.texture = {
+     texture: loadedTexture, // the texture to display
+     aspectRatio: loadedTexture.image.width / loadedTexture.image.height // the aspect ratio of the texture, width / height
+   }
+ })</code></pre>
 
     
 </dd>
@@ -1118,7 +1265,7 @@
 <dd>
     
     <div class="description">
-        <p>Set the visibility of the marker.</p>
+        <p>Visibility of sprite and its pin.</p>
     </div>
     
 
@@ -1140,7 +1287,7 @@
     
     <dt class="tag-overrides">Overrides:</dt>
     <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Marker.html#visible">Marker#visible</a>
+        <a href="SpriteMarker.html#visible">SpriteMarker#visible</a>
     </li></ul></dd>
     
 
@@ -1173,10 +1320,10 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> Set visible </p>
+        <p class="code-caption"> Change visibility of the sprite and pin </p>
     
-    <pre class="prettyprint"><code> marker.visible = false // make this marker invisible
- marker.visible = !marker.visible // flip visible status</code></pre>
+    <pre class="prettyprint"><code> spriteMarker.visible = true // make them visible
+ spriteMarker.visible = !spriteMarker.visible // flip the visibility</code></pre>
 
     
 </dd>
@@ -1345,7 +1492,7 @@
 
     
     <div class="description">
-        <p>Destructor.</p>
+        <p>Destructor</p>
     </div>
     
 
@@ -1383,7 +1530,7 @@
     
     <dt class="tag-overrides">Overrides:</dt>
     <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Marker.html#destruct">Marker#destruct</a>
+        <a href="SpriteMarker.html#destruct">SpriteMarker#destruct</a>
     </li></ul></dd>
     
 
@@ -2519,6 +2666,101 @@ Note: an event can only has one handler.</p>
 
 <dt>
     
+        <h4 class="name" id="takeEffects">
+            
+                <span class="type-signature"></span>takeEffects<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Make the drawing commands take effects.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code>// get context
+ let ctx = canvasTagMarker.context
+ // draw something
+ // let size = canvasTagMarker.size
+ // ctx.drawRect(0, 0, size.width, size.height, some paint) // a rectangle here
+ // take effects
+ canvasTagMarker.takeEffects()</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
         <h4 class="name" id="updateVisibility">
             
                 <span class="type-signature"><span class="icon green">abstract</span> </span>updateVisibility<span class="signature">(options)</span><span class="type-signature"></span>
@@ -2678,7 +2920,7 @@ Note: an event can only has one handler.</p>
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'OBJMarker_sub'.replace(/"/g, '_');
+        var id = 'CanvasTagMarker_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 

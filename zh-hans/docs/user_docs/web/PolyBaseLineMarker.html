@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Class: OBJMarker | Altizure SDK</title>
+    <title>Class: PolyBaseLineMarker | Altizure SDK</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -57,9 +57,7 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>OBJMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
-        
-            <div class="class-description"><p>a marker with shape of a specified obj</p></div>
+        <h2><span class="attribs"><span class="type-signature"></span></span>PolyBaseLineMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
         
     
 </header>
@@ -72,9 +70,9 @@
 
 <dt>
     
-        <h4 class="name" id="OBJMarker">
+        <h4 class="name" id="PolyBaseLineMarker">
             
-                new <span class="type-signature"></span>OBJMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
+                new <span class="type-signature"></span>PolyBaseLineMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -134,7 +132,7 @@
 
             
 
-            <td class="description last"><p>options to construct the marker</p>
+            <td class="description last">
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -147,11 +145,7 @@
         <th>Type</th>
 
         
-        <th>Attributes</th>
-        
 
-        
-        <th>Default</th>
         
 
         <th class="last">Description</th>
@@ -163,151 +157,30 @@
 
         <tr>
             
-                <td class="name"><code>shape</code></td>
+                <td class="name"><code>points</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">array</span>
 
 
             
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
 
             
-                <td class="default">
-                
-                </td>
-            
 
-            <td class="description last"><p>tag for excution, use 'CUSTOMIZE' for self-defined path</p></td>
+            <td class="description last"><p>position array of the points</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>objUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>url to the obj file</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>mtlUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>url to the mtl file</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>upDir</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>up direction, default {x: 0, y: 0, z: 1}</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>scale</code></td>
+                <td class="name"><code>lineWidth</code></td>
             
 
             <td class="type">
@@ -320,107 +193,40 @@
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
 
             
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
 
-            <td class="description last"><p>scale the model to bounding sphere with radius scale</p></td>
+            <td class="description last"><p>width of the line</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>errHandler</code></td>
+                <td class="name"><code>color</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type">any</span>
 
 
             
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
 
             
-                <td class="default">
-                
-                </td>
-            
 
-            <td class="description last"><p>the error handler of OBJMarker creation</p></td>
+            <td class="description last"><p>anything that can be parsed by THREE.Color</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>patrolRoutes</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"><p>the routes data of marker</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isRollOver</code></td>
+                <td class="name"><code>depthTest</code></td>
             
 
             <td class="type">
@@ -433,26 +239,56 @@
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
 
-                
+            
 
+            <td class="description last"><p>whether this marker is doing depth test</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>textOptions</code></td>
+            
+
+            <td class="type">
+            
                 
-                </td>
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
             
 
             
-                <td class="default">
-                
-                    false
-                
-                </td>
+
+            <td class="description last"><p>text options used to draw text on the labels</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>labelVisible</code></td>
             
 
-            <td class="description last"><p>whether to reload the obj</p></td>
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether the labels are visible</p></td>
         </tr>
 
     
@@ -513,35 +349,10 @@
     
 
     
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li>{<a href="Marker.html">Marker</a>}</li>
-        
-            <li>{addMTLOBJ}</li>
-        </ul>
-    </dd>
-    
 
     
 </dl>
 
-
-    
-        <h5>Example</h5>
-        
-        <p class="code-caption"> construction </p>
-    
-    <pre class="prettyprint"><code> let objMarker = new altizure.OBJMarker({
-   sandbox: sandbox,
-   position: new altizure.LngLatAlt(127.55201053062397, 45.024293080277, 0),
-   name: 'Optimus',
-   shape: 'CUSTOMIZE',
-   objUrl: './object/optimus.obj',
-   mtlUrl: './object/optimus.obj.mtl',
-   upDir: {x: 0, y: 0, z: 1},
-   scale: 10
- })</code></pre>
 
     
 
@@ -581,8 +392,8 @@
             
 
 <dt>
-<h4 class="name" id="bboxColor">
-    <span class="type-signature"></span>bboxColor<span class="type-signature"></span>
+<h4 class="name" id="color">
+    <span class="type-signature"></span>color<span class="type-signature"></span>
     
 </h4>
 
@@ -591,7 +402,7 @@
 <dd>
     
     <div class="description">
-        <p>Set the bounding box color of the object marker</p>
+        <p>set the color</p>
     </div>
     
 
@@ -641,9 +452,80 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> Change the bounding box color </p>
+        <p class="code-caption"> Change color </p>
     
-    <pre class="prettyprint"><code> objMarker.bboxColor = 0xff0000 // red</code></pre>
+    <pre class="prettyprint"><code> polyBaseLineMarker.color = 0xff0000 // red</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="depthTest">
+    <span class="type-signature"></span>depthTest<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>set depth test</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change depthTest </p>
+    
+    <pre class="prettyprint"><code> polyBaseLineMarker.depthTest = false // shoule be in front now</code></pre>
 
     
 </dd>
@@ -790,6 +672,148 @@
     
     <pre class="prettyprint"><code> marker.interactable = true // make this marker interactable
  marker.interactable = !marker.interactable // flip interactable status</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="labelsVisible">
+    <span class="type-signature"></span>labelsVisible<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>set the visibility of the labels</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change visibility of the labels </p>
+    
+    <pre class="prettyprint"><code> polyBaseLineMarker.labelsVisible = true // labels visible</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="length">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>length<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Get the total length of the lines.</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Get total length </p>
+    
+    <pre class="prettyprint"><code> let totalLength = polyBaseLineMarker.length</code></pre>
 
     
 </dd>
@@ -951,6 +975,134 @@
             
 
 <dt>
+<h4 class="name" id="points">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>points<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>get the list of points used to construct this marker</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="pointsNumber">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>pointsNumber<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>get the length of the point list</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
 <h4 class="name" id="position">
     <span class="type-signature"></span>position<span class="type-signature"></span>
     
@@ -1100,6 +1252,87 @@
     
     <pre class="prettyprint"><code> marker.scale = 2.0 // set scale to 2.0
  marker.scale = marker.scale * 2.0 // make it two times bigger</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="textOptions">
+    <span class="type-signature"></span>textOptions<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>set the text options</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change text options </p>
+    
+    <pre class="prettyprint"><code> polyBaseLineMarker.textOptions = {
+   margin: 0,
+   lineHeight: 0.1,
+   align: 'center',
+   fillStyle: 'red',
+   font: 'bold 60px Times New Roman',
+   outlineWidth: 2,
+   outlineStyle: 'black',
+   resetCursorY: true,
+   trimText: true
+ }</code></pre>
 
     
 </dd>
@@ -1345,7 +1578,7 @@
 
     
     <div class="description">
-        <p>Destructor.</p>
+        <p>Destructor</p>
     </div>
     
 
@@ -2678,7 +2911,7 @@ Note: an event can only has one handler.</p>
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'OBJMarker_sub'.replace(/"/g, '_');
+        var id = 'PolyBaseLineMarker_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 
