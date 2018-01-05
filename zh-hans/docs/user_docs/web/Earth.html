@@ -2139,7 +2139,14 @@
 
 
 - <ul>
-<li>{buffer: UintArray8, resolution: Numeric, dimension: buffer dimension {width, height}, bbox: bounding box lngLatAlt form}</li>
+<li>{
+buffer: UintArray8,
+resolution: Numeric,
+resolutionwidth: width of a resolution area,
+resolutionheight: height of a resolution area,
+dimension: buffer dimension {width, height},
+bbox: bounding box lngLatAlt form
+}</li>
 </ul>
 
 
@@ -2207,7 +2214,9 @@
  // RGBSnapshot.dimension: {width: width of the snapshot, height: height of the snapshot}
  // RGBSnapshot.buffer: UintArray8 with size 4 * dimension.width * dimension.height
  // RGBSnapshot.bbox: the bounding box of the snapshoted area
- // RGBSnapshot.resolution: area that each pixel represents</code></pre>
+ // RGBSnapshot.resolution: area that each pixel represents
+ // RGBSnapshot.resolutionwidth: width of area that each pixel represents
+ // RGBSnapshot.resolutionheight: height of area that each pixel represents</code></pre>
 
         <p class="code-caption"> Take a depth snapshot </p>
     
@@ -2228,7 +2237,9 @@
  // depthSnapshot.dimension: {width: width of the snapshot, height: height of the snapshot}
  // depthSnapshot.buffer: UintArray8 with size dimension.width * dimension.height. Higher place should be darker (smaller values)
  // depthSnapshot.bbox: the bounding box of the snapshoted area
- // depthSnapshot.resolution: area that each pixel represents</code></pre>
+ // depthSnapshot.resolution: area that each pixel represents
+ // RGBSnapshot.resolutionwidth: width of area that each pixel represents
+ // RGBSnapshot.resolutionheight: height of area that each pixel represents</code></pre>
 
     
 
