@@ -36,6 +36,9 @@ Modern handheld mobile devices contain lots of sensors, measuring positions, pos
 * Keywords: Text tag, Rendering benchmark, Altitude reading.
 * Brief introduction: The demo renders 1000 text tags by default. Users can change the number of text tags and click `Generate` to generate a new scene. The more tags can be rendered smoothly, the more powerful is your system.
 
+* Demo link: [altizure.github.io/experimental-demo/polycylinder-limittest.html](https://altizure.github.io/experimental-demo/polycylinder-limittest.html)
+* Keywords: Cylinder line, Rendering benchmark. 
+* Brief introduction: The demo renders 100 cylinder lines with 7 points for each line by default. Users can change the number of cylinder lines along with the number of points for each line and click `Generate` to generate a new scene. The more cylinder lines with more points can be rendered smoothly, the more powerful is your system.
 
 # 4. How to Get the Code?
 
