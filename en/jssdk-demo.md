@@ -32,9 +32,13 @@ Modern handheld mobile devices contain lots of sensors, measuring positions, pos
 
 # 3. Performance Benchmark
 
+#### 3.1 Text Tag Rendering
+
 * Demo link: [altizure.github.io/experimental-demo/performance-test.html](https://altizure.github.io/experimental-demo/performance-test.html)
 * Keywords: Text tag, Rendering benchmark, Altitude reading.
 * Brief introduction: The demo renders 1000 text tags by default. Users can change the number of text tags and click `Generate` to generate a new scene. The more tags can be rendered smoothly, the more powerful is your system.
+
+#### 3.2 Line Rendering
 
 * Demo link: [altizure.github.io/experimental-demo/polycylinder-limittest.html](https://altizure.github.io/experimental-demo/polycylinder-limittest.html)
 * Keywords: Cylinder line, Rendering benchmark. 
