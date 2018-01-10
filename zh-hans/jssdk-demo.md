@@ -38,7 +38,7 @@
 
 * 演示链接：[altizure.github.io/experimental-demo/polycylinder-limittest.html](https://altizure.github.io/experimental-demo/polycylinder-limittest.html)
 * 演示重点：管线加载和删除，测试三维渲染性能
-* 演示简介：演示默认加载 100 个有 7 个位置随机的节点的管线。可以通过修改管线数目和节点数目，并点击 `Generate` 生成不同节点数的管线。可以同时显示的管线数目越多，说明您的电脑的渲染能力越强。
+* 演示简介：演示默认加载 100 个有 7 个位置随机的节点的管线。可以通过修改管线数目和节点数目，并点击 `Generate` 生成不同节点数的管线。可以同时显示的有更多节点数的管线数目越多，说明您的电脑的渲染能力越强。
 
 
 # 4. 如何获取这些演示的代码
