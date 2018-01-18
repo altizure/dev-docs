@@ -110,47 +110,6 @@
         <th>Type</th>
 
         
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>markerOptions</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>options for creation</p>
-                <h6>Properties</h6>
-                
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
         <th>Attributes</th>
         
 
@@ -167,7 +126,7 @@
 
         <tr>
             
-                <td class="name"><code>volume</code></td>
+                <td class="name"><code>markerOptions</code></td>
             
 
             <td class="type">
@@ -195,7 +154,7 @@
                 </td>
             
 
-            <td class="description last"><p>the polygon volume description</p>
+            <td class="description last"><p>options for creation</p>
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -220,13 +179,13 @@
 
         <tr>
             
-                <td class="name"><code>points</code></td>
+                <td class="name"><code>volume</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;LngLatAlt></span>
+<span class="param-type">object</span>
 
 
             
@@ -236,11 +195,7 @@
 
             
 
-            <td class="description last"><p>points of the polygon in counter-clockwise order</p>
-<ul>
-<li>the first and last point should be the same to be close)</li>
-<li>at least 4 points are required (to form a triangle)</li>
-</ul></td>
+            <td class="description last"><p>the polygon volume description</p></td>
         </tr>
 
     
@@ -254,7 +209,131 @@
 
         <tr>
             
-                <td class="name"><code>depthTest</code></td>
+                <td class="name"><code></code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>markerOptions.volume.top</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">Array.&lt;Array.&lt;number>></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+
+            <td class="description last"><p>top of the volume in meters</p>
+<ul>
+<li>if the top is an array:</li>
+<li>for every corresponding array, the top's array's length must be smaller than points array's length by 1</li>
+<li>that is to say: markerOptions.volume.top[i].length EQUALS TO markerOptions.volume.points[i].length - 1</li>
+</ul></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>markerOptions.volume.bottom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">Array.&lt;Array.&lt;number>></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last"><p>bottom of the volume in meters</p>
+<ul>
+<li>if the bottom is an array:</li>
+<li>for every corresponding array, the bottom's array's length must be smaller than points array's length by 1</li>
+<li>that is to say: markerOptions.volume.bottom[i].length EQUALS TO markerOptions.volume.points[i].length - 1</li>
+</ul></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>markerOptions.depthTest</code></td>
             
 
             <td class="type">
@@ -293,7 +372,7 @@
 
         <tr>
             
-                <td class="name"><code>volume.color</code></td>
+                <td class="name"><code>markerOptions.volume.color</code></td>
             
 
             <td class="type">
@@ -332,7 +411,7 @@
 
         <tr>
             
-                <td class="name"><code>volume.opacity</code></td>
+                <td class="name"><code>markerOptions.volume.opacity</code></td>
             
 
             <td class="type">
@@ -371,91 +450,7 @@
 
         <tr>
             
-                <td class="name"><code>volume.top</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">Array.&lt;number></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
-
-            <td class="description last"><p>top of the volume in meters</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>volume.bottom</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">Array.&lt;number></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-
-            <td class="description last"><p>bottom of the volume in meters</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>volume.hasTopCover</code></td>
+                <td class="name"><code>markerOptions.volume.hasTopCover</code></td>
             
 
             <td class="type">
@@ -494,7 +489,7 @@
 
         <tr>
             
-                <td class="name"><code>volume.hasBottomCover</code></td>
+                <td class="name"><code>markerOptions.volume.hasBottomCover</code></td>
             
 
             <td class="type">
@@ -527,13 +522,6 @@
             
 
             <td class="description last"><p>whether the marker has a bottom</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
         </tr>
 
     
@@ -699,11 +687,29 @@
     
         <p class="code-caption"> Change bottom </p>
     
-    <pre class="prettyprint"><code> // set top of every side edge to be the same
+    <pre class="prettyprint"><code> // set bottom of every side edge to be the same
  polygonBaseMarker.bottom = 10
  // specify different values for different side edges
  // the order of the input array should be the same as the points
- polygonBaseMarker.bottom = [10, 15, 13, 12, 9.5] // we assume the marker has 5 points</code></pre>
+ // when the points is 
+ // [
+ //   {array: length 5, hole: false}, {array: length 6, hole: true}
+ // ]
+ polygonBaseMarker.bottom = [
+   [110, 140, 180, 133], [100, 200, 150, 115, 175]
+   // length (5 - 1) = 4 and length (6 - 1) = 5, corrosponding to the points
+ ]
+ // special case:
+ // when the points is [
+ //   {array: length 7, hole: false}
+ // ]
+ polygonBaseMarker.bottom = [
+   [120, 150, 180, 133, 165, 147] // length (7 - 1) = 6
+ ]
+ // or:
+ polygonBaseMarker.bottom = [
+   120, 150, 180, 133, 165, 147
+ ] // this will be automatically converted into the input above</code></pre>
 
     
 </dd>
@@ -1759,7 +1765,25 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
  polygonBaseMarker.top = 100
  // specify different values for different side edges
  // the order of the input array should be the same as the points
- polygonBaseMarker.top = [100, 200, 150, 115, 175] // we assume the marker has 5 points</code></pre>
+ // when the points is 
+ // [
+ //   {array: length 5, hole: false}, {array: length 6, hole: true}
+ // ]
+ polygonBaseMarker.top = [
+   [110, 140, 180, 133], [100, 200, 150, 115, 175]
+   // length (5 - 1) = 4 and length (6 - 1) = 5, corrosponding to the points
+ ]
+ // special case:
+ // when the points is [
+ //   {array: length 7, hole: false}
+ // ]
+ polygonBaseMarker.top = [
+   [120, 150, 180, 133, 165, 147] // length (7 - 1) = 6
+ ]
+ // or:
+ polygonBaseMarker.top = [
+   120, 150, 180, 133, 165, 147
+ ] // this will be automatically converted into the input above</code></pre>
 
     
 </dd>

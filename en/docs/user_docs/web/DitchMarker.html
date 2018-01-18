@@ -469,9 +469,9 @@
 
 
     
-        <h5>Example</h5>
+        <h5>Examples</h5>
         
-        <p class="code-caption"> construction </p>
+        <p class="code-caption"> construction without hole </p>
     
     <pre class="prettyprint"><code> let pts = [
    new altizure.LngLatAlt(113.93868723125762, 22.536830165346906, 0),
@@ -481,6 +481,7 @@
    new altizure.LngLatAlt(113.93868723125762, 22.536830165346906, 0)
    // the first and last point should be the same
  ] // length 5
+// the tops can be automatically obtained through pickDepthMap(LngLat[], number) using AltizureProjectMarker
  let tops = [
    50, 45, 67, 33.4
  ] // length pts.length - 1 = 4
@@ -490,6 +491,45 @@
    color: 0xffffff,
    opacity: 0.3,
    top: tops, // top can be an array or a number. When it is an array, its length should be points.length - 1
+   bottom: 0.2 // bottom must be a number for DitchMarker
+ }
+ let ditchMarker = new altizure.DitchMarker({
+   volume: volume,
+   sandbox: sandbox
+ })</code></pre>
+
+        <p class="code-caption"> construction with hole </p>
+    
+    <pre class="prettyprint"><code> let outpts = [
+   new altizure.LngLatAlt(113.93868723125762, 22.536830165346906, 0),
+   new altizure.LngLatAlt(113.93867780368912, 22.53715382208763, 0),
+   new altizure.LngLatAlt(113.93945433925597, 22.53718272790738, 0),
+   new altizure.LngLatAlt(113.93945744949984, 22.536853133662152, 0),
+   new altizure.LngLatAlt(113.93868723125762, 22.536830165346906, 0)
+   // the first and last point should be the same
+ ] // length 5
+ let holepts = [
+   new altizure.LngLatAlt(113.93889136065118, 22.536930209186917, 0),
+   new altizure.LngLatAlt(113.93888975348045, 22.537047514032043, 0),
+   new altizure.LngLatAlt(113.93909509788641, 22.537064284308517, 0),
+   new altizure.LngLatAlt(113.93912719845262, 22.536941793866472, 0),
+   new altizure.LngLatAlt(113.9390056396585, 22.536923522386015, 0),
+   new altizure.LngLatAlt(113.93889136065118, 22.536930209186917, 0)
+ ] // length 6
+ let pts = [
+   {array: outpts, hole: false}, // length 5
+   {array: holepts, hole: true} // length 6
+ ]
+// the tops can be automatically obtained through pickDepthMap(LngLat[], number) using AltizureProjectMarker
+ let tops = [
+   [50, 45, 67, 33.4], // length (5 - 1) = 4 as the first and the last point in outpts is the same
+   [45, 50, 77, 45, 65] // length (6 - 1) = 5 as the first and the last point in holepts is the same
+ ]
+ let volume = {
+   points: pts,
+   color: 0xffffff,
+   opacity: 0.3,
+   top: tops,
    bottom: 0.2 // bottom must be a number for DitchMarker
  }
  let ditchMarker = new altizure.DitchMarker({
@@ -1742,7 +1782,25 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
  polygonBaseMarker.top = 100
  // specify different values for different side edges
  // the order of the input array should be the same as the points
- polygonBaseMarker.top = [100, 200, 150, 115, 175] // we assume the marker has 5 points</code></pre>
+ // when the points is 
+ // [
+ //   {array: length 5, hole: false}, {array: length 6, hole: true}
+ // ]
+ polygonBaseMarker.top = [
+   [110, 140, 180, 133], [100, 200, 150, 115, 175]
+   // length (5 - 1) = 4 and length (6 - 1) = 5, corrosponding to the points
+ ]
+ // special case:
+ // when the points is [
+ //   {array: length 7, hole: false}
+ // ]
+ polygonBaseMarker.top = [
+   [120, 150, 180, 133, 165, 147] // length (7 - 1) = 6
+ ]
+ // or:
+ polygonBaseMarker.top = [
+   120, 150, 180, 133, 165, 147
+ ] // this will be automatically converted into the input above</code></pre>
 
     
 </dd>
