@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Class: TagMarker | Altizure SDK</title>
+    <title>Class: LightBeamMarker | Altizure SDK</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -57,10 +57,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>TagMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>LightBeamMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description"><p>Tag marker always facing towards the camera and maitains its screen space size.
-Note: the pivot is at the center of the image.</p></div>
+            <div class="class-description"><p>lightBeamMarker: indicator of a position on the earth or project</p></div>
         
     
 </header>
@@ -73,9 +72,9 @@ Note: the pivot is at the center of the image.</p></div>
 
 <dt>
     
-        <h4 class="name" id="TagMarker">
+        <h4 class="name" id="LightBeamMarker">
             
-                new <span class="type-signature"></span>TagMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
+                new <span class="type-signature"></span>LightBeamMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -135,7 +134,7 @@ Note: the pivot is at the center of the image.</p></div>
 
             
 
-            <td class="description last">
+            <td class="description last"><p>options to construct the marker</p>
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -148,7 +147,11 @@ Note: the pivot is at the center of the image.</p></div>
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
+        
+        <th>Default</th>
         
 
         <th class="last">Description</th>
@@ -160,23 +163,117 @@ Note: the pivot is at the center of the image.</p></div>
 
         <tr>
             
-                <td class="name"><code>imgUrl</code></td>
+                <td class="name"><code>radius</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">number</span>
 
 
             
             </td>
 
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
 
+                
+
+                
+                </td>
             
 
-            <td class="description last"><p>marker icon url</p></td>
+            
+                <td class="default">
+                
+                    5
+                
+                </td>
+            
+
+            <td class="description last"><p>the radius of the light beam</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    50
+                
+                </td>
+            
+
+            <td class="description last"><p>the height of the light beam</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0xffffff
+                
+                </td>
+            
+
+            <td class="description last"><p>the color of the light beam</p></td>
         </tr>
 
     
@@ -237,6 +334,13 @@ Note: the pivot is at the center of the image.</p></div>
     
 
     
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>{<a href="Marker.html">Marker</a>}</li>
+        </ul>
+    </dd>
+    
 
     
 </dl>
@@ -247,14 +351,17 @@ Note: the pivot is at the center of the image.</p></div>
         
         <p class="code-caption"> construction </p>
     
-    <pre class="prettyprint"><code>  let tagMarker = new altizure.TagMarker({
-    imgUrl: '../public/assets/img/meta_description.png',
-    // icon position
-    position: {lng: 113.9390549031058, lat: 22.53601411862488, alt: 59.03098709697936},
-    // scene
-    sandbox: sandbox,
-    scale: 1 // icon size
-  })</code></pre>
+    <pre class="prettyprint"><code> let beam = new altizure.LightBeamMarker({
+   position: {
+     alt: 10,
+     lat: 22.5364271949327,
+     lng: 113.93977612840078
+   },
+   sandbox: sandbox,
+   radius: 5,
+   height: 50,
+   color: 0xffaa00
+ })</code></pre>
 
     
 
@@ -271,7 +378,7 @@ Note: the pivot is at the center of the image.</p></div>
 
 
     <ul>
-        <li><a href="SpriteMarker.html">SpriteMarker</a></li>
+        <li><a href="Marker.html">Marker</a></li>
     </ul>
 
 
@@ -304,7 +411,7 @@ Note: the pivot is at the center of the image.</p></div>
 <dd>
     
     <div class="description">
-        <p>The pin's color.</p>
+        <p>Set the color of the light beam</p>
     </div>
     
 
@@ -323,11 +430,6 @@ Note: the pivot is at the center of the image.</p></div>
 
     
 
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#color">SpriteMarker#color</a>
-    </li></ul></dd>
     
 
     
@@ -359,88 +461,9 @@ Note: the pivot is at the center of the image.</p></div>
     
     <h5>Example</h5>
     
-        <p class="code-caption"> Change color </p>
+        <p class="code-caption"> Change the color of the light beam </p>
     
-    <pre class="prettyprint"><code> spriteMarker.color = 0xff0000 // red in number
- spriteMarker.color = new THREE.Color(0, 1, 0) // green in THREE.Color
- spriteMarker.color = '#0000FF' // blue in string</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="depthTest">
-    <span class="type-signature"></span>depthTest<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Do depth test or not. If false, always in front.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#depthTest">SpriteMarker#depthTest</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change depth test status </p>
-    
-    <pre class="prettyprint"><code> spriteMarker.depthTest = true // do depth test
- spriteMarker.depthTest = !spriteMarker.depthTest // flip the status</code></pre>
+    <pre class="prettyprint"><code> beam.color = 0xff0000</code></pre>
 
     
 </dd>
@@ -492,12 +515,12 @@ Note: the pivot is at the center of the image.</p></div>
     
 
     
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
         <a href="Marker.html#euler">Marker#euler</a>
     </li></ul></dd>
-    
-
     
 
     
@@ -540,6 +563,77 @@ Note: the pivot is at the center of the image.</p></div>
     
     <pre class="prettyprint"><code> marker.euler = {x: Math.PI/6, y: Math.PI/4, z: Math.PI/3} // rotate around X-axis for 30 degree; Y for 45 degree; Z for 60 degree, in that order.
  marker.euler = {y: Math.PI/2} // rotate around Y-axis for 90 degree.</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="height">
+    <span class="type-signature"></span>height<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the height of the light beam</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change the height of the light beam </p>
+    
+    <pre class="prettyprint"><code> beam.height = 40</code></pre>
 
     
 </dd>
@@ -665,12 +759,12 @@ Note: the pivot is at the center of the image.</p></div>
     
 
     
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
         <a href="Marker.html#interactable">Marker#interactable</a>
     </li></ul></dd>
-    
-
     
 
     
@@ -752,12 +846,12 @@ Note: the pivot is at the center of the image.</p></div>
     
 
     
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
         <a href="Marker.html#name">Marker#name</a>
     </li></ul></dd>
-    
-
     
 
     
@@ -840,12 +934,12 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
 
     
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
         <a href="Marker.html#orientation">Marker#orientation</a>
     </li></ul></dd>
-    
-
     
 
     
@@ -895,83 +989,6 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
             
 
 <dt>
-<h4 class="name" id="pinLength">
-    <span class="type-signature"></span>pinLength<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>The length of the pin underneath the sprite.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#pinLength">SpriteMarker#pinLength</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change pinLength </p>
-    
-    <pre class="prettyprint"><code> spriteMarker.pinLength = 100 // set pinLength to 100 (in meters)
- spriteMarker.pinLength = 0 // no pinLength, pin will be invisible</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
 <h4 class="name" id="position">
     <span class="type-signature"></span>position<span class="type-signature"> :LngLatAlt</span>
     
@@ -1010,12 +1027,12 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
 
     
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
         <a href="Marker.html#position">Marker#position</a>
     </li></ul></dd>
-    
-
     
 
     
@@ -1062,8 +1079,79 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
             
 
 <dt>
+<h4 class="name" id="radius">
+    <span class="type-signature"></span>radius<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the radius of the light beam</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change the radius of the light beam </p>
+    
+    <pre class="prettyprint"><code> beam.radius = 10</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
 <h4 class="name" id="scale">
-    <span class="type-signature"></span>scale<span class="type-signature"></span>
+    <span class="type-signature"></span>scale<span class="type-signature"> :number</span>
     
 </h4>
 
@@ -1072,11 +1160,21 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 <dd>
     
     <div class="description">
-        <p>The scale.</p>
+        <p>Set the scale of the marker.</p>
     </div>
     
 
     <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
     
     -->
 
@@ -1094,7 +1192,7 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
     <dt class="tag-overrides">Overrides:</dt>
     <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#scale">SpriteMarker#scale</a>
+        <a href="Marker.html#scale">Marker#scale</a>
     </li></ul></dd>
     
 
@@ -1127,160 +1225,10 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
     <h5>Example</h5>
     
-        <p class="code-caption"> Change scale </p>
+        <p class="code-caption"> Set scale </p>
     
-    <pre class="prettyprint"><code> spriteMarker.scale = 2.0 // set scale to 2.0</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="texture">
-    <span class="type-signature"></span>texture<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Texture path image url.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#texture">SpriteMarker#texture</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change imgUrl </p>
-    
-    <pre class="prettyprint"><code> tagMarker.texture = '../public/assets/img/meta_description.png'</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="textureAsync">
-    <span class="type-signature"></span>textureAsync<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Set texture with handlers. {data: imageUrl, onSuccess: handler, onFail: handler}</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change imgUrl with callback handlers </p>
-    
-    <pre class="prettyprint"><code> tagMarker.textureAsync = {
-   data: '../public/assets/img/meta_description.png',
-   onSuccess: function () { console.log('the imgUrl has been changed successfully!') },
-   onFail: function () { console.log('Fail to change the imgUrl') }
- }</code></pre>
+    <pre class="prettyprint"><code> marker.scale = 2.0 // set scale to 2.0
+ marker.scale = marker.scale * 2.0 // make it two times bigger</code></pre>
 
     
 </dd>
@@ -1290,7 +1238,7 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
 <dt>
 <h4 class="name" id="visible">
-    <span class="type-signature"></span>visible<span class="type-signature"></span>
+    <span class="type-signature"></span>visible<span class="type-signature"> :bool</span>
     
 </h4>
 
@@ -1299,11 +1247,21 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 <dd>
     
     <div class="description">
-        <p>Visibility of sprite and its pin.</p>
+        <p>Set the visibility of the marker.</p>
     </div>
     
 
     <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">bool</span>
+
+
+            </li>
+        </ul>
     
     -->
 
@@ -1321,7 +1279,7 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
     <dt class="tag-overrides">Overrides:</dt>
     <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#visible">SpriteMarker#visible</a>
+        <a href="Marker.html#visible">Marker#visible</a>
     </li></ul></dd>
     
 
@@ -1354,10 +1312,10 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
     <h5>Example</h5>
     
-        <p class="code-caption"> Change visibility of the sprite and pin </p>
+        <p class="code-caption"> Set visible </p>
     
-    <pre class="prettyprint"><code> spriteMarker.visible = true // make them visible
- spriteMarker.visible = !spriteMarker.visible // flip the visibility</code></pre>
+    <pre class="prettyprint"><code> marker.visible = false // make this marker invisible
+ marker.visible = !marker.visible // flip visible status</code></pre>
 
     
 </dd>
@@ -1564,7 +1522,7 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
     <dt class="tag-overrides">Overrides:</dt>
     <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#destruct">SpriteMarker#destruct</a>
+        <a href="Marker.html#destruct">Marker#destruct</a>
     </li></ul></dd>
     
 
@@ -2859,7 +2817,7 @@ Note: an event can only has one handler.</p>
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'TagMarker_sub'.replace(/"/g, '_');
+        var id = 'LightBeamMarker_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 
