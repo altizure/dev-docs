@@ -18,6 +18,7 @@ Let's start the journey.
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
   * [SDK Reference](ref://docs/user_docs/web/index.html)
+  * [SDK Changelog](jssdk-changelog.md)
 
 Learn more about Altizure at:
 

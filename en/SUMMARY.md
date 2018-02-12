@@ -11,3 +11,4 @@
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
   * [SDK Reference](ref://en/docs/user_docs/web/index.html)
+  * [SDK Changelog](jssdk-changelog.md)
