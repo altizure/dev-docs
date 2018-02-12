@@ -7,7 +7,7 @@
         "language-picker",
         "toolbar",
         "custom-favicon",
-        "autosize-iframe",
+        "responsive-iframes",
         "otherlink"
     ],
     "pluginsConfig": {
