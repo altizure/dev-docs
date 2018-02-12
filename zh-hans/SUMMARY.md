@@ -11,3 +11,4 @@
   * [演示应用](jssdk-demo.md)
   * [常见问题](jssdk-faq.md)
   * [SDK 文档](ref://zh-hans/docs/user_docs/web/)
+  * [SDK 更新日志](jssdk-changelog.md)
