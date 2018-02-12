@@ -5,6 +5,7 @@
 * [开发者账号申请](dev-account.md)
 * [GraphGL API](api.md)
   * [上传图像](upload.md)
+  * [详细文档](api-ref.md)
 * [Javascript SDK](jssdk.md)
   * [演示应用](jssdk-demo.md)
   * [常见问题](jssdk-faq.md)
