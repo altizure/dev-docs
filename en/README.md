@@ -12,10 +12,12 @@ Let's start the journey.
 * [Developer Account](dev-account.md)
 * [GraphGL API](api.md)
   * [Images Upload](upload.md)
+  * [API Reference](https://api.altizure.com/graphql)
+  * [API Changelog](api-changelog.md)
 * [Javascript SDK](jssdk.md)
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
-  * [Reference](ref://docs/user_docs/web/index.html)
+  * [SDK Reference](ref://docs/user_docs/web/index.html)
 
 Learn more about Altizure at:
 

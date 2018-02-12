@@ -12,10 +12,12 @@
 * [开发者账号申请](dev-account.md)
 * [GraphGL API](api.md)
   * [上传图像](upload.md)
+  * [API 文档](https://api.altizure.cn/graphql)
+  * [API 更新日志](api-changelog.md)
 * [Javascript SDK](jssdk.md)
   * [演示应用](jssdk-demo.md)
   * [常见问题](jssdk-faq.md)
-  * [详细文档](ref://docs/user_docs/web/)
+  * [SDK 文档](ref://docs/user_docs/web/)
 
 
 更多了解 Altizure 欢迎访问：
