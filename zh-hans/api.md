@@ -16,7 +16,9 @@ API 调用和文档的入口：
 * 国际站 [api.altizure.com/graphql](https://api.altizure.com/graphql) 。
 * 中国站 [api.altizure.cn/graphql](https://api.altizure.cn/graphql) 。
 
-## 3. 在浏览器中测试 API
+## 3. 在浏览器中调用测试 API
+
+虽然以上的文档站点可以直接浏览文档，但是无法直接用您的应用令牌和用户令牌执行查询。这里我们介绍如何通过修改浏览器的 http header 使用您自己的应用令牌和用户令牌来做查询。
 
 在浏览器中测试 API，可以在浏览文档的同时测试，提高开发效率。确定数据正确后，才把相关的调用复制到代码中集成，过程轻松简单。
 

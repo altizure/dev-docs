@@ -14,6 +14,8 @@ API endpoints and documentations: [api.altizure.com/graphql](https://api.altizur
 
 ## 3. Try out API in your browser
 
+The above endpoint shows detailed documentation. However, you cannot execute the query or mutation that require your own app key and user token. Here is a tutorial on how to modify the http header in your browser to use your own app key and user token.
+
 It is very convenience to test the API in browsers, because it provides instant feedback on the query results and detailed inline documentations. After the testing, you can easily copy and paste the query string to your code and trigger the API call.
 
 We take Google Chrome as an example. Other browsers supporting extensions, e.g. Firefox, should work too.
