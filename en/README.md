@@ -29,7 +29,7 @@ Learn more about Altizure at:
 
 
 
-Contact us [support@altizure.com](mailto:support@altizure.com)
+Contact us [developers@altizure.com](mailto:developers@altizure.com)
 
 ---
 
