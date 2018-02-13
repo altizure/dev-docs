@@ -36,6 +36,9 @@ If the total count of `Ready` matches the desired number, you may call mutation 
 
 If you do not concern about a few number of missing images and want to start the reconstruction immediately once all the images are ready, you could call mutation `preStartReconstruction(id, options)`.
 
+### Next
+After images are processed. you could start a [reconstruction](api-reconstruction.md).
+
 ## Learn more
 
 * Learn more about [STS](https://www.alibabacloud.com/help/doc-detail/31953.htm?spm=a3c0i.o31952en.b99.284.7ab2aa72OYaf6D)
