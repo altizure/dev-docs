@@ -11,6 +11,7 @@ Let's start the journey.
 * [Concepts](concepts.md)
 * [Developer Account](dev-account.md)
 * [GraphGL API](api.md)
+  * [3D Reconstruction](api-reconstruction.md)
   * [Images Upload](upload.md)
   * [API Reference](https://api.altizure.com/graphql)
   * [API Changelog](api-changelog.md)

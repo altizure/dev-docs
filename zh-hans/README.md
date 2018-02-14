@@ -11,6 +11,7 @@
 * [基本概念](concepts.md)
 * [开发者账号申请](dev-account.md)
 * [GraphGL API](api.md)
+  * [三维重建](api-reconstruction.md)
   * [上传图像](upload.md)
   * [API 文档](https://api.altizure.cn/graphql)
   * [API 更新日志](api-changelog.md)
