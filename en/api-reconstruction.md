@@ -1,6 +1,8 @@
-# How to do 3D Reconstruction via API
+# How to do 3D reconstruction via API
 
 ### Overview
+
+3D reconstruction service is provided as a project on Altizure. You need to create a project in order to trigger a 3D reconstruction task.
 Each user could create multiple projects. But one project could only be owned by one user.
 The project created via API is owned by the user whose user token is passed along the request.
 
@@ -13,7 +15,7 @@ If successful, the Project type will be returned, otherwise it would be null.
 From this type, you could get the id field.
 This project id is used as an argument in all of the project related queries and mutations.
 
-__Sample Code__
+__Sample GraphQL request__
 ```js
 mutation {
   createProject(name: "sample project", type: free) {
@@ -38,9 +40,9 @@ Otherwise, an error would be returned.
 There are 10 types of error.
 Details could be found in the GraphQL docs.
 
-__Sample Code__
+__Sample GraphQL request__
 ```js
-mutation startReconstructionWithError {
+mutation {
   startReconstructionWithError(id: "54ed8e5741fbfa3e1967fe9b") {
     error {
       code
