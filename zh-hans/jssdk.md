@@ -102,19 +102,21 @@ python -m SimpleHTTPServer
 
 ## 2. 范例
 
-您可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
-
 #### 2.1 概念释义
 
-以下我们简单解释一下出现在范例里的元素的概念
+我们简单解释一下出现在范例里的元素的概念
 
 * Sandbox \(沙盒\)： altizure.Sandbox \(沙盒\) 是整个三维应用的核心，它负责管理整个三维场景的数据和绘制。通过对沙盒进行定制和添加数据，可以定制出非常强大的三维应用。这是编写三维应用的主要入口。
-* Earth \(地球\)：altizure.Earth \(地球\) 是负责渲染管理 Altizure 地球的核心，通常它是作为沙盒的底图。我们提供丰富的选项来方便您定义这个地球的外观。一般来说，如果创建了 Sandbox 就无需再创建一个 Earth 对象。
+
+#### 2.2 范例列表
 
 您可以参考 [github.com/altizure/sdk.examples](https://github.com/altizure/sdk.examples/) 的教程把这范例代码下载下来，在本地建立服务器进行尝试。您只需要对其中的部分函数做些简单修改便可以和您现有的系统进行整合。
 
+您也可以直接访问 [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
+
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 进行提问和交流。
 
+<!--
 #### 2.2 范例列表
 
 * 2.2.1 Altizure 地球基本加载范例
@@ -151,7 +153,7 @@ python -m SimpleHTTPServer
     * [设置相机矩阵](https://altizure.github.io/sdk.examples/5-5-camera-mat)
 * 2.2.6 其他
     * [裁剪项目](https://altizure.github.io/sdk.examples/6-1-crop-project)
-    * [体积测量](https://altizure.github.io/sdk.examples/6-2-measurement-volume)
+    * [体积测量](https://altizure.github.io/sdk.examples/6-2-measurement-volume) -->
 
 ## 3. 常见问题
 

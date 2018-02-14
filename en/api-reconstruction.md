@@ -30,8 +30,8 @@ When the upload finishes, a reconstruction task could be created to start a reco
 
 ### 3. Start the reconstruction
 Send a GraphQL request with the required project id, with an optional coupon id.
-The project id is obtained from either the mutation: createProject or query: my.projects.
-The coupon id (if any) is obtained from query: my.coupons.
+The project id is obtained from either the mutation: `createProject` or query: `my.projects`.
+The coupon id (if any) is obtained from query: `my.coupons`.
 This step would cost coin if it is a pro project (without coupon).
 
 
@@ -56,7 +56,7 @@ mutation {
 ```
 
 ### 4. Check project status
-Once a reconstruction task is created. You could get its task state and other info within the Project type via the top level query: project.
+Once a reconstruction task is created. You could get its task state and other info within the Project type via the top level query: `project`.
 
 
 ---
