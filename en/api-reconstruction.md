@@ -2,7 +2,7 @@
 
 ### Overview
 
-3D reconstruction service is provided as a project on Altizure. You need to create a project in order to trigger a 3D reconstruction task.
+3D reconstruction service is provided in the form of reconstruction projects on Altizure. You need to create a project in order to trigger a 3D reconstruction task.
 Each user could create multiple projects. But one project could only be owned by one user.
 The project created via API is owned by the user whose user token is passed along the request.
 
