@@ -2,7 +2,7 @@
 
 ## Overview
 To speed up data transfer, images are uploaded directly from clients to Amazon
-or Aliyun. Your image are protected securely. Others could not read or modify your images. That is why you need to obtain the authorizations from our api. As filename is the only identifier in the buckets, the image is required to be uploaded to a specific url (S3) or prefix (OSS) so that Altizure knows which image is which.
+or Aliyun. Your images are protected securely. Others could not read or modify your images. That is why you need to obtain the authorizations from our api. As filename is the only identifier in the buckets, the image is required to be uploaded to a specific url (S3) or prefix (OSS) so that Altizure knows which image is which.
 
 ### 1. Choose bucket
 Choose one of the fastest S3 or OSS buckets. This is largely correlated to your network zone with the edge-points.
@@ -22,7 +22,7 @@ Given the STS, images could be uploaded via any compatible protocol or library t
 In order to keep track of the state, just before an image is uploaded, call mutation `startImageUpload(id)` to signal the start of the process. When the upload is done, call mutation `doneImageUpload(id)`.
 
 
-### 3. Upload to S3
+### 4. Upload to S3
 If a S3 bucket is chosen, uploading is much simpler.
 For each image, call the mutation `uploadImageS3(pid, bucket, filename, type, checksum)` to obtain a temporary (3 hours) signed url and the related meta image info.
 
@@ -30,7 +30,7 @@ Given the signed url, use the standard HTTP put to put the file to this url with
 
 Just before each upload, it is required to call mutation `startImageUpload(id)`. There is no need to signal the end of uploading.
 
-### 4. Wait for image processing
+### 5. Wait for image processing
 Uploaded images will be copied, verified and processed. Eventually, the image state will become either `Ready` or `Invalid`.
 If the total count of `Ready` matches the desired number, you may call mutation `startReconstructionWithError(id, options)` to start the reconstruction. Otherwise, you may consider re-uploading any outstanding image as indicated by the mutation `hasImage`.
 
