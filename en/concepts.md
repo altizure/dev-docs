@@ -13,7 +13,7 @@ Then you can apply for [developer account](dev-account.md). All development tool
 
 App is the basic unit of application management on Altizure Development Platform. Each application also has it own unique app key, app secret, and authority level.
 
-It would be better for developers to create differnt Apps and assign them to separate businesses and workflows respectively.
+It would be better for developers to create different Apps and assign them to separate businesses and workflows respectively.
 
 
 ##### App key
