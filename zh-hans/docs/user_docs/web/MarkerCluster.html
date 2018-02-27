@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Class: TagMarker | Altizure SDK</title>
+    <title>Class: MarkerCluster | Altizure SDK</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -57,10 +57,10 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>TagMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>MarkerCluster<span class="signature">(options)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description"><p>Tag marker always facing towards the camera and maitains its screen space size.
-Note: the pivot is at the center of the image.</p></div>
+            <div class="class-description"><p>The marker cluster.</p>
+<p>Construct the cluster for the markers and provide corresponding APIs for configuration of cluster result.</p></div>
         
     
 </header>
@@ -73,9 +73,9 @@ Note: the pivot is at the center of the image.</p></div>
 
 <dt>
     
-        <h4 class="name" id="TagMarker">
+        <h4 class="name" id="MarkerCluster">
             
-                new <span class="type-signature"></span>TagMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
+                new <span class="type-signature"></span>MarkerCluster<span class="signature">(options)</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -119,7 +119,657 @@ Note: the pivot is at the center of the image.</p></div>
 
         <tr>
             
-                <td class="name"><code>markerOptions</code></td>
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>options for initialization</p>
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>debug</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>whether to print the debug info</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sandbox</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Sandbox.html">Sandbox</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>the sandbox where the markercluster is applied</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>earth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Earth.html">Earth</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>sandbox's alias</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    {method: 'default'}
+                
+                </td>
+            
+
+            <td class="description last"><p>the configuration of cluster method and parameters</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clustersTagReserve</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    25
+                
+                </td>
+            
+
+            <td class="description last"><p>number of clustersTag reserved for visualizing the clustering result</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+                
+
+<dt>
+    
+        <h4 class="name" id=".add">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>add<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Add marker to the cluster.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Add marker to cluster </p>
+    
+    <pre class="prettyprint"><code> let tag = new altizure.TagMarker({
+    sandbox: sandbox,
+    position: position_of_marker,
+    imgUrl: the_url_of_the_image_used_by_tag,
+    scale: 1
+  })
+  cluster_instance.add(tag)</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id=".clustering">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>clustering<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Generate the clusters of this markercluster instance.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Generate clusters </p>
+    
+    <pre class="prettyprint"><code> cluster_instance.clustering().then((clusters) => {
+     // operation to the clusters result
+   })</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id=".disable">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>disable<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Disable the visualization of marker clustering.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Disable visualization </p>
+    
+    <pre class="prettyprint"><code> cluster_instance.disable()</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id=".enable">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>enable<span class="signature">(enableOptions)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Visualize the result of marker clustering.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>enableOptions</code></td>
             
 
             <td class="type">
@@ -160,1278 +810,15 @@ Note: the pivot is at the center of the image.</p></div>
 
         <tr>
             
-                <td class="name"><code>imgUrl</code></td>
+                <td class="name"><code>adjustHeight</code></td>
             
 
             <td class="type">
             
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>marker icon url</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-        <h5>Example</h5>
-        
-        <p class="code-caption"> construction </p>
-    
-    <pre class="prettyprint"><code>  let tagMarker = new altizure.TagMarker({
-    imgUrl: '../public/assets/img/meta_description.png',
-    // icon position
-    position: {lng: 113.9390549031058, lat: 22.53601411862488, alt: 59.03098709697936},
-    // scene
-    sandbox: sandbox,
-    scale: 1 // icon size
-  })</code></pre>
-
-    
-
-</dd>
-
-        
-        </div>
-    
-
-    
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-
-    <ul>
-        <li><a href="SpriteMarker.html">SpriteMarker</a></li>
-    </ul>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        <dl>
-            
-
-<dt>
-<h4 class="name" id="color">
-    <span class="type-signature"></span>color<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>The pin's color.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#color">SpriteMarker#color</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change color </p>
-    
-    <pre class="prettyprint"><code> spriteMarker.color = 0xff0000 // red in number
- spriteMarker.color = new THREE.Color(0, 1, 0) // green in THREE.Color
- spriteMarker.color = '#0000FF' // blue in string</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="depthTest">
-    <span class="type-signature"></span>depthTest<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Do depth test or not. If false, always in front.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#depthTest">SpriteMarker#depthTest</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change depth test status </p>
-    
-    <pre class="prettyprint"><code> spriteMarker.depthTest = true // do depth test
- spriteMarker.depthTest = !spriteMarker.depthTest // flip the status</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="euler">
-    <span class="type-signature"></span>euler<span class="type-signature"> :object</span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>The orientation in Eular angle representation.
-{ x: rotation angle around X axis in radian,
- y: radian,
- z: radian,
- order: rotation order, default 'XYZ'}.
- Use this instead of <code>orientation</code> if you are not familar with the math.</p>
-    </div>
-    
-
-    <!--
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">object</span>
-
-
-            </li>
-        </ul>
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#euler">Marker#euler</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://en.wikipedia.org/wiki/File:Yaw_Axis_Corrected.svg">Eular angle rotation</a></li>
-        </ul>
-    </dd>
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Set orientation by Eular angles </p>
-    
-    <pre class="prettyprint"><code> marker.euler = {x: Math.PI/6, y: Math.PI/4, z: Math.PI/3} // rotate around X-axis for 30 degree; Y for 45 degree; Z for 60 degree, in that order.
- marker.euler = {y: Math.PI/2} // rotate around Y-axis for 90 degree.</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="ID">
-    <span class="type-signature"><span class="icon green">readonly</span> </span>ID<span class="type-signature"> :string</span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Get the unique id.</p>
-    </div>
-    
-
-    <!--
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">string</span>
-
-
-            </li>
-        </ul>
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#ID">Marker#ID</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="interactable">
-    <span class="type-signature"></span>interactable<span class="type-signature"> :bool</span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Set if the marker is interactable. Set to true to respond to mouse events.</p>
-    </div>
-    
-
-    <!--
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
                 
 <span class="param-type">bool</span>
 
 
-            </li>
-        </ul>
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#interactable">Marker#interactable</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Set interactable </p>
-    
-    <pre class="prettyprint"><code> marker.interactable = true // make this marker interactable
- marker.interactable = !marker.interactable // flip interactable status</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="name">
-    <span class="type-signature"></span>name<span class="type-signature"> :string</span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>A string of name.</p>
-    </div>
-    
-
-    <!--
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">string</span>
-
-
-            </li>
-        </ul>
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#name">Marker#name</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Set name </p>
-    
-    <pre class="prettyprint"><code> marker.name = 'this marker' // set name as 'this marker'
- marker.name = marker.name + ' suffix' // extend the name</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="orientation">
-    <span class="type-signature"></span>orientation<span class="type-signature"> :object</span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Set the rotation by an uniform quaternion {x, y, z, w}.
-Use <code>eular</code> instead if you are not sure how to use this.</p>
-    </div>
-    
-
-    <!--
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">object</span>
-
-
-            </li>
-        </ul>
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#orientation">Marker#orientation</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Quaternion">Quaternion</a></li>
-        </ul>
-    </dd>
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Set orientation </p>
-    
-    <pre class="prettyprint"><code> marker.orientation = {x: 0, y: 0, z: 0, w: 1}</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="pinLength">
-    <span class="type-signature"></span>pinLength<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>The length of the pin underneath the sprite.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#pinLength">SpriteMarker#pinLength</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change pinLength </p>
-    
-    <pre class="prettyprint"><code> spriteMarker.pinLength = 100 // set pinLength to 100 (in meters)
- spriteMarker.pinLength = 0 // no pinLength, pin will be invisible</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="position">
-    <span class="type-signature"></span>position<span class="type-signature"> :LngLatAlt</span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Change the current position {lng, lat, alt}.</p>
-    </div>
-    
-
-    <!--
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">LngLatAlt</span>
-
-
-            </li>
-        </ul>
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#position">Marker#position</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Set position </p>
-    
-    <pre class="prettyprint"><code> marker.position = {
-   lng: 113.93977612840078,
-   lat: 22.5364271949327,
-   alt: 12.3
- }</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="scale">
-    <span class="type-signature"></span>scale<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>The scale.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#scale">SpriteMarker#scale</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change scale </p>
-    
-    <pre class="prettyprint"><code> spriteMarker.scale = 2.0 // set scale to 2.0</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="texture">
-    <span class="type-signature"></span>texture<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Texture path image url.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#texture">SpriteMarker#texture</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change imgUrl </p>
-    
-    <pre class="prettyprint"><code> tagMarker.texture = '../public/assets/img/meta_description.png'</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="textureAsync">
-    <span class="type-signature"></span>textureAsync<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Set texture with handlers. {data: imageUrl, onSuccess: handler, onFail: handler}</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change imgUrl with callback handlers </p>
-    
-    <pre class="prettyprint"><code> tagMarker.textureAsync = {
-   data: '../public/assets/img/meta_description.png',
-   onSuccess: function () { console.log('the imgUrl has been changed successfully!') },
-   onFail: function () { console.log('Fail to change the imgUrl') }
- }</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="visible">
-    <span class="type-signature"></span>visible<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Visibility of sprite and its pin.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#visible">SpriteMarker#visible</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> Change visibility of the sprite and pin </p>
-    
-    <pre class="prettyprint"><code> spriteMarker.visible = true // make them visible
- spriteMarker.visible = !spriteMarker.visible // flip the visibility</code></pre>
-
-    
-</dd>
-
-        </dl>
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        <dl>
-                
-
-<dt>
-    
-        <h4 class="name" id="animate">
-            
-                <span class="type-signature"><span class="icon green">abstract</span> </span>animate<span class="signature">(options)</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Propagated event, new frame being rendered.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
             
             </td>
 
@@ -1439,7 +826,14 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>cluster label with height</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
         </tr>
 
     
@@ -1470,189 +864,6 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
     
 
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#animate">Marker#animate</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="destruct">
-            
-                <span class="type-signature"></span>destruct<span class="signature">()</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Destructor.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="SpriteMarker.html#destruct">SpriteMarker#destruct</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="detachControl">
-            
-                <span class="type-signature"></span>detachControl<span class="signature">()</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Detach and hide the control gizmo of the marker</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#detachControl">Marker#detachControl</a>
-    </li></ul></dd>
     
 
     
@@ -1684,9 +895,11 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
         <h5>Example</h5>
         
-        <p class="code-caption"> Detach control </p>
+        <p class="code-caption"> Visualize clustering result </p>
     
-    <pre class="prettyprint"><code> marker.detachControl()</code></pre>
+    <pre class="prettyprint"><code> cluster_instance.clustering().then((clusters) => {
+     cluster_instance.enable({})
+   })</code></pre>
 
     
 
@@ -1697,9 +910,9 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
 <dt>
     
-        <h4 class="name" id="off">
+        <h4 class="name" id=".remove">
             
-                <span class="type-signature"></span>off<span class="signature">(eventType, handler)</span><span class="type-signature"></span>
+                <span class="type-signature"><span class="icon green">static</span> </span>remove<span class="signature">()</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -1711,7 +924,7 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
     
     <div class="description">
-        <p>Un-register the handler from an event.</p>
+        <p>Remove marker from the cluster.</p>
     </div>
     
 
@@ -1721,79 +934,6 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
     
 
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>eventType</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>handler</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
     
 
     
@@ -1817,11 +957,6 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
     
 
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#off">Marker#off</a>
-    </li></ul></dd>
     
 
     
@@ -1853,982 +988,9 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
         <h5>Example</h5>
         
-        <p class="code-caption"> Un-register interaction events </p>
+        <p class="code-caption"> Remove marker from cluster </p>
     
-    <pre class="prettyprint"><code> marker.off('click')
- marker.off('mouseover')
- marker.off('mouseenter')
- marker.off('mouseleave')</code></pre>
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="on">
-            
-                <span class="type-signature"></span>on<span class="signature">(eventType, handler)</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Register an event with a handler.
-Note: an event can only has one handler.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>eventType</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>'click', 'mouseover', 'mouseenter', 'mouseleave'</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>handler</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>event handler</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#on">Marker#on</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-        <h5>Example</h5>
-        
-        <p class="code-caption"> Register interaction events </p>
-    
-    <pre class="prettyprint"><code> marker.on('click', function (event) {
-   console.log('click on marker ', marker, event)
- })
- marker.on('mouseover', function (event) {
-   console.log('mouse over marker ', marker, event)
- })
- marker.on('mouseenter', function (event) {
-   console.log('mouse enter marker ', marker, event)
- })
- marker.on('mouseleave', function (event) {
-   console.log('mouse leave marker ', marker, event)
- })
- marker.interactable = true // the marker must be interactable for events to take effects</code></pre>
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="sceneUpdated">
-            
-                <span class="type-signature"><span class="icon green">abstract</span> </span>sceneUpdated<span class="signature">(options)</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Propagated periodic event handler. Triggered when scene content is updated.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#sceneUpdated">Marker#sceneUpdated</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="setControlMode">
-            
-                <span class="type-signature"></span>setControlMode<span class="signature">(mode)</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Set the mode of control gizmo</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>mode</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the mode of the control gizmo 'translate', 'rotate'</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#setControlMode">Marker#setControlMode</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-        <h5>Example</h5>
-        
-        <p class="code-caption"> Set the mode of the control </p>
-    
-    <pre class="prettyprint"><code> marker.setControlMode('translate')
- marker.setControlMode('rotate')</code></pre>
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="shapeToEarth">
-            
-                <span class="type-signature"></span>shapeToEarth<span class="signature">()</span><span class="type-signature"> &rarr; {Matrix4}</span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Transformation matrix from shapeHolder-space to earth-space</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-returns">
-        <h5>Returns:</h5>
-        
-                
-
-
-
-<span class="param-type">Matrix4</span>
-
-
-
-
-
-
-
-
-            
-    </div>
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#shapeToEarth">Marker#shapeToEarth</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="shapeToScene">
-            
-                <span class="type-signature"></span>shapeToScene<span class="signature">()</span><span class="type-signature"> &rarr; {Matrix4}</span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Transformation matrix from shapeHolder-space to scene-root</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-returns">
-        <h5>Returns:</h5>
-        
-                
-
-
-
-<span class="param-type">Matrix4</span>
-
-
-
-
-
-
-
-
-            
-    </div>
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#shapeToScene">Marker#shapeToScene</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="showControl">
-            
-                <span class="type-signature"></span>showControl<span class="signature">(mode)</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Play the {index} patrol route of the marker</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>mode</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the mode of the control gizmo: 'translate', 'rotate'</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#showControl">Marker#showControl</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-        <h5>Example</h5>
-        
-        <p class="code-caption"> Show control </p>
-    
-    <pre class="prettyprint"><code> marker.showControl('translate') // show control used for translate
- marker.showControl('rotate') // show control used for rotate</code></pre>
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="updateVisibility">
-            
-                <span class="type-signature"><span class="icon green">abstract</span> </span>updateVisibility<span class="signature">(options)</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Propagated event, screen visibility is being updated.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#updateVisibility">Marker#updateVisibility</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
+    <pre class="prettyprint"><code>  cluster_instance.remove(tag)</code></pre>
 
     
 
@@ -2859,7 +1021,7 @@ Note: an event can only has one handler.</p>
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'TagMarker_sub'.replace(/"/g, '_');
+        var id = 'MarkerCluster_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 
