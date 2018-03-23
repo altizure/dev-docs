@@ -1,5 +1,22 @@
 # Changelog of Altizure GraphQL API
 
+### 1.3.0
+
+__Release data:__
+March. 23th, 2018
+
+__New features:__
+* Supported accepting multiple time based coupons in a single operation
+* Added sales API
+
+__Fixes:__
+* Fixed redeem coupon link in http server mode
+* Fixed ProjectImage's 'resized' ValidatorError when calling mutation: hasImage
+* Fixed mis-judging 'Invalid' image as 'ReadyStrong'
+
+__Breaking Change:__
+* Mutation: upgradeProjectWithError, startReconstructionWithError and preStartReconstruction accept a list of coupon ids, instead of a single coupon id.
+
 ### 1.2.0
 
 __Release data:__
