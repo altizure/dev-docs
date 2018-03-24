@@ -15,7 +15,7 @@ Please make sure that you start a local http server and access the sample page v
 
 #### 1.3 The link of SDK script cannot be accessed.
 
-If `https://www.altizure.com/sdk` and `https://beta.altizure.com/sdk` are not reachable. Please switch to `https://www.altizure.cn/sdk`。
+If `https://www.altizure.com/sdk` and `https://beta.altizure.com/sdk` are not reachable. Please switch to `https://www.altizure.cn/sdk` and `https://beta.altizure.cn/sdk`。
 
 #### 1.4 Where can I find the reference manual?
 

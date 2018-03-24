@@ -25,9 +25,10 @@ In the `<head>` section of the html page, include our SDK as
 
 Here we provide three links for our SDK.
 
-* Latest：`<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
-* Stable：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
-* Mainland China：`<script type="text/javascript" src="https://www.altizure.cn/sdk"></script>`
+* Latest: `<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
+* Stable: `<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
+* Latest for Mainland China: `<script type="text/javascript" src="https://beta.altizure.cn/sdk"></script>`
+* Stable for Mainland China: `<script type="text/javascript" src="https://www.altizure.cn/sdk"></script>`
 
 ##### Create a div as a container for 3D rendering
 

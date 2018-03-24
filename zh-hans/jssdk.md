@@ -27,7 +27,8 @@
 
 * 最新版：`<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
 * 稳定版：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
-* 中国版：`<script type="text/javascript" src="https://www.altizure.cn/sdk"></script>`
+* 中国最新版：`<script type="text/javascript" src="https://beta.altizure.cn/sdk"></script>`
+* 中国稳定版：`<script type="text/javascript" src="https://www.altizure.cn/sdk"></script>`
 
 ##### 创建三维显示容器
 

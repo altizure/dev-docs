@@ -15,7 +15,7 @@
 
 #### 1.3 无法访问 sdk script 链接？
 
-如果无法访问 `https://www.altizure.com/sdk` 或 `https://beta.altizure.com/sdk`，请使用中国站点 `https://www.altizure.cn/sdk`。
+如果无法访问 `https://www.altizure.com/sdk` 或 `https://beta.altizure.com/sdk`，请使用中国站点 `https://www.altizure.cn/sdk` 或 `https://beta.altizure.cn/sdk`。
 
 #### 1.4 详细文档在哪儿？
 
