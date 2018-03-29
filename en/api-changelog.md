@@ -1,5 +1,21 @@
 # Changelog of Altizure GraphQL API
 
+### 1.3.1
+
+__Release data:__
+March. 29th, 2018
+
+__New features:__
+* Added resendVerificationEmail in query.support
+* Added args: type in query.my.transactions to filter credit or debit transactions
+* Added new field: MembershipInfo in User object
+
+__Fixes:__
+* Fixed issues of translating original image names to hashed image names in meta files
+* Fixed issues of user login via OAuth
+
+__Breaking Change:__
+
 ### 1.3.0
 
 __Release data:__
