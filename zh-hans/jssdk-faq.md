@@ -158,6 +158,24 @@ polylineMarker.addPointMarker(new altizure.LngLatAlt(
 ))
 ```
 
+#### 2.24 实景模型/OBJ模型 加载至地球指定位置，指定朝向，指定比例尺？
+实景模型/OBJ模型 使用的是同样的接口
+
+marker.position 位置
+marker.euler 欧拉方向
+marker.orientation 四元数方向
+marker.scale 比例尺
+
+[参考範例] (https://altizure.github.io/sdk.examples/examples.sdk.html) 2.1， 2.5.1
+[参考文档] (https://altizure.github.io/dev-docs-site/zh-hans/docs/user_docs/web/Marker.html)
+
+#### 2.25 制作OBJ模型的一切建议(非必须)
+* 使用建模软件时，用1m作为单位长度，导入sdk时就不需要重新调整scale比例尺。
+* （如果是对实景建筑物的建模）OBJ模型和实景模型的形状需要尽量相近。
+* 使用尽量少的面片数可以提升加载效率。
+* 可将光照效果烘焙至纹理中，可以有更真实的渲染效果。
+* 贴图尺寸采用2^N作为边长，比如 64*64, 128*256。
+
 ## 3. 阅读更多
 
 * [基础范例列表](https://altizure.github.io/sdk.examples/examples.sdk.html)
