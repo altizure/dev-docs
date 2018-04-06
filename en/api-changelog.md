@@ -1,5 +1,24 @@
 # Changelog of Altizure GraphQL API
 
+### 1.4.0
+
+__Release data:__
+April. 6th, 2018
+
+__New features:__
+* Added 2 new filters: ActiveUsed + ActiveUnused in FILTER_COUPON_TIME_STATE, which is used in query.my.coupons
+* Added query.sandbox.sandbox + query.sandbox.allSandboxes + query.my.sandboxes
+* Added mutation.sandbox
+* Supported importing CAD, photogrammetric and point-cloud models
+
+__Fixes:__
+* Fixed status 500 server error if no user token is provided in any query
+* Fixed handling pre-starting non-existing project
+* Fixed unhandled promise rejection error when registering new user with empty fields
+
+__Breaking Change:__
+* Mutation: createProject accepts an additional arg: modelType for indicating the imported model type.
+
 ### 1.3.1
 
 __Release data:__
@@ -13,8 +32,6 @@ __New features:__
 __Fixes:__
 * Fixed issues of translating original image names to hashed image names in meta files
 * Fixed issues of user login via OAuth
-
-__Breaking Change:__
 
 ### 1.3.0
 
