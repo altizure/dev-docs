@@ -44,7 +44,13 @@
 * 演示重点：管线加载和删除，测试三维渲染性能
 * 演示简介：演示默认加载 100 个有 7 个位置随机的节点的管线。可以通过修改管线数目和节点数目，并点击 `Generate` 生成不同节点数的管线。可以同时显示的有更多节点数的管线数目越多，说明您的电脑的渲染能力越强。
 
-# 4. 如何获取这些演示的代码
+#### 4. 导入GeoJSON矢量地图
+
+* 演示链接：[altizure.github.io/experimental-demo/import-geojson.html](https://altizure.github.io/experimental-demo/import-geojson.html)
+* 演示重点：加载GeoJson类型的矢量数据
+* 演示简介：演示加载香港科技大学的三维模型以及矢量数据，每个矢量单体可相应交互并显示预设信息。
+
+# 5. 如何获取这些演示的代码
 
 这些演示应用都是开源的，您可以通过以下的命令把代码复制到您的电脑查看并运行。
 
@@ -56,7 +62,7 @@ python -m SimpleHTTPServer
 
 打开您的浏览器，访问 `http://127.0.0.1:8000/` 便可运行和查看这些演示应用。
 
-# 5. 了解更多
+# 6. 了解更多
 
 * [Altizure Javascript SDK](jssdk.md)
 * [Altizure Javascript SDK 常见问题](jssdk-faq.md)
