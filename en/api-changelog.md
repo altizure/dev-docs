@@ -1,5 +1,26 @@
 # Changelog of Altizure GraphQL API
 
+### 1.5.0
+
+__Release data:__
+April. 13th, 2018
+
+__New features:__
+* Added field: importedModelType in Project, to indicate the imported model type
+* Added field: developer.level in User, to store the base level of subsequent apps
+* Allowed sales api to get/set developer base level and individual apps level
+* Added sales api to send email
+
+__Fixes:__
+* Fixed setting default materials for imported models
+* Allowed sales to query private coupon fields
+* Enforced expiring developer status and all of his apps
+* Properly handled the case when project image is removed when it is still in excited state
+
+__Breaking Change:__
+* Changed the definition of User.freeGPQuota to {free global quota + staff picked bonus + membership quota}, instead of just {free global quota + staff picked bonus}
+* project.allMaterials were set as public, instead of private
+
 ### 1.4.0
 
 __Release data:__
