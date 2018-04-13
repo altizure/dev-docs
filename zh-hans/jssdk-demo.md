@@ -48,7 +48,7 @@
 
 * 演示链接：[altizure.github.io/experimental-demo/import-geojson.html](https://altizure.github.io/experimental-demo/import-geojson.html)
 * 演示重点：加载GeoJson类型的矢量数据
-* 演示简介：演示加载香港科技大学的三维模型以及矢量数据，每个矢量单体可相应交互并显示预设信息。
+* 演示简介：演示加载香港科技大学的三维模型以及矢量数据。点击`Visualize GeoJSON`加载矢量数据，每个矢量单体可相应交互并显示预设信息。
 
 # 5. 如何获取这些演示的代码
 
