@@ -1,5 +1,17 @@
 # Changelog of Altizure GraphQL API
 
+### 1.5.1
+
+__Release data:__
+April. 20th, 2018
+
+__New features:__
+* Supported markdown format in sales query: sendEmail
+* Added mutation: setSandboxThumb for setting progressive sandbox thumbnails
+* Added sales mutation: addUserNote and removeUserNote
+* Added new buckets: Beijing, Virginia and London in enum: BucketS3Model, used in mutation: uploadModelS3
+* Added new query: getGeoIPInfo.nearestModelBuckets to get the nearest buckets for uploading obj model
+
 ### 1.5.0
 
 __Release data:__
