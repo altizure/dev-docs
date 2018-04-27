@@ -1,5 +1,24 @@
 # Changelog of Altizure GraphQL API
 
+### 1.6.0
+
+__Release data:__
+April. 27th, 2018
+
+__New features:__
+* Added mutation: sandbox.storyboard.{createStory + updateStory + removeStory + createStoryScene + removeStoryScene}
+* Supported image file name that contains space(s), e.g. 'abc def ghi.JPG' in metafile (despite space is being used as delimiter)
+
+__Improvements:__
+* Reduced the latency of all the query (especially in China) with geo-distributed replica set
+
+__Fixes:__
+* Fixed typo of metafile filename to accept `group.txt` instead of `groups.txt`
+
+__Breaking Change:__
+* All images that are not in state: `Ready(Strong)` or `Invalid` will be forcefully switched to `Invalid`
+if their last `modifiedDate` is older than 65 minutes
+
 ### 1.5.1
 
 __Release data:__
