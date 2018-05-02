@@ -38,7 +38,7 @@ Now please fill the following query string to the query section to calculate how
 
 ```
 query {
-  support {
+  utility {
     sizeToGigaPixel(width: 4000, height: 3000, numImg: 100)
   }
 }

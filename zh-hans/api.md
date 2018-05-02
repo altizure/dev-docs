@@ -42,7 +42,7 @@ API 调用和文档的入口：
 
 ```
 query {
-  support {
+  utility {
     sizeToGigaPixel(width: 4000, height: 3000, numImg: 100)
   }
 }
