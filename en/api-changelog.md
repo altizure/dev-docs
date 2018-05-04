@@ -1,5 +1,28 @@
 # Changelog of Altizure GraphQL API
 
+### 1.6.1
+
+__Release data:__
+May. 4th, 2018
+
+__New features:__
+* Added transaction types: [
+    BraintreeBuyCoin,
+    AlipayBuyCoin,
+    WechatBuyCoin,
+    DepositCoinCoupon,
+    Reconstruction,
+    ProjUpgrade,
+    Refund,
+    SpecialCharge
+  ] in type: Transaction
+* Supported custom transaction description by offering tokenized description arguments `descArgs` in type: Transaction
+* Added ids of coupons used in relevant transaction
+* Added sales mutation: refundProject and specialChargeUser
+
+__Fixes:__
+* Fixed issue of not refunding a pro project if it is stopped within 15 minutes
+
 ### 1.6.0
 
 __Release data:__
