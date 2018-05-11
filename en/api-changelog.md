@@ -1,5 +1,17 @@
 # Changelog of Altizure GraphQL API
 
+### 1.6.2
+
+__Release data:__
+May. 11th, 2018
+
+__New features:__
+* Added type: frame in sandbox's animation
+
+__Fixes:__
+* Fixed setting project as modified if an image is removed
+* Fixed missing message of 'Authentication Error' in various mutations
+
 ### 1.6.1
 
 __Release data:__
