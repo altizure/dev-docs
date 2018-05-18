@@ -1,5 +1,21 @@
 # Changelog of Altizure GraphQL API
 
+### 1.7.0
+
+__Release data:__
+May. 18th, 2018
+
+__New features:__
+* Added mutation: transferProject for transferring ownership of projects to other user
+* Added mutation: transferCoins for transferring coins to other user
+* Added mutation: transferCoupon for transferring unused and non-expired timed coupons to other user
+
+__Breaking Change:__
+* Allowed zero transaction for starting reconstruction / upgrading project.
+(Previously, if total value of timed coupon used is bigger than required,
+no transaction will be conducted. Now, a transaction of zero amount will be carried out
+with relevant information such as the coupons used in the transaction.)
+
 ### 1.6.2
 
 __Release data:__
