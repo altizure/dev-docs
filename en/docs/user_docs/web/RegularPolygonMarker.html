@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Class: CameraMarker | Altizure SDK</title>
+    <title>Class: RegularPolygonMarker | Altizure SDK</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -57,7 +57,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>CameraMarker<span class="signature">(CMOptions)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>RegularPolygonMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description"><p>a marker with regular polygon shape that extrude vertically</p></div>
         
     
 </header>
@@ -70,9 +72,9 @@
 
 <dt>
     
-        <h4 class="name" id="CameraMarker">
+        <h4 class="name" id="RegularPolygonMarker">
             
-                new <span class="type-signature"></span>CameraMarker<span class="signature">(CMOptions)</span><span class="type-signature"></span>
+                new <span class="type-signature"></span>RegularPolygonMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -82,10 +84,6 @@
 </dt>
 <dd>
 
-    
-    <div class="description">
-        <p>a marker which visualizes a camera.</p>
-    </div>
     
 
     
@@ -120,7 +118,7 @@
 
         <tr>
             
-                <td class="name"><code>CMOptions</code></td>
+                <td class="name"><code>markerOptions</code></td>
             
 
             <td class="type">
@@ -136,7 +134,7 @@
 
             
 
-            <td class="description last">
+            <td class="description last"><p>options for creation</p>
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -165,13 +163,13 @@
 
         <tr>
             
-                <td class="name"><code>camToEarth</code></td>
+                <td class="name"><code>position</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">LngLatAlt</span>
 
 
             
@@ -193,20 +191,20 @@
                 </td>
             
 
-            <td class="description last"><p>the marker to earth matrix, specify the position and orientation. Length 16.</p></td>
+            <td class="description last"><p>center of the marker, only lng and lat will be in effects</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>sandbox</code></td>
+                <td class="name"><code>radius</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Sandbox.html">Sandbox</a></span>
+<span class="param-type">number</span>
 
 
             
@@ -228,20 +226,20 @@
                 </td>
             
 
-            <td class="description last"><p>the scene</p></td>
+            <td class="description last"><p>radius of the marker, in meters</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>showNear</code></td>
+                <td class="name"><code>sided</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">bool</span>
+<span class="param-type">number</span>
 
 
             
@@ -249,8 +247,6 @@
 
             
                 <td class="attributes">
-                
-                    &lt;optional><br>
                 
 
                 
@@ -262,25 +258,23 @@
             
                 <td class="default">
                 
-                    true
-                
                 </td>
             
 
-            <td class="description last"><p>whether to show near plane</p></td>
+            <td class="description last"><p>number of sides of the marker</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>showFar</code></td>
+                <td class="name"><code>top</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">bool</span>
+<span class="param-type">number</span>
 
 
             
@@ -288,8 +282,6 @@
 
             
                 <td class="attributes">
-                
-                    &lt;optional><br>
                 
 
                 
@@ -301,25 +293,23 @@
             
                 <td class="default">
                 
-                    false
-                
                 </td>
             
 
-            <td class="description last"><p>whether to show far plane</p></td>
+            <td class="description last"><p>top of the marker, in meters</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>color</code></td>
+                <td class="name"><code>bottom</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type">number</span>
 
 
             
@@ -327,8 +317,6 @@
 
             
                 <td class="attributes">
-                
-                    &lt;optional><br>
                 
 
                 
@@ -340,19 +328,17 @@
             
                 <td class="default">
                 
-                    new THREE.Color(0xff0000)
-                
                 </td>
             
 
-            <td class="description last"><p>the color of the cone, defaultly red</p></td>
+            <td class="description last"><p>bottom of the marker, in meters</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>fov</code></td>
+                <td class="name"><code>volume.color</code></td>
             
 
             <td class="type">
@@ -379,19 +365,19 @@
             
                 <td class="default">
                 
-                    45
+                    0xff0000
                 
                 </td>
             
 
-            <td class="description last"><p>the fov of the camera</p></td>
+            <td class="description last"><p>color of the volume in hex number</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>near</code></td>
+                <td class="name"><code>volume.opacity</code></td>
             
 
             <td class="type">
@@ -418,90 +404,12 @@
             
                 <td class="default">
                 
-                    0.00001
+                    0.1
                 
                 </td>
             
 
-            <td class="description last"><p>the near plane of the camera</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>far</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    0.01
-                
-                </td>
-            
-
-            <td class="description last"><p>the far plane of the camera</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>aspect</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
-
-            <td class="description last"><p>the aspect ratio of the camera</p></td>
+            <td class="description last"><p>opacity of the volume</p></td>
         </tr>
 
     
@@ -565,7 +473,7 @@
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=KyTaxN2XUyQ%20"> Camera Illustration Video</a></li>
+            <li><a href="PolygonMarker.html">PolygonMarker</a></li>
         </ul>
     </dd>
     
@@ -579,14 +487,15 @@
         
         <p class="code-caption"> construction </p>
     
-    <pre class="prettyprint"><code> let cameraMarker = new altizure.CameraMarker({
-   sandbox: sandbox,
-   camToEarth: [
-     -0.06275835503639593, 0.7649967940136936, 0.6409690273499146, 0,
-     0.9718982451244642, 0.19284429450863955, -0.1349995525898201, 0,
-     -0.22688144480567865, 0.6144843230093303, -0.7556016323292666, 0,
-     0.8430508839622491, 0.3831657154430671, -0.3743447899092847, 0.9999999999999998
-   ]
+    <pre class="prettyprint"><code> let regularPolygonMarker = new altizure.RegularPolygonMarker({
+   position: {lng: 121.62199313850867, lat: 31.21593319676947, alt: 0},
+   radius: 100,
+   sided: 32,
+   top: 100,
+   bottom: 1,
+   color: 0x0000ff,
+   opacity: 0.3,
+   sandbox: sandbox
  })</code></pre>
 
     
@@ -604,7 +513,7 @@
 
 
     <ul>
-        <li><a href="Marker.html">Marker</a></li>
+        <li><a href="PolygonMarker.html">PolygonMarker</a></li>
     </ul>
 
 
@@ -627,8 +536,8 @@
             
 
 <dt>
-<h4 class="name" id="aspect">
-    <span class="type-signature"></span>aspect<span class="type-signature"></span>
+<h4 class="name" id="bottom">
+    <span class="type-signature"></span>bottom<span class="type-signature"></span>
     
 </h4>
 
@@ -637,7 +546,7 @@
 <dd>
     
     <div class="description">
-        <p>set the aspect ratio of the camera marker</p>
+        <p>Altitude of the bottom (in meter). Can only be a number.</p>
     </div>
     
 
@@ -656,6 +565,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolygonMarker.html#bottom">PolygonMarker#bottom</a>
+    </li></ul></dd>
     
 
     
@@ -687,87 +601,9 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> set the aspect </p>
+        <p class="code-caption"> Change bottom </p>
     
-    <pre class="prettyprint"><code> cameraMarker.aspect = 1.2
- cameraMarker.aspect = cameraMarker.aspect * 1.01</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="camToEarth">
-    <span class="type-signature"></span>camToEarth<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>update the marker's position and orientation using matrix</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> set camToEarth </p>
-    
-    <pre class="prettyprint"><code> // this will set the position and orietation
- cameraMarker.camToEarth = [
-   -0.06275835503639593, 0.7649967940136936, 0.6409690273499146, 0,
-   0.9718982451244642, 0.19284429450863955, -0.1349995525898201, 0,
-   -0.22688144480567865, 0.6144843230093303, -0.7556016323292666, 0,
-   0.8430508839622491, 0.3831657154430671, -0.3743447899092847, 0.9999999999999998
- ]</code></pre>
+    <pre class="prettyprint"><code> polygon.bottom = 0.2</code></pre>
 
     
 </dd>
@@ -786,7 +622,7 @@
 <dd>
     
     <div class="description">
-        <p>change the color in the cone formed by near plane and camera's origin</p>
+        <p>Set the polygon marker color</p>
     </div>
     
 
@@ -805,6 +641,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolygonMarker.html#color">PolygonMarker#color</a>
+    </li></ul></dd>
     
 
     
@@ -836,9 +677,86 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> change the color </p>
+        <p class="code-caption"> Change color </p>
     
-    <pre class="prettyprint"><code> cameraMarker.color = new THREE.Color(0x0000ff) // change the color of the cone to blue</code></pre>
+    <pre class="prettyprint"><code> polygonMarker.color = 0xff0000 // red</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="depthTest">
+    <span class="type-signature"></span>depthTest<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set depth test. If false, it should be in front</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolygonMarker.html#depthTest">PolygonMarker#depthTest</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change depthTest </p>
+    
+    <pre class="prettyprint"><code> polygonMarker.depthTest = true // do depth test
+ polygonMarker.depthTest = !polygonMarker.depthTest // flip the status</code></pre>
 
     
 </dd>
@@ -890,12 +808,12 @@
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#euler">Marker#euler</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -946,8 +864,8 @@
             
 
 <dt>
-<h4 class="name" id="far">
-    <span class="type-signature"></span>far<span class="type-signature"></span>
+<h4 class="name" id="hasBottomCover">
+    <span class="type-signature"></span>hasBottomCover<span class="type-signature"></span>
     
 </h4>
 
@@ -956,7 +874,7 @@
 <dd>
     
     <div class="description">
-        <p>Set the far plane of the camera marker</p>
+        <p>The polygon has bottom or not.</p>
     </div>
     
 
@@ -973,6 +891,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PolygonBaseMarker.html#hasBottomCover">PolygonBaseMarker#hasBottomCover</a>
+    </li></ul></dd>
     
 
     
@@ -1006,10 +929,10 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> change far </p>
+        <p class="code-caption"> Change hasBottomCover </p>
     
-    <pre class="prettyprint"><code> cameraMarker.far = 0.01
- cameraMarker.far = cameraMarker.far / 10</code></pre>
+    <pre class="prettyprint"><code> polygonBaseMarker.hasBottomCover = true // has bottom cover
+ polygonBaseMarker.hasBottomCover = !polygonBaseMarker.hasBottomCover // flip the status</code></pre>
 
     
 </dd>
@@ -1018,8 +941,8 @@
             
 
 <dt>
-<h4 class="name" id="farInMeter">
-    <span class="type-signature"></span>farInMeter<span class="type-signature"></span>
+<h4 class="name" id="hasTopCover">
+    <span class="type-signature"></span>hasTopCover<span class="type-signature"></span>
     
 </h4>
 
@@ -1028,7 +951,7 @@
 <dd>
     
     <div class="description">
-        <p>The distance (in meter) between the far plane and the camera marker.</p>
+        <p>The polygon has top or not.</p>
     </div>
     
 
@@ -1045,6 +968,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PolygonBaseMarker.html#hasTopCover">PolygonBaseMarker#hasTopCover</a>
+    </li></ul></dd>
     
 
     
@@ -1078,82 +1006,10 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> change far plane (in meter) </p>
+        <p class="code-caption"> Change hasTopCover </p>
     
-    <pre class="prettyprint"><code> cameraMarker.farInMeter = 100
- cameraMarker.farInMeter = cameraMarker.farInMeter / 10</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="fov">
-    <span class="type-signature"></span>fov<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>set the fov of the camera marker</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> set the fov </p>
-    
-    <pre class="prettyprint"><code> cameraMarker.fov = 60
- cameraMarker.fov = cameraMarker.fov + 10</code></pre>
+    <pre class="prettyprint"><code> polygonBaseMarker.hasTopCover = true // has top cover
+ polygonBaseMarker.hasTopCover = !polygonBaseMarker.hasTopCover // flip the status</code></pre>
 
     
 </dd>
@@ -1279,12 +1135,12 @@
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#interactable">Marker#interactable</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -1366,12 +1222,12 @@
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#name">Marker#name</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -1415,8 +1271,8 @@
             
 
 <dt>
-<h4 class="name" id="near">
-    <span class="type-signature"></span>near<span class="type-signature"></span>
+<h4 class="name" id="opacity">
+    <span class="type-signature"></span>opacity<span class="type-signature"></span>
     
 </h4>
 
@@ -1425,7 +1281,7 @@
 <dd>
     
     <div class="description">
-        <p>set the near plane of the camera marker</p>
+        <p>Set opacity.</p>
     </div>
     
 
@@ -1444,6 +1300,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolygonMarker.html#opacity">PolygonMarker#opacity</a>
+    </li></ul></dd>
     
 
     
@@ -1475,10 +1336,9 @@
     
     <h5>Example</h5>
     
-        <p class="code-caption"> change near </p>
+        <p class="code-caption"> Change opacity </p>
     
-    <pre class="prettyprint"><code> cameraMarker.near = 0.00001
- cameraMarker.near = cameraMarker.near * 10</code></pre>
+    <pre class="prettyprint"><code> polygonMarker.opactiy = 0.234</code></pre>
 
     
 </dd>
@@ -1526,12 +1386,12 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#orientation">Marker#orientation</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -1619,12 +1479,12 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#position">Marker#position</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -1671,6 +1531,70 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
             
 
 <dt>
+<h4 class="name" id="radius">
+    <span class="type-signature"></span>radius<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>set the radius of the marker</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
 <h4 class="name" id="scale">
     <span class="type-signature"></span>scale<span class="type-signature"> :number</span>
     
@@ -1709,12 +1633,12 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#scale">Marker#scale</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -1758,8 +1682,8 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
             
 
 <dt>
-<h4 class="name" id="showFar">
-    <span class="type-signature"></span>showFar<span class="type-signature"></span>
+<h4 class="name" id="sided">
+    <span class="type-signature"></span>sided<span class="type-signature"></span>
     
 </h4>
 
@@ -1768,7 +1692,7 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 <dd>
     
     <div class="description">
-        <p>whether to show far plane</p>
+        <p>set the number of the side of the marker</p>
     </div>
     
 
@@ -1814,14 +1738,6 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
 
     
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> change showFar </p>
-    
-    <pre class="prettyprint"><code> cameraMarker.showFar = false // near plane not shown
- cameraMarker.showFar = !cameraMarker.showFar // flip status</code></pre>
 
     
 </dd>
@@ -1830,8 +1746,8 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
             
 
 <dt>
-<h4 class="name" id="showNear">
-    <span class="type-signature"></span>showNear<span class="type-signature"></span>
+<h4 class="name" id="top">
+    <span class="type-signature"></span>top<span class="type-signature"></span>
     
 </h4>
 
@@ -1840,7 +1756,7 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 <dd>
     
     <div class="description">
-        <p>whether to show near plane</p>
+        <p>Altitude of the top (in meter). Can only be a number.</p>
     </div>
     
 
@@ -1859,6 +1775,11 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolygonMarker.html#top">PolygonMarker#top</a>
+    </li></ul></dd>
     
 
     
@@ -1890,152 +1811,9 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
     <h5>Example</h5>
     
-        <p class="code-caption"> change showNear </p>
+        <p class="code-caption"> Change top </p>
     
-    <pre class="prettyprint"><code> cameraMarker.showNear = false // near plane not shown
- cameraMarker.showNear = !cameraMarker.showNear // flip status</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="visColor">
-    <span class="type-signature"></span>visColor<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Hexadecimal color of the light.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> change the light color </p>
-    
-    <pre class="prettyprint"><code> cameraMarker.visColor = 0xff0000</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="visDecay">
-    <span class="type-signature"></span>visDecay<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>The amount the light dims along the distance of the light. Default is 1.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> change the light decay </p>
-    
-    <pre class="prettyprint"><code> cameraMarker.visDecay = 0.1</code></pre>
+    <pre class="prettyprint"><code> polygonMarker.top = 100</code></pre>
 
     
 </dd>
@@ -2082,12 +1860,12 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#visible">Marker#visible</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -2123,149 +1901,6 @@ Use <code>eular</code> instead if you are not sure how to use this.</p>
     
     <pre class="prettyprint"><code> marker.visible = false // make this marker invisible
  marker.visible = !marker.visible // flip visible status</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="visIntensity">
-    <span class="type-signature"></span>visIntensity<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Numeric value of the light's strength/intensity. Default is 1.
-For visibility analysis uses, it is recommended to be above 50.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> change the light intensity </p>
-    
-    <pre class="prettyprint"><code> cameraMarker.visIntensity = 2</code></pre>
-
-    
-</dd>
-
-        
-            
-
-<dt>
-<h4 class="name" id="visPenumbra">
-    <span class="type-signature"></span>visPenumbra<span class="type-signature"></span>
-    
-</h4>
-
-
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Percent of the spotlight cone that is attenuated due to penumbra. Takes values between zero and 1. Default is 0.05.</p>
-    </div>
-    
-
-    <!--
-    
-    -->
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-    <h5>Example</h5>
-    
-        <p class="code-caption"> change the light penumbra </p>
-    
-    <pre class="prettyprint"><code> cameraMarker.visPenumbra = 0.1</code></pre>
 
     
 </dd>
@@ -2312,12 +1947,12 @@ For visibility analysis uses, it is recommended to be above 50.</p>
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#x">Marker#x</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -2399,12 +2034,12 @@ For visibility analysis uses, it is recommended to be above 50.</p>
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#y">Marker#y</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -2486,12 +2121,12 @@ For visibility analysis uses, it is recommended to be above 50.</p>
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Marker.html#z">Marker#z</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -2683,7 +2318,7 @@ For visibility analysis uses, it is recommended to be above 50.</p>
     
         <h4 class="name" id="destruct">
             
-                <span class="type-signature"><span class="icon green">abstract</span> </span>destruct<span class="signature">()</span><span class="type-signature"></span>
+                <span class="type-signature"></span>destruct<span class="signature">()</span><span class="type-signature"></span>
                 
             
         </h4>
@@ -2695,7 +2330,7 @@ For visibility analysis uses, it is recommended to be above 50.</p>
 
     
     <div class="description">
-        <p>Remove this marker from the sandbox and release resources occupied by it.</p>
+        <p>Destructor.</p>
     </div>
     
 
@@ -2731,7 +2366,7 @@ For visibility analysis uses, it is recommended to be above 50.</p>
     
     <dt class="inherited-from">Inherited From:</dt>
     <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="Marker.html#destruct">Marker#destruct</a>
+        <a href="PolygonMarker.html#destruct">PolygonMarker#destruct</a>
     </li></ul></dd>
     
 
@@ -2760,13 +2395,6 @@ For visibility analysis uses, it is recommended to be above 50.</p>
     
 </dl>
 
-
-    
-        <h5>Example</h5>
-        
-        <p class="code-caption"> Destruct a marker </p>
-    
-    <pre class="prettyprint"><code> marker.destruct()</code></pre>
 
     
 
@@ -2863,140 +2491,6 @@ For visibility analysis uses, it is recommended to be above 50.</p>
         <p class="code-caption"> Detach control </p>
     
     <pre class="prettyprint"><code> marker.detachControl()</code></pre>
-
-    
-
-</dd>
-
-            
-                
-
-<dt>
-    
-        <h4 class="name" id="lookAt">
-            
-                <span class="type-signature"></span>lookAt<span class="signature">(pose)</span><span class="type-signature"></span>
-                
-            
-        </h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Change the target of the camera marker.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="container-params">
-        <h5>Parameters:</h5>
-        
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>pose</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">LngLatAlt</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
 
     
 
@@ -4169,7 +3663,7 @@ Note: an event can only has one handler.</p>
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'CameraMarker_sub'.replace(/"/g, '_');
+        var id = 'RegularPolygonMarker_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 
