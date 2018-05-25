@@ -1,5 +1,22 @@
 # Changelog of Altizure GraphQL API
 
+### 1.8.0
+
+__Release data:__
+May. 25th, 2018
+
+__New features:__
+* Supported Minio object storage server
+* Added mutation: uploadImageMinio, to upload image to our private Minio server
+* Added mutation: downgradeProject, for downgrading pro and non-done-once project to free project
+
+__Fixes:__
+* Fixed issue of pre-processing images indefinitely triggered from mobile apps, projects that have timeout images will be auto-started
+
+__Change:__
+* Changed SandboxEntity's name from required to optional.
+* Changed domains of cdn of various sandbox thumbs according to the region of api server
+
 ### 1.7.0
 
 __Release data:__
