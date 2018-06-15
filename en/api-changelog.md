@@ -1,5 +1,20 @@
 # Changelog of Altizure GraphQL API
 
+### 1.8.1
+
+__Release data:__
+June. 15th, 2018
+
+__New features:__
+* Supported changing the imported model type via mutation: setProjectProperties(importedModelType)
+
+__Change:__
+* For query: project.cropMask, if crop mask does not exist, return a default mask instead of null
+
+__Fixes:__
+* Fixed issues of translating original image names to hashed image names in meta files if same image is uploaded multiple times
+* Fixed changing project.importedState of imported-model-project to `Pending` immediately after a new upload URL is signed
+
 ### 1.8.0
 
 __Release data:__
