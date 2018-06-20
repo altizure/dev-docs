@@ -1,5 +1,21 @@
 # Altizure Sandbox 3D SDK 更新日志
 
+### 0.2.24
+__发布时间:__
+2018年6月20日
+
+__新功能:__
+* 新版的`sandbox.camera.lookAt`，可以调整camera使得marker在视野中心。增加了[範例5.10](https://altizure.github.io/sdk.examples/5-10-camera-lookat/)。
+
+__改进:__
+* 优化了`PolyFenceLineMarker`的贴图逻辑，避免贴图错误。
+
+__缺陷修复:__
+
+* 修复了IE11对 `Math.log2` 未定义的报错。
+
+___
+
 ### 0.2.22
 __发布时间:__
 2018年6月11日
@@ -41,7 +57,7 @@ __新功能:__
       * @returns {Number} - squared meters
       */
       function areaByLngLatAlts (pts) {}
-  ```
+    ```
 * 判断一个点（投影到地表后）是否在polygon范围内 `GeometryUtils::checkPtsInPoly`
     ```
     /**
@@ -57,6 +73,7 @@ __改进:__
 
 __缺陷修复:__
 
+___
 
 ### 0.2.20
 __发布时间:__
@@ -85,6 +102,8 @@ __缺陷修复:__
 * Marterial array 导致的 marker::destruct 报错。
 * 销毁项目模型时释放裁剪Mask内存。
 
+___
+
 ### 0.2.5
 __发布时间:__
 2018年4月9日
@@ -105,6 +124,7 @@ __改进:__
 __缺陷修复:__
 * LightBeam color 接口，接受string类型。
 
+___
 
 ### 0.1.62
 
