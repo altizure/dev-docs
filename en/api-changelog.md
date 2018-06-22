@@ -1,5 +1,13 @@
 # Changelog of Altizure GraphQL API
 
+### 1.8.2
+
+__Release data:__
+June. 22th, 2018
+
+__New features:__
+* Added query: search.user(username) for searching the account unique username
+
 ### 1.8.1
 
 __Release data:__
