@@ -1,5 +1,19 @@
 # Changelog of Altizure GraphQL API
 
+### 1.8.3
+
+__Release data:__
+July. 6th, 2018
+
+__New features:__
+* Added query: my.favouriteProjects / my.favouriteSandboxes for querying favourite projects with descending created time
+* Added sorting options for sandbox apis
+* Added super/sales query: userProjectList to output all the projects as CSV of a user
+
+__Change:__
+* Removed deprecated query: version, User.thumb, getGeoIPInfo.suggestedBuckets
+* Removed deprecated mutation: startReconstruction, upgradeProject,
+
 ### 1.8.2
 
 __Release data:__
