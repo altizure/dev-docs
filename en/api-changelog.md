@@ -1,5 +1,17 @@
 # Changelog of Altizure GraphQL API
 
+### 1.8.4
+
+__Release data:__
+July. 13th, 2018
+
+__New features:__
+* Added fields: animation + texture in type: SandboxEntity
+* Added args: planet + background in SandboxMutation.create + update
+
+__Fixes:__
+* Fixed setting uploaded image as `Invalid` if client and server side checksums mismatch
+
 ### 1.8.3
 
 __Release data:__
