@@ -1,5 +1,18 @@
 # Changelog of Altizure GraphQL API
 
+### 1.8.5
+
+__Release data:__
+July. 20th, 2018
+
+__New features:__
+* Added query: My.allProjects, for querying native and imported model projects at the same time
+* Added mutation: makeScreenshot to make a server side rendered screenshot with specific dimension and camera pose
+* Added mutation: removeScreenshot to remove a screenshot of a project
+
+__Fixes:__
+* Fixed empty importedModelType error
+
 ### 1.8.4
 
 __Release data:__
