@@ -1,5 +1,16 @@
 # Changelog of Altizure GraphQL API
 
+### 1.8.6
+
+__Release data:__
+July. 27th, 2018
+
+__New features:__
+* Supported custom notification description by offering tokenized description arguments `descArgs` in type: Notification
+
+__Change:__
+* Allowed any user to set thumbnail of Sandbox
+
 ### 1.8.5
 
 __Release data:__
