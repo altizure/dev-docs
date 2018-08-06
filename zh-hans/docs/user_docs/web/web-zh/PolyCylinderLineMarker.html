@@ -1,0 +1,4356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class: PolyCylinderLineMarker | Altizure SDK</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/tui-doc.css">
+
+    
+</head>
+<body>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="width: 20px; height: 20px">
+        
+            <a href="https://www.altizure.com" rel="noopener noreferrer" target="_blank">
+                <img src="https://cdn-china.altizure.cn/public/images/apple-touch-icon-180.png" width="100%" height="100%">
+            </a>
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">Altizure SDK</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+        <ol class="lnb-tab">
+            <li id="api-tab">
+                <a href="#"><h4>API</h4></a>
+            </li>
+            <li id="examples-tab">
+                <a href="#"><h4>Examples</h4></a>
+            </li>
+        </ol>
+    
+    <div class="lnb-examples hidden"><h3>Examples</h3><ul><li><a href="tutorial-index_.html">index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="index_sub"></div></li></ul></div><div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="AltizureProjectMarker.html">AltizureProjectMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="AltizureProjectMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="AltizureProjectMarker.html#autoScale">autoScale</a></li><li><a href="AltizureProjectMarker.html#euler">euler</a></li><li><a href="AltizureProjectMarker.html#geoCoverage">geoCoverage</a></li><li><a href="AltizureProjectMarker.html#ID">ID</a></li><li><a href="AltizureProjectMarker.html#interactable">interactable</a></li><li><a href="AltizureProjectMarker.html#name">name</a></li><li><a href="AltizureProjectMarker.html#orientation">orientation</a></li><li><a href="AltizureProjectMarker.html#photos">photos</a></li><li><a href="AltizureProjectMarker.html#position">position</a></li><li><a href="AltizureProjectMarker.html#projInfo">projInfo</a></li><li><a href="AltizureProjectMarker.html#scale">scale</a></li><li><a href="AltizureProjectMarker.html#visible">visible</a></li><li><a href="AltizureProjectMarker.html#water">water</a></li><li><a href="AltizureProjectMarker.html#x">x</a></li><li><a href="AltizureProjectMarker.html#y">y</a></li><li><a href="AltizureProjectMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="AltizureProjectMarker.html#_detectOffset">_detectOffset</a></li><li><a href="AltizureProjectMarker.html#_generateImages">_generateImages</a></li><li><a href="AltizureProjectMarker.html#animate">animate</a></li><li><a href="AltizureProjectMarker.html#autoAdjustPolygons">autoAdjustPolygons</a></li><li><a href="AltizureProjectMarker.html#deport">deport</a></li><li><a href="AltizureProjectMarker.html#deportPhotos">deportPhotos</a></li><li><a href="AltizureProjectMarker.html#deportWater">deportWater</a></li><li><a href="AltizureProjectMarker.html#destruct">destruct</a></li><li><a href="AltizureProjectMarker.html#detachControl">detachControl</a></li><li><a href="AltizureProjectMarker.html#dim">dim</a></li><li><a href="AltizureProjectMarker.html#disposeCurrentDisplay">disposeCurrentDisplay</a></li><li><a href="AltizureProjectMarker.html#earthToObj">earthToObj</a></li><li><a href="AltizureProjectMarker.html#earthToProject">earthToProject</a></li><li><a href="AltizureProjectMarker.html#getRegionVolume">getRegionVolume</a></li><li><a href="AltizureProjectMarker.html#importPhotos">importPhotos</a></li><li><a href="AltizureProjectMarker.html#importWater">importWater</a></li><li><a href="AltizureProjectMarker.html#light">light</a></li><li><a href="AltizureProjectMarker.html#measureByPolygon">measureByPolygon</a></li><li><a href="AltizureProjectMarker.html#objToEarth">objToEarth</a></li><li><a href="AltizureProjectMarker.html#objToScene">objToScene</a></li><li><a href="AltizureProjectMarker.html#off">off</a></li><li><a href="AltizureProjectMarker.html#on">on</a></li><li><a href="AltizureProjectMarker.html#onContentInitialized">onContentInitialized</a></li><li><a href="AltizureProjectMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="AltizureProjectMarker.html#pickDepthMap">pickDepthMap</a></li><li><a href="AltizureProjectMarker.html#sceneToObj">sceneToObj</a></li><li><a href="AltizureProjectMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="AltizureProjectMarker.html#setControlMode">setControlMode</a></li><li><a href="AltizureProjectMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="AltizureProjectMarker.html#shapeToScene">shapeToScene</a></li><li><a href="AltizureProjectMarker.html#showControl">showControl</a></li><li><a href="AltizureProjectMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="CameraMarker.html">CameraMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="CameraMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="CameraMarker.html#aspect">aspect</a></li><li><a href="CameraMarker.html#camToEarth">camToEarth</a></li><li><a href="CameraMarker.html#color">color</a></li><li><a href="CameraMarker.html#euler">euler</a></li><li><a href="CameraMarker.html#far">far</a></li><li><a href="CameraMarker.html#farInMeter">farInMeter</a></li><li><a href="CameraMarker.html#fov">fov</a></li><li><a href="CameraMarker.html#ID">ID</a></li><li><a href="CameraMarker.html#interactable">interactable</a></li><li><a href="CameraMarker.html#name">name</a></li><li><a href="CameraMarker.html#near">near</a></li><li><a href="CameraMarker.html#orientation">orientation</a></li><li><a href="CameraMarker.html#position">position</a></li><li><a href="CameraMarker.html#scale">scale</a></li><li><a href="CameraMarker.html#showFar">showFar</a></li><li><a href="CameraMarker.html#showNear">showNear</a></li><li><a href="CameraMarker.html#visColor">visColor</a></li><li><a href="CameraMarker.html#visDecay">visDecay</a></li><li><a href="CameraMarker.html#visible">visible</a></li><li><a href="CameraMarker.html#visIntensity">visIntensity</a></li><li><a href="CameraMarker.html#visPenumbra">visPenumbra</a></li><li><a href="CameraMarker.html#x">x</a></li><li><a href="CameraMarker.html#y">y</a></li><li><a href="CameraMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="CameraMarker.html#animate">animate</a></li><li><a href="CameraMarker.html#destruct">destruct</a></li><li><a href="CameraMarker.html#detachControl">detachControl</a></li><li><a href="CameraMarker.html#dim">dim</a></li><li><a href="CameraMarker.html#light">light</a></li><li><a href="CameraMarker.html#lookAt">lookAt</a></li><li><a href="CameraMarker.html#off">off</a></li><li><a href="CameraMarker.html#on">on</a></li><li><a href="CameraMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="CameraMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="CameraMarker.html#setControlMode">setControlMode</a></li><li><a href="CameraMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="CameraMarker.html#shapeToScene">shapeToScene</a></li><li><a href="CameraMarker.html#showControl">showControl</a></li><li><a href="CameraMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="CanvasTagMarker.html">CanvasTagMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="CanvasTagMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="CanvasTagMarker.html#color">color</a></li><li><a href="CanvasTagMarker.html#context">context</a></li><li><a href="CanvasTagMarker.html#depthTest">depthTest</a></li><li><a href="CanvasTagMarker.html#euler">euler</a></li><li><a href="CanvasTagMarker.html#fixedSize">fixedSize</a></li><li><a href="CanvasTagMarker.html#ID">ID</a></li><li><a href="CanvasTagMarker.html#interactable">interactable</a></li><li><a href="CanvasTagMarker.html#isSprite">isSprite</a></li><li><a href="CanvasTagMarker.html#name">name</a></li><li><a href="CanvasTagMarker.html#orientation">orientation</a></li><li><a href="CanvasTagMarker.html#pinLength">pinLength</a></li><li><a href="CanvasTagMarker.html#pivot">pivot</a></li><li><a href="CanvasTagMarker.html#position">position</a></li><li><a href="CanvasTagMarker.html#scale">scale</a></li><li><a href="CanvasTagMarker.html#size">size</a></li><li><a href="CanvasTagMarker.html#tagQuaternion">tagQuaternion</a></li><li><a href="CanvasTagMarker.html#texture">texture</a></li><li><a href="CanvasTagMarker.html#visible">visible</a></li><li><a href="CanvasTagMarker.html#x">x</a></li><li><a href="CanvasTagMarker.html#y">y</a></li><li><a href="CanvasTagMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="CanvasTagMarker.html#animate">animate</a></li><li><a href="CanvasTagMarker.html#destruct">destruct</a></li><li><a href="CanvasTagMarker.html#detachControl">detachControl</a></li><li><a href="CanvasTagMarker.html#dim">dim</a></li><li><a href="CanvasTagMarker.html#light">light</a></li><li><a href="CanvasTagMarker.html#off">off</a></li><li><a href="CanvasTagMarker.html#on">on</a></li><li><a href="CanvasTagMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="CanvasTagMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="CanvasTagMarker.html#setControlMode">setControlMode</a></li><li><a href="CanvasTagMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="CanvasTagMarker.html#shapeToScene">shapeToScene</a></li><li><a href="CanvasTagMarker.html#showControl">showControl</a></li><li><a href="CanvasTagMarker.html#takeEffects">takeEffects</a></li><li><a href="CanvasTagMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="CylinderVolumeMarker.html">CylinderVolumeMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="CylinderVolumeMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="CylinderVolumeMarker.html#radius">radius</a></li><li><a href="CylinderVolumeMarker.html#sided">sided</a></li></ul></div></li><li><a href="DitchMarker.html">DitchMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="DitchMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="DitchMarker.html#bottom">bottom</a></li><li><a href="DitchMarker.html#color">color</a></li><li><a href="DitchMarker.html#depthTest">depthTest</a></li><li><a href="DitchMarker.html#euler">euler</a></li><li><a href="DitchMarker.html#hasBottomCover">hasBottomCover</a></li><li><a href="DitchMarker.html#hasTopCover">hasTopCover</a></li><li><a href="DitchMarker.html#ID">ID</a></li><li><a href="DitchMarker.html#interactable">interactable</a></li><li><a href="DitchMarker.html#name">name</a></li><li><a href="DitchMarker.html#opacity">opacity</a></li><li><a href="DitchMarker.html#orientation">orientation</a></li><li><a href="DitchMarker.html#position">position</a></li><li><a href="DitchMarker.html#scale">scale</a></li><li><a href="DitchMarker.html#texture">texture</a></li><li><a href="DitchMarker.html#top">top</a></li><li><a href="DitchMarker.html#visible">visible</a></li><li><a href="DitchMarker.html#x">x</a></li><li><a href="DitchMarker.html#y">y</a></li><li><a href="DitchMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="DitchMarker.html#animate">animate</a></li><li><a href="DitchMarker.html#detachControl">detachControl</a></li><li><a href="DitchMarker.html#dim">dim</a></li><li><a href="DitchMarker.html#light">light</a></li><li><a href="DitchMarker.html#off">off</a></li><li><a href="DitchMarker.html#on">on</a></li><li><a href="DitchMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="DitchMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="DitchMarker.html#setControlMode">setControlMode</a></li><li><a href="DitchMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="DitchMarker.html#shapeToScene">shapeToScene</a></li><li><a href="DitchMarker.html#showControl">showControl</a></li><li><a href="DitchMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="Earth.html">Earth</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Earth_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="Earth.html#domElement">domElement</a></li><li><a href="Earth.html#enableDolly">enableDolly</a></li><li><a href="Earth.html#renderer">renderer</a></li><li><a href="Earth.html#scene">scene</a></li><li><a href="Earth.html#sceneRoot">sceneRoot</a></li><li><a href="Earth.html#viewerCamera">viewerCamera</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="Earth.html#calculateDistanceBetweenTwoPoints">calculateDistanceBetweenTwoPoints</a></li><li><a href="Earth.html#destruct">destruct</a></li><li><a href="Earth.html#earthToScene">earthToScene</a></li><li><a href="Earth.html#freeze">freeze</a></li><li><a href="Earth.html#generateMask">generateMask</a></li><li><a href="Earth.html#lngLatAlt2XYZ">lngLatAlt2XYZ</a></li><li><a href="Earth.html#markerSnapshot">markerSnapshot</a></li><li><a href="Earth.html#pick">pick</a></li><li><a href="Earth.html#pickOnProjects">pickOnProjects</a></li><li><a href="Earth.html#unfreeze">unfreeze</a></li></ul></div></li><li><a href="HeightMapMarker.html">HeightMapMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="HeightMapMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="HeightMapMarker.html#euler">euler</a></li><li><a href="HeightMapMarker.html#ID">ID</a></li><li><a href="HeightMapMarker.html#interactable">interactable</a></li><li><a href="HeightMapMarker.html#name">name</a></li><li><a href="HeightMapMarker.html#orientation">orientation</a></li><li><a href="HeightMapMarker.html#position">position</a></li><li><a href="HeightMapMarker.html#scale">scale</a></li><li><a href="HeightMapMarker.html#visible">visible</a></li><li><a href="HeightMapMarker.html#x">x</a></li><li><a href="HeightMapMarker.html#y">y</a></li><li><a href="HeightMapMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="HeightMapMarker.html#animate">animate</a></li><li><a href="HeightMapMarker.html#destruct">destruct</a></li><li><a href="HeightMapMarker.html#detachControl">detachControl</a></li><li><a href="HeightMapMarker.html#dim">dim</a></li><li><a href="HeightMapMarker.html#light">light</a></li><li><a href="HeightMapMarker.html#off">off</a></li><li><a href="HeightMapMarker.html#on">on</a></li><li><a href="HeightMapMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="HeightMapMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="HeightMapMarker.html#setControlMode">setControlMode</a></li><li><a href="HeightMapMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="HeightMapMarker.html#shapeToScene">shapeToScene</a></li><li><a href="HeightMapMarker.html#showControl">showControl</a></li><li><a href="HeightMapMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="LightBeamMarker.html">LightBeamMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="LightBeamMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="LightBeamMarker.html#color">color</a></li><li><a href="LightBeamMarker.html#euler">euler</a></li><li><a href="LightBeamMarker.html#height">height</a></li><li><a href="LightBeamMarker.html#ID">ID</a></li><li><a href="LightBeamMarker.html#interactable">interactable</a></li><li><a href="LightBeamMarker.html#name">name</a></li><li><a href="LightBeamMarker.html#orientation">orientation</a></li><li><a href="LightBeamMarker.html#position">position</a></li><li><a href="LightBeamMarker.html#radius">radius</a></li><li><a href="LightBeamMarker.html#scale">scale</a></li><li><a href="LightBeamMarker.html#visible">visible</a></li><li><a href="LightBeamMarker.html#x">x</a></li><li><a href="LightBeamMarker.html#y">y</a></li><li><a href="LightBeamMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="LightBeamMarker.html#animate">animate</a></li><li><a href="LightBeamMarker.html#destruct">destruct</a></li><li><a href="LightBeamMarker.html#detachControl">detachControl</a></li><li><a href="LightBeamMarker.html#dim">dim</a></li><li><a href="LightBeamMarker.html#light">light</a></li><li><a href="LightBeamMarker.html#off">off</a></li><li><a href="LightBeamMarker.html#on">on</a></li><li><a href="LightBeamMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="LightBeamMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="LightBeamMarker.html#setControlMode">setControlMode</a></li><li><a href="LightBeamMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="LightBeamMarker.html#shapeToScene">shapeToScene</a></li><li><a href="LightBeamMarker.html#showControl">showControl</a></li><li><a href="LightBeamMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="Marker.html">Marker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Marker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="Marker.html#euler">euler</a></li><li><a href="Marker.html#ID">ID</a></li><li><a href="Marker.html#interactable">interactable</a></li><li><a href="Marker.html#name">name</a></li><li><a href="Marker.html#orientation">orientation</a></li><li><a href="Marker.html#position">position</a></li><li><a href="Marker.html#scale">scale</a></li><li><a href="Marker.html#visible">visible</a></li><li><a href="Marker.html#x">x</a></li><li><a href="Marker.html#y">y</a></li><li><a href="Marker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="Marker.html#animate">animate</a></li><li><a href="Marker.html#destruct">destruct</a></li><li><a href="Marker.html#detachControl">detachControl</a></li><li><a href="Marker.html#dim">dim</a></li><li><a href="Marker.html#light">light</a></li><li><a href="Marker.html#off">off</a></li><li><a href="Marker.html#on">on</a></li><li><a href="Marker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="Marker.html#sceneUpdated">sceneUpdated</a></li><li><a href="Marker.html#setControlMode">setControlMode</a></li><li><a href="Marker.html#shapeToEarth">shapeToEarth</a></li><li><a href="Marker.html#shapeToScene">shapeToScene</a></li><li><a href="Marker.html#showControl">showControl</a></li><li><a href="Marker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="MarkerCluster.html">MarkerCluster</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="MarkerCluster_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="MarkerCluster.html#.add">add</a></li><li><a href="MarkerCluster.html#.clustering">clustering</a></li><li><a href="MarkerCluster.html#.disable">disable</a></li><li><a href="MarkerCluster.html#.enable">enable</a></li><li><a href="MarkerCluster.html#.remove">remove</a></li></ul></div></li><li><a href="OBJMarker.html">OBJMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="OBJMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="OBJMarker.html#bboxColor">bboxColor</a></li><li><a href="OBJMarker.html#euler">euler</a></li><li><a href="OBJMarker.html#ID">ID</a></li><li><a href="OBJMarker.html#interactable">interactable</a></li><li><a href="OBJMarker.html#name">name</a></li><li><a href="OBJMarker.html#orientation">orientation</a></li><li><a href="OBJMarker.html#position">position</a></li><li><a href="OBJMarker.html#scale">scale</a></li><li><a href="OBJMarker.html#visible">visible</a></li><li><a href="OBJMarker.html#x">x</a></li><li><a href="OBJMarker.html#y">y</a></li><li><a href="OBJMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="OBJMarker.html#animate">animate</a></li><li><a href="OBJMarker.html#destruct">destruct</a></li><li><a href="OBJMarker.html#detachControl">detachControl</a></li><li><a href="OBJMarker.html#dim">dim</a></li><li><a href="OBJMarker.html#light">light</a></li><li><a href="OBJMarker.html#off">off</a></li><li><a href="OBJMarker.html#on">on</a></li><li><a href="OBJMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="OBJMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="OBJMarker.html#setControlMode">setControlMode</a></li><li><a href="OBJMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="OBJMarker.html#shapeToScene">shapeToScene</a></li><li><a href="OBJMarker.html#showControl">showControl</a></li><li><a href="OBJMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="PlaneMarker.html">PlaneMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="PlaneMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="PlaneMarker.html#color">color</a></li><li><a href="PlaneMarker.html#depthTest">depthTest</a></li><li><a href="PlaneMarker.html#euler">euler</a></li><li><a href="PlaneMarker.html#fixedSize">fixedSize</a></li><li><a href="PlaneMarker.html#fixedSize">fixedSize</a></li><li><a href="PlaneMarker.html#ID">ID</a></li><li><a href="PlaneMarker.html#interactable">interactable</a></li><li><a href="PlaneMarker.html#isSprite">isSprite</a></li><li><a href="PlaneMarker.html#isSprite">isSprite</a></li><li><a href="PlaneMarker.html#name">name</a></li><li><a href="PlaneMarker.html#orientation">orientation</a></li><li><a href="PlaneMarker.html#pinLength">pinLength</a></li><li><a href="PlaneMarker.html#pivot">pivot</a></li><li><a href="PlaneMarker.html#pivot">pivot</a></li><li><a href="PlaneMarker.html#position">position</a></li><li><a href="PlaneMarker.html#scale">scale</a></li><li><a href="PlaneMarker.html#tagQuaternion">tagQuaternion</a></li><li><a href="PlaneMarker.html#texture">texture</a></li><li><a href="PlaneMarker.html#visible">visible</a></li><li><a href="PlaneMarker.html#x">x</a></li><li><a href="PlaneMarker.html#y">y</a></li><li><a href="PlaneMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="PlaneMarker.html#animate">animate</a></li><li><a href="PlaneMarker.html#destruct">destruct</a></li><li><a href="PlaneMarker.html#detachControl">detachControl</a></li><li><a href="PlaneMarker.html#dim">dim</a></li><li><a href="PlaneMarker.html#light">light</a></li><li><a href="PlaneMarker.html#off">off</a></li><li><a href="PlaneMarker.html#on">on</a></li><li><a href="PlaneMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="PlaneMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="PlaneMarker.html#setControlMode">setControlMode</a></li><li><a href="PlaneMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="PlaneMarker.html#shapeToScene">shapeToScene</a></li><li><a href="PlaneMarker.html#showControl">showControl</a></li><li><a href="PlaneMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="PolyBaseLineMarker.html">PolyBaseLineMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="PolyBaseLineMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="PolyBaseLineMarker.html#color">color</a></li><li><a href="PolyBaseLineMarker.html#depthTest">depthTest</a></li><li><a href="PolyBaseLineMarker.html#euler">euler</a></li><li><a href="PolyBaseLineMarker.html#ID">ID</a></li><li><a href="PolyBaseLineMarker.html#interactable">interactable</a></li><li><a href="PolyBaseLineMarker.html#labelScaleFunc">labelScaleFunc</a></li><li><a href="PolyBaseLineMarker.html#labelsVisible">labelsVisible</a></li><li><a href="PolyBaseLineMarker.html#length">length</a></li><li><a href="PolyBaseLineMarker.html#name">name</a></li><li><a href="PolyBaseLineMarker.html#orientation">orientation</a></li><li><a href="PolyBaseLineMarker.html#points">points</a></li><li><a href="PolyBaseLineMarker.html#pointsNumber">pointsNumber</a></li><li><a href="PolyBaseLineMarker.html#position">position</a></li><li><a href="PolyBaseLineMarker.html#scale">scale</a></li><li><a href="PolyBaseLineMarker.html#textOptions">textOptions</a></li><li><a href="PolyBaseLineMarker.html#visible">visible</a></li><li><a href="PolyBaseLineMarker.html#x">x</a></li><li><a href="PolyBaseLineMarker.html#y">y</a></li><li><a href="PolyBaseLineMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="PolyBaseLineMarker.html#addPoint">addPoint</a></li><li><a href="PolyBaseLineMarker.html#animate">animate</a></li><li><a href="PolyBaseLineMarker.html#destruct">destruct</a></li><li><a href="PolyBaseLineMarker.html#detachControl">detachControl</a></li><li><a href="PolyBaseLineMarker.html#dim">dim</a></li><li><a href="PolyBaseLineMarker.html#light">light</a></li><li><a href="PolyBaseLineMarker.html#off">off</a></li><li><a href="PolyBaseLineMarker.html#on">on</a></li><li><a href="PolyBaseLineMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="PolyBaseLineMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="PolyBaseLineMarker.html#setControlMode">setControlMode</a></li><li><a href="PolyBaseLineMarker.html#setPoint">setPoint</a></li><li><a href="PolyBaseLineMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="PolyBaseLineMarker.html#shapeToScene">shapeToScene</a></li><li><a href="PolyBaseLineMarker.html#showControl">showControl</a></li><li><a href="PolyBaseLineMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="PolyCylinderLineMarker.html">PolyCylinderLineMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="PolyCylinderLineMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="PolyCylinderLineMarker.html#color">color</a></li><li><a href="PolyCylinderLineMarker.html#depthTest">depthTest</a></li><li><a href="PolyCylinderLineMarker.html#euler">euler</a></li><li><a href="PolyCylinderLineMarker.html#ID">ID</a></li><li><a href="PolyCylinderLineMarker.html#interactable">interactable</a></li><li><a href="PolyCylinderLineMarker.html#labelScaleFunc">labelScaleFunc</a></li><li><a href="PolyCylinderLineMarker.html#labelsVisible">labelsVisible</a></li><li><a href="PolyCylinderLineMarker.html#length">length</a></li><li><a href="PolyCylinderLineMarker.html#lineWidth">lineWidth</a></li><li><a href="PolyCylinderLineMarker.html#name">name</a></li><li><a href="PolyCylinderLineMarker.html#opacity">opacity</a></li><li><a href="PolyCylinderLineMarker.html#orientation">orientation</a></li><li><a href="PolyCylinderLineMarker.html#points">points</a></li><li><a href="PolyCylinderLineMarker.html#pointsNumber">pointsNumber</a></li><li><a href="PolyCylinderLineMarker.html#position">position</a></li><li><a href="PolyCylinderLineMarker.html#scale">scale</a></li><li><a href="PolyCylinderLineMarker.html#textOptions">textOptions</a></li><li><a href="PolyCylinderLineMarker.html#visible">visible</a></li><li><a href="PolyCylinderLineMarker.html#x">x</a></li><li><a href="PolyCylinderLineMarker.html#y">y</a></li><li><a href="PolyCylinderLineMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="PolyCylinderLineMarker.html#addPoint">addPoint</a></li><li><a href="PolyCylinderLineMarker.html#animate">animate</a></li><li><a href="PolyCylinderLineMarker.html#destruct">destruct</a></li><li><a href="PolyCylinderLineMarker.html#detachControl">detachControl</a></li><li><a href="PolyCylinderLineMarker.html#dim">dim</a></li><li><a href="PolyCylinderLineMarker.html#light">light</a></li><li><a href="PolyCylinderLineMarker.html#off">off</a></li><li><a href="PolyCylinderLineMarker.html#on">on</a></li><li><a href="PolyCylinderLineMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="PolyCylinderLineMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="PolyCylinderLineMarker.html#setControlMode">setControlMode</a></li><li><a href="PolyCylinderLineMarker.html#setPoint">setPoint</a></li><li><a href="PolyCylinderLineMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="PolyCylinderLineMarker.html#shapeToScene">shapeToScene</a></li><li><a href="PolyCylinderLineMarker.html#showControl">showControl</a></li><li><a href="PolyCylinderLineMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="PolyFenceLineMarker.html">PolyFenceLineMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="PolyFenceLineMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="PolyFenceLineMarker.html#color">color</a></li><li><a href="PolyFenceLineMarker.html#depthTest">depthTest</a></li><li><a href="PolyFenceLineMarker.html#euler">euler</a></li><li><a href="PolyFenceLineMarker.html#fenceHeight">fenceHeight</a></li><li><a href="PolyFenceLineMarker.html#ID">ID</a></li><li><a href="PolyFenceLineMarker.html#interactable">interactable</a></li><li><a href="PolyFenceLineMarker.html#labelScaleFunc">labelScaleFunc</a></li><li><a href="PolyFenceLineMarker.html#labelsVisible">labelsVisible</a></li><li><a href="PolyFenceLineMarker.html#length">length</a></li><li><a href="PolyFenceLineMarker.html#lineWidth">lineWidth</a></li><li><a href="PolyFenceLineMarker.html#name">name</a></li><li><a href="PolyFenceLineMarker.html#opacity">opacity</a></li><li><a href="PolyFenceLineMarker.html#orientation">orientation</a></li><li><a href="PolyFenceLineMarker.html#points">points</a></li><li><a href="PolyFenceLineMarker.html#pointsNumber">pointsNumber</a></li><li><a href="PolyFenceLineMarker.html#position">position</a></li><li><a href="PolyFenceLineMarker.html#scale">scale</a></li><li><a href="PolyFenceLineMarker.html#speed">speed</a></li><li><a href="PolyFenceLineMarker.html#style">style</a></li><li><a href="PolyFenceLineMarker.html#textOptions">textOptions</a></li><li><a href="PolyFenceLineMarker.html#visible">visible</a></li><li><a href="PolyFenceLineMarker.html#x">x</a></li><li><a href="PolyFenceLineMarker.html#y">y</a></li><li><a href="PolyFenceLineMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="PolyFenceLineMarker.html#addPoint">addPoint</a></li><li><a href="PolyFenceLineMarker.html#animate">animate</a></li><li><a href="PolyFenceLineMarker.html#destruct">destruct</a></li><li><a href="PolyFenceLineMarker.html#detachControl">detachControl</a></li><li><a href="PolyFenceLineMarker.html#dim">dim</a></li><li><a href="PolyFenceLineMarker.html#light">light</a></li><li><a href="PolyFenceLineMarker.html#off">off</a></li><li><a href="PolyFenceLineMarker.html#on">on</a></li><li><a href="PolyFenceLineMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="PolyFenceLineMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="PolyFenceLineMarker.html#setControlMode">setControlMode</a></li><li><a href="PolyFenceLineMarker.html#setPoint">setPoint</a></li><li><a href="PolyFenceLineMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="PolyFenceLineMarker.html#shapeToScene">shapeToScene</a></li><li><a href="PolyFenceLineMarker.html#showControl">showControl</a></li><li><a href="PolyFenceLineMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="PolygonBaseMarker.html">PolygonBaseMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="PolygonBaseMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="PolygonBaseMarker.html#bottom">bottom</a></li><li><a href="PolygonBaseMarker.html#color">color</a></li><li><a href="PolygonBaseMarker.html#depthTest">depthTest</a></li><li><a href="PolygonBaseMarker.html#euler">euler</a></li><li><a href="PolygonBaseMarker.html#hasBottomCover">hasBottomCover</a></li><li><a href="PolygonBaseMarker.html#hasTopCover">hasTopCover</a></li><li><a href="PolygonBaseMarker.html#ID">ID</a></li><li><a href="PolygonBaseMarker.html#interactable">interactable</a></li><li><a href="PolygonBaseMarker.html#name">name</a></li><li><a href="PolygonBaseMarker.html#opacity">opacity</a></li><li><a href="PolygonBaseMarker.html#orientation">orientation</a></li><li><a href="PolygonBaseMarker.html#position">position</a></li><li><a href="PolygonBaseMarker.html#scale">scale</a></li><li><a href="PolygonBaseMarker.html#top">top</a></li><li><a href="PolygonBaseMarker.html#visible">visible</a></li><li><a href="PolygonBaseMarker.html#x">x</a></li><li><a href="PolygonBaseMarker.html#y">y</a></li><li><a href="PolygonBaseMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="PolygonBaseMarker.html#animate">animate</a></li><li><a href="PolygonBaseMarker.html#destruct">destruct</a></li><li><a href="PolygonBaseMarker.html#detachControl">detachControl</a></li><li><a href="PolygonBaseMarker.html#dim">dim</a></li><li><a href="PolygonBaseMarker.html#light">light</a></li><li><a href="PolygonBaseMarker.html#off">off</a></li><li><a href="PolygonBaseMarker.html#on">on</a></li><li><a href="PolygonBaseMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="PolygonBaseMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="PolygonBaseMarker.html#setControlMode">setControlMode</a></li><li><a href="PolygonBaseMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="PolygonBaseMarker.html#shapeToScene">shapeToScene</a></li><li><a href="PolygonBaseMarker.html#showControl">showControl</a></li><li><a href="PolygonBaseMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="PolygonMarker.html">PolygonMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="PolygonMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="PolygonMarker.html#bottom">bottom</a></li><li><a href="PolygonMarker.html#color">color</a></li><li><a href="PolygonMarker.html#depthTest">depthTest</a></li><li><a href="PolygonMarker.html#euler">euler</a></li><li><a href="PolygonMarker.html#hasBottomCover">hasBottomCover</a></li><li><a href="PolygonMarker.html#hasTopCover">hasTopCover</a></li><li><a href="PolygonMarker.html#ID">ID</a></li><li><a href="PolygonMarker.html#interactable">interactable</a></li><li><a href="PolygonMarker.html#name">name</a></li><li><a href="PolygonMarker.html#opacity">opacity</a></li><li><a href="PolygonMarker.html#orientation">orientation</a></li><li><a href="PolygonMarker.html#position">position</a></li><li><a href="PolygonMarker.html#scale">scale</a></li><li><a href="PolygonMarker.html#top">top</a></li><li><a href="PolygonMarker.html#visible">visible</a></li><li><a href="PolygonMarker.html#x">x</a></li><li><a href="PolygonMarker.html#y">y</a></li><li><a href="PolygonMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="PolygonMarker.html#animate">animate</a></li><li><a href="PolygonMarker.html#destruct">destruct</a></li><li><a href="PolygonMarker.html#detachControl">detachControl</a></li><li><a href="PolygonMarker.html#dim">dim</a></li><li><a href="PolygonMarker.html#light">light</a></li><li><a href="PolygonMarker.html#off">off</a></li><li><a href="PolygonMarker.html#on">on</a></li><li><a href="PolygonMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="PolygonMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="PolygonMarker.html#setControlMode">setControlMode</a></li><li><a href="PolygonMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="PolygonMarker.html#shapeToScene">shapeToScene</a></li><li><a href="PolygonMarker.html#showControl">showControl</a></li><li><a href="PolygonMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="RegularPolygonMarker.html">RegularPolygonMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="RegularPolygonMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="RegularPolygonMarker.html#bottom">bottom</a></li><li><a href="RegularPolygonMarker.html#color">color</a></li><li><a href="RegularPolygonMarker.html#depthTest">depthTest</a></li><li><a href="RegularPolygonMarker.html#euler">euler</a></li><li><a href="RegularPolygonMarker.html#hasBottomCover">hasBottomCover</a></li><li><a href="RegularPolygonMarker.html#hasTopCover">hasTopCover</a></li><li><a href="RegularPolygonMarker.html#ID">ID</a></li><li><a href="RegularPolygonMarker.html#interactable">interactable</a></li><li><a href="RegularPolygonMarker.html#name">name</a></li><li><a href="RegularPolygonMarker.html#opacity">opacity</a></li><li><a href="RegularPolygonMarker.html#orientation">orientation</a></li><li><a href="RegularPolygonMarker.html#position">position</a></li><li><a href="RegularPolygonMarker.html#radius">radius</a></li><li><a href="RegularPolygonMarker.html#scale">scale</a></li><li><a href="RegularPolygonMarker.html#sided">sided</a></li><li><a href="RegularPolygonMarker.html#top">top</a></li><li><a href="RegularPolygonMarker.html#visible">visible</a></li><li><a href="RegularPolygonMarker.html#x">x</a></li><li><a href="RegularPolygonMarker.html#y">y</a></li><li><a href="RegularPolygonMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="RegularPolygonMarker.html#animate">animate</a></li><li><a href="RegularPolygonMarker.html#destruct">destruct</a></li><li><a href="RegularPolygonMarker.html#detachControl">detachControl</a></li><li><a href="RegularPolygonMarker.html#dim">dim</a></li><li><a href="RegularPolygonMarker.html#light">light</a></li><li><a href="RegularPolygonMarker.html#off">off</a></li><li><a href="RegularPolygonMarker.html#on">on</a></li><li><a href="RegularPolygonMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="RegularPolygonMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="RegularPolygonMarker.html#setControlMode">setControlMode</a></li><li><a href="RegularPolygonMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="RegularPolygonMarker.html#shapeToScene">shapeToScene</a></li><li><a href="RegularPolygonMarker.html#showControl">showControl</a></li><li><a href="RegularPolygonMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="Sandbox.html">Sandbox</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Sandbox_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="Sandbox.html#.mat">mat</a></li><li><a href="Sandbox.html#.pose">pose</a></li><li><a href="Sandbox.html#.range">range</a></li><li><a href="Sandbox.html#camera">camera</a></li><li><a href="Sandbox.html#control">control</a></li><li><a href="Sandbox.html#domElement">domElement</a></li><li><a href="Sandbox.html#enableDolly">enableDolly</a></li><li><a href="Sandbox.html#height">height</a></li><li><a href="Sandbox.html#interaction">interaction</a></li><li><a href="Sandbox.html#JSON">JSON</a></li><li><a href="Sandbox.html#renderer">renderer</a></li><li><a href="Sandbox.html#scene">scene</a></li><li><a href="Sandbox.html#sceneRoot">sceneRoot</a></li><li><a href="Sandbox.html#viewerCamera">viewerCamera</a></li><li><a href="Sandbox.html#visibilityCamera">visibilityCamera</a></li><li><a href="Sandbox.html#width">width</a></li><li><a href="Sandbox.html#window">window</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="Sandbox.html#.flyTo">flyTo</a></li><li><a href="Sandbox.html#.flyToCamToEarth">flyToCamToEarth</a></li><li><a href="Sandbox.html#.flyToMat">flyToMat</a></li><li><a href="Sandbox.html#.fromLngLatAlt">fromLngLatAlt</a></li><li><a href="Sandbox.html#.lookAt">lookAt</a></li><li><a href="Sandbox.html#.matToPose">matToPose</a></li><li><a href="Sandbox.html#.screenshot">screenshot</a></li><li><a href="Sandbox.html#.stop">stop</a></li><li><a href="Sandbox.html#.toLngLatAlt">toLngLatAlt</a></li><li><a href="Sandbox.html#add">add</a></li><li><a href="Sandbox.html#calculateDistanceBetweenTwoPoints">calculateDistanceBetweenTwoPoints</a></li><li><a href="Sandbox.html#destruct">destruct</a></li><li><a href="Sandbox.html#earthToScene">earthToScene</a></li><li><a href="Sandbox.html#freeze">freeze</a></li><li><a href="Sandbox.html#generateMask">generateMask</a></li><li><a href="Sandbox.html#lngLatAlt2XYZ">lngLatAlt2XYZ</a></li><li><a href="Sandbox.html#login">login</a></li><li><a href="Sandbox.html#markerSnapshot">markerSnapshot</a></li><li><a href="Sandbox.html#off">off</a></li><li><a href="Sandbox.html#on">on</a></li><li><a href="Sandbox.html#pick">pick</a></li><li><a href="Sandbox.html#pickOnProjects">pickOnProjects</a></li><li><a href="Sandbox.html#polygonsFromGeoJson">polygonsFromGeoJson</a></li><li><a href="Sandbox.html#positionsAltitude">positionsAltitude</a></li><li><a href="Sandbox.html#queryGeoJsonForAltizureProjectMarker">queryGeoJsonForAltizureProjectMarker</a></li><li><a href="Sandbox.html#render">render</a></li><li><a href="Sandbox.html#unfreeze">unfreeze</a></li><li><a href="Sandbox.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="TagMarker.html">TagMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="TagMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="TagMarker.html#color">color</a></li><li><a href="TagMarker.html#depthTest">depthTest</a></li><li><a href="TagMarker.html#euler">euler</a></li><li><a href="TagMarker.html#fixedSize">fixedSize</a></li><li><a href="TagMarker.html#ID">ID</a></li><li><a href="TagMarker.html#interactable">interactable</a></li><li><a href="TagMarker.html#isSprite">isSprite</a></li><li><a href="TagMarker.html#name">name</a></li><li><a href="TagMarker.html#orientation">orientation</a></li><li><a href="TagMarker.html#pinLength">pinLength</a></li><li><a href="TagMarker.html#pivot">pivot</a></li><li><a href="TagMarker.html#position">position</a></li><li><a href="TagMarker.html#scale">scale</a></li><li><a href="TagMarker.html#tagQuaternion">tagQuaternion</a></li><li><a href="TagMarker.html#texture">texture</a></li><li><a href="TagMarker.html#textureAsync">textureAsync</a></li><li><a href="TagMarker.html#visible">visible</a></li><li><a href="TagMarker.html#x">x</a></li><li><a href="TagMarker.html#y">y</a></li><li><a href="TagMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="TagMarker.html#animate">animate</a></li><li><a href="TagMarker.html#destruct">destruct</a></li><li><a href="TagMarker.html#detachControl">detachControl</a></li><li><a href="TagMarker.html#dim">dim</a></li><li><a href="TagMarker.html#light">light</a></li><li><a href="TagMarker.html#off">off</a></li><li><a href="TagMarker.html#on">on</a></li><li><a href="TagMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="TagMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="TagMarker.html#setControlMode">setControlMode</a></li><li><a href="TagMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="TagMarker.html#shapeToScene">shapeToScene</a></li><li><a href="TagMarker.html#showControl">showControl</a></li><li><a href="TagMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="TextTagMarker.html">TextTagMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="TextTagMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="TextTagMarker.html#color">color</a></li><li><a href="TextTagMarker.html#depthTest">depthTest</a></li><li><a href="TextTagMarker.html#euler">euler</a></li><li><a href="TextTagMarker.html#fixedSize">fixedSize</a></li><li><a href="TextTagMarker.html#ID">ID</a></li><li><a href="TextTagMarker.html#interactable">interactable</a></li><li><a href="TextTagMarker.html#isSprite">isSprite</a></li><li><a href="TextTagMarker.html#name">name</a></li><li><a href="TextTagMarker.html#orientation">orientation</a></li><li><a href="TextTagMarker.html#pinLength">pinLength</a></li><li><a href="TextTagMarker.html#pivot">pivot</a></li><li><a href="TextTagMarker.html#position">position</a></li><li><a href="TextTagMarker.html#scale">scale</a></li><li><a href="TextTagMarker.html#tagQuaternion">tagQuaternion</a></li><li><a href="TextTagMarker.html#text">text</a></li><li><a href="TextTagMarker.html#textStyle">textStyle</a></li><li><a href="TextTagMarker.html#texture">texture</a></li><li><a href="TextTagMarker.html#visible">visible</a></li><li><a href="TextTagMarker.html#x">x</a></li><li><a href="TextTagMarker.html#y">y</a></li><li><a href="TextTagMarker.html#z">z</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="TextTagMarker.html#animate">animate</a></li><li><a href="TextTagMarker.html#destruct">destruct</a></li><li><a href="TextTagMarker.html#detachControl">detachControl</a></li><li><a href="TextTagMarker.html#dim">dim</a></li><li><a href="TextTagMarker.html#light">light</a></li><li><a href="TextTagMarker.html#off">off</a></li><li><a href="TextTagMarker.html#on">on</a></li><li><a href="TextTagMarker.html#orientationByHorizontalPoints">orientationByHorizontalPoints</a></li><li><a href="TextTagMarker.html#sceneUpdated">sceneUpdated</a></li><li><a href="TextTagMarker.html#setControlMode">setControlMode</a></li><li><a href="TextTagMarker.html#shapeToEarth">shapeToEarth</a></li><li><a href="TextTagMarker.html#shapeToScene">shapeToScene</a></li><li><a href="TextTagMarker.html#showControl">showControl</a></li><li><a href="TextTagMarker.html#updateVisibility">updateVisibility</a></li></ul></div></li><li><a href="ZoneMarker.html">ZoneMarker</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="ZoneMarker_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="ZoneMarker.html#bottom">bottom</a></li><li><a href="ZoneMarker.html#color">color</a></li><li><a href="ZoneMarker.html#depthTest">depthTest</a></li><li><a href="ZoneMarker.html#hasBottomCover">hasBottomCover</a></li><li><a href="ZoneMarker.html#hasTopCover">hasTopCover</a></li><li><a href="ZoneMarker.html#imgUrl">imgUrl</a></li><li><a href="ZoneMarker.html#opacity">opacity</a></li><li><a href="ZoneMarker.html#tagOrientation">tagOrientation</a></li><li><a href="ZoneMarker.html#tagScale">tagScale</a></li><li><a href="ZoneMarker.html#tagTexture">tagTexture</a></li><li><a href="ZoneMarker.html#textOptions">textOptions</a></li><li><a href="ZoneMarker.html#top">top</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="ZoneMarker.html#destruct">destruct</a></li><li><a href="ZoneMarker.html#onCameraChange">onCameraChange</a></li></ul></div></li></ul></div>
+</nav>
+<div id="resizer"></div>
+
+<div class="main" id="main">
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>PolyCylinderLineMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+<dt>
+    
+        <h4 class="name" id="PolyCylinderLineMarker">
+            
+                new <span class="type-signature"></span>PolyCylinderLineMarker<span class="signature">(markerOptions)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>markerOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>点的位置数组</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lineWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>线的宽度</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>任何可以由THREE.Color解析的东西</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>depthTest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>这个标记是否正在进行深度测试</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>textOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>用于在标签上绘制文本的文本选项</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>labelVisible</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>标签是否可见</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> construction </p>
+    
+    <pre class="prettyprint"><code> let pts = [
+   altizure.LngLatAlt(121.62207076772476, 31.215100709313937, 38.71264891175848),
+   altizure.LngLatAlt(121.62223528048824, 31.215088706573, 19.093825215424204),
+   altizure.LngLatAlt(121.62240077344717, 31.215081359056317, 39.37697345820135),
+   altizure.LngLatAlt(121.62240150082697, 31.21530379856871, 38.812298225319545)
+ ]
+ let defaultTextOptions = {
+   margin: 0,
+   lineHeight: 0.1,
+   align: 'center',
+   fillStyle: 'red',
+   font: 'bold 60px Times New Roman',
+   outlineWidth: 2,
+   outlineStyle: 'black',
+   resetCursorY: true,
+   trimText: true
+ }
+ // modify the text options to draw your desired labels
+ let polyCylinderLineMarker = new altizure.PolyCylinderLineMarker({
+   sandbox: sandbox,
+   points: pts,
+   lineWidth: 0.5,
+   depthTest: true,
+   color: 0xff111,
+   labelsVisible: true,
+   textOptions: defaultTextOptions
+ })</code></pre>
+
+    
+
+</dd>
+
+        
+        </div>
+    
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="PolyBaseLineMarker.html">PolyBaseLineMarker</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+
+<dt>
+<h4 class="name" id="color">
+    <span class="type-signature"></span>color<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置颜色</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#color">PolyBaseLineMarker#color</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change color </p>
+    
+    <pre class="prettyprint"><code> polyCylinderLineMarker.color = 0xff0000 // red</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="depthTest">
+    <span class="type-signature"></span>depthTest<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置深度测试</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#depthTest">PolyBaseLineMarker#depthTest</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change depthTest </p>
+    
+    <pre class="prettyprint"><code> polyCylinderLineMarker.depthTest = false // shoule be in front now</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="euler">
+    <span class="type-signature"></span>euler<span class="type-signature"> :object</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Eular角度表示中的方向。
+{x：绕X轴以弧度为单位的旋转角度，
+ y：弧度，
+ z：弧度，
+ 顺序：旋转顺序，默认'XYZ'}。
+ 用这个代替<code>方向</code> 如果你不熟悉数学。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">object</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#euler">Marker#euler</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/File:Yaw_Axis_Corrected.svg">Eular angle rotation</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set orientation by Eular angles </p>
+    
+    <pre class="prettyprint"><code> marker.euler = {x: Math.PI/6, y: Math.PI/4, z: Math.PI/3} // rotate around X-axis for 30 degree; Y for 45 degree; Z for 60 degree, in that order.
+ marker.euler = {y: Math.PI/2} // rotate around Y-axis for 90 degree.</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="ID">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>ID<span class="type-signature"> :string</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>获取唯一的ID。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">string</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#ID">Marker#ID</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="interactable">
+    <span class="type-signature"></span>interactable<span class="type-signature"> :bool</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>如果标记是可交互的，则设置。设置为true以响应鼠标事件。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">bool</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#interactable">Marker#interactable</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set interactable </p>
+    
+    <pre class="prettyprint"><code> marker.interactable = true // make this marker interactable
+ marker.interactable = !marker.interactable // flip interactable status</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="labelScaleFunc">
+    <span class="type-signature"></span>labelScaleFunc<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置自定义标签缩放行为</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#labelScaleFunc">PolyBaseLineMarker#labelScaleFunc</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Define label scale function </p>
+    
+    <pre class="prettyprint"><code> polyCylinderLineMarker.labelScaleFunc = (lineWidth) => {
+   return 1.0 / (Math.abs(lineWidth) + 5e-3)
+ }</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="labelsVisible">
+    <span class="type-signature"></span>labelsVisible<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置标签的可见性</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#labelsVisible">PolyBaseLineMarker#labelsVisible</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change visibility of the labels </p>
+    
+    <pre class="prettyprint"><code> polyBaseLineMarker.labelsVisible = true // labels visible</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="length">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>length<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>获取线的总长度。</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#length">PolyBaseLineMarker#length</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Get total length </p>
+    
+    <pre class="prettyprint"><code> let totalLength = polyBaseLineMarker.length</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="lineWidth">
+    <span class="type-signature"></span>lineWidth<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置线宽（以米为单位）</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change line width </p>
+    
+    <pre class="prettyprint"><code> polyCylinderLineMarker.lineWidth = polyCylinderLineMarker.lineWidth + 0.5
+ // increase the line width</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="name">
+    <span class="type-signature"></span>name<span class="type-signature"> :string</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>一串名字。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">string</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#name">Marker#name</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set name </p>
+    
+    <pre class="prettyprint"><code> marker.name = 'this marker' // set name as 'this marker'
+ marker.name = marker.name + ' suffix' // extend the name</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="opacity">
+    <span class="type-signature"></span>opacity<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置不透明度</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set opacity </p>
+    
+    <pre class="prettyprint"><code> polyCylinderLineMarker.opacity = 0.32
+ polyCylinderLineMarker.opacity = 1 - polyCylinderLineMarker.opacity</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="orientation">
+    <span class="type-signature"></span>orientation<span class="type-signature"> :object</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>通过均匀四元数{x，y，z，w}设置旋转。
+使用<code>EULAR</code> 相反，如果你不知道如何使用这个。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">object</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#orientation">Marker#orientation</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Quaternion">Quaternion</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set orientation </p>
+    
+    <pre class="prettyprint"><code> marker.orientation = {x: 0, y: 0, z: 0, w: 1}</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="points">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>points<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>获取用于构建此标记的点的列表</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#points">PolyBaseLineMarker#points</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="pointsNumber">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>pointsNumber<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>得到点列表的长度</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#pointsNumber">PolyBaseLineMarker#pointsNumber</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="position">
+    <span class="type-signature"></span>position<span class="type-signature"> :LngLatAlt</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>改变当前位置{lng，lat，alt}。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">LngLatAlt</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#position">Marker#position</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set position </p>
+    
+    <pre class="prettyprint"><code> marker.position = {
+   lng: 113.93977612840078,
+   lat: 22.5364271949327,
+   alt: 12.3
+ }</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="scale">
+    <span class="type-signature"></span>scale<span class="type-signature"> :number</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置标记的比例。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#scale">Marker#scale</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set scale </p>
+    
+    <pre class="prettyprint"><code> marker.scale = 2.0 // set scale to 2.0
+ marker.scale = marker.scale * 2.0 // make it two times bigger</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="textOptions">
+    <span class="type-signature"></span>textOptions<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置文本选项</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#textOptions">PolyBaseLineMarker#textOptions</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Change text options </p>
+    
+    <pre class="prettyprint"><code> polyBaseLineMarker.textOptions = {
+   margin: 0,
+   lineHeight: 0.1,
+   align: 'center',
+   fillStyle: 'red',
+   font: 'bold 60px Times New Roman',
+   outlineWidth: 2,
+   outlineStyle: 'black',
+   resetCursorY: true,
+   trimText: true
+ }</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="visible">
+    <span class="type-signature"></span>visible<span class="type-signature"> :bool</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置标记的可见性。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">bool</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#visible">Marker#visible</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set visible </p>
+    
+    <pre class="prettyprint"><code> marker.visible = false // make this marker invisible
+ marker.visible = !marker.visible // flip visible status</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="x">
+    <span class="type-signature"></span>x<span class="type-signature"> :number</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>在x方向上设置标记的比例。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#x">Marker#x</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set scale x </p>
+    
+    <pre class="prettyprint"><code> marker.x = 2.0 // set scale x to 2.0
+ marker.x = marker.x * 2.0 // make it two times bigger in x direction</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="y">
+    <span class="type-signature"></span>y<span class="type-signature"> :number</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>在y方向上设置标记的比例。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#y">Marker#y</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set scale y </p>
+    
+    <pre class="prettyprint"><code> marker.y = 2.0 // set scale y to 2.0
+ marker.y = marker.y * 2.0 // make it two times bigger in y direction</code></pre>
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="z">
+    <span class="type-signature"></span>z<span class="type-signature"> :number</span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>在z方向上设置标记的比例。</p>
+    </div>
+    
+
+    <!--
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#z">Marker#z</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+    <h5>Example</h5>
+    
+        <p class="code-caption"> Set scale z </p>
+    
+    <pre class="prettyprint"><code> marker.z = 2.0 // set scale z to 2.0
+ marker.z = marker.z * 2.0 // make it two times bigger in z direction</code></pre>
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+                
+
+<dt>
+    
+        <h4 class="name" id="addPoint">
+            
+                <span class="type-signature"></span>addPoint<span class="signature">(lngLatAlt)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>添加一个点到最后。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>lngLatAlt</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">altizure.LngLatAlt</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#addPoint">PolyBaseLineMarker#addPoint</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Add a point </p>
+    
+    <pre class="prettyprint"><code> let pt = new altizure.LngLatAlt(121.62207076772476, 31.215100709313937, 42.71264891175848)
+ polyCylinderLineMarker.addPoint(pt)</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="animate">
+            
+                <span class="type-signature"><span class="icon green">abstract</span> </span>animate<span class="signature">(options)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>传播的事件，正在渲染的新帧。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#animate">Marker#animate</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="destruct">
+            
+                <span class="type-signature"></span>destruct<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>析构函数</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#destruct">PolyBaseLineMarker#destruct</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="detachControl">
+            
+                <span class="type-signature"></span>detachControl<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>分离并隐藏标记的控件小控件</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#detachControl">Marker#detachControl</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Detach control </p>
+    
+    <pre class="prettyprint"><code> marker.detachControl()</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="dim">
+            
+                <span class="type-signature"></span>dim<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Un-highlight the marker. (hide the blue fence of the marker)</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#dim">Marker#dim</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Un-highlight </p>
+    
+    <pre class="prettyprint"><code> marker.dim()</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="light">
+            
+                <span class="type-signature"></span>light<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Highlight the marker. (show the blue fence of the marker)</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#light">Marker#light</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Highlight </p>
+    
+    <pre class="prettyprint"><code> marker.light()</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="off">
+            
+                <span class="type-signature"></span>off<span class="signature">(eventType, handler)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>从事件中取消注册处理程序。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>handler</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#off">Marker#off</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Un-register interaction events </p>
+    
+    <pre class="prettyprint"><code> marker.off('click')
+ marker.off('mouseover')
+ marker.off('mouseenter')
+ marker.off('mouseleave')</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="on">
+            
+                <span class="type-signature"></span>on<span class="signature">(eventType, handler)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>用处理程序注册一个事件。
+注意：一个事件只能有一个处理程序。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>'click'，'mouseover'，'mouseenter'，'mouseleave'</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>handler</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>事件处理器</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#on">Marker#on</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Register interaction events </p>
+    
+    <pre class="prettyprint"><code> marker.on('click', function (event) {
+   console.log('click on marker ', marker, event)
+ })
+ marker.on('mouseover', function (event) {
+   console.log('mouse over marker ', marker, event)
+ })
+ marker.on('mouseenter', function (event) {
+   console.log('mouse enter marker ', marker, event)
+ })
+ marker.on('mouseleave', function (event) {
+   console.log('mouse leave marker ', marker, event)
+ })
+ marker.interactable = true // the marker must be interactable for events to take effects</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="orientationByHorizontalPoints">
+            
+                <span class="type-signature"></span>orientationByHorizontalPoints<span class="signature">(pts, flip)</span><span class="type-signature"> &rarr; {Quaternion}</span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>从水平点得到重新定位的方向</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;LngLatAlt></span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>flip</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Quaternion</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#orientationByHorizontalPoints">Marker#orientationByHorizontalPoints</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="sceneUpdated">
+            
+                <span class="type-signature"><span class="icon green">abstract</span> </span>sceneUpdated<span class="signature">(options)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>传播的定期事件处理程序。当场景内容更新时触发。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#sceneUpdated">Marker#sceneUpdated</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="setControlMode">
+            
+                <span class="type-signature"></span>setControlMode<span class="signature">(mode)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>设置控件Gizmo的模式</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>mode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>控件gizmo'translate'，'rotate'的模式</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#setControlMode">Marker#setControlMode</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Set the mode of the control </p>
+    
+    <pre class="prettyprint"><code> marker.setControlMode('translate')
+ marker.setControlMode('rotate')</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="setPoint">
+            
+                <span class="type-signature"></span>setPoint<span class="signature">(index, lngLatAlt)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>将索引点设置为lngLatAlt</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lngLatAlt</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">altizure.LngLatAlt</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PolyBaseLineMarker.html#setPoint">PolyBaseLineMarker#setPoint</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> set the point </p>
+    
+    <pre class="prettyprint"><code> let pt = new altizure.LngLatAlt(121.62207076772476, 31.215100709313937, 42.71264891175848)
+ polyCylinderLineMarker.setPoint(polyCylinderLineMarker.pointsNumber - 1, pt) // set the last point to be pt
+ // polyCylinderLineMarker.setPoint(0, pt) // set first point to be pt
+ // polyCylinderLineMarker.setPoint(1, pt) // set second point to be pt</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="shapeToEarth">
+            
+                <span class="type-signature"></span>shapeToEarth<span class="signature">()</span><span class="type-signature"> &rarr; {Matrix4}</span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>从shapeHolder-space到地球空间的变换矩阵</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Matrix4</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#shapeToEarth">Marker#shapeToEarth</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="shapeToScene">
+            
+                <span class="type-signature"></span>shapeToScene<span class="signature">()</span><span class="type-signature"> &rarr; {Matrix4}</span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>从shapeHolder-space到scene-root的变换矩阵</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Matrix4</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#shapeToScene">Marker#shapeToScene</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="showControl">
+            
+                <span class="type-signature"></span>showControl<span class="signature">(mode)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>播放标记的{index}巡视路线</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>mode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>控件gizmo的模式：'translate'，'rotate'</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#showControl">Marker#showControl</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption"> Show control </p>
+    
+    <pre class="prettyprint"><code> marker.showControl('translate') // show control used for translate
+ marker.showControl('rotate') // show control used for rotate</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="updateVisibility">
+            
+                <span class="type-signature"><span class="icon green">abstract</span> </span>updateVisibility<span class="signature">(options)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>传播事件，屏幕可见性正在更新。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Marker.html#updateVisibility">Marker#updateVisibility</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<footer>
+    <img class="logo" src="https://cdn-china.altizure.cn/public/images/apple-touch-icon-180.png" style="width: 20px; height: 20px">
+    <div class="footer-text">Everest Innovation Technology</div>
+</footer>
+<script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+    <script>
+        var id = 'PolyCylinderLineMarker_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
+</body>
+</html>
