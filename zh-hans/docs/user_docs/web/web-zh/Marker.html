@@ -59,10 +59,10 @@
     
         <h2><span class="attribs"><span class="type-signature"><span class="icon green">abstract</span> </span></span>Marker<span class="signature">(markerOptions)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description"><p>所有标记类的基础。</p>
-<p>使用指定的选项创建要插入到沙箱中的标记。
-如果指定了沙箱（别名：地球），则在构建时将标记添加到沙箱中。</p>
-<p>标记空间是起源于指定位置的当地Cooridnate系统。 X向东，Y向北，Z沿地球正常。</p></div>
+            <div class="class-description"><mn><p>这是所有marker类的基础。</p>
+<p>使用指定的选项创建要插入到Sandbox中的marker。
+如果指定了Sandbox（别名：earth），则在构建时将marker添加到Sandbox中。</p>
+<p>marker空间是在指定位置建立的局部坐标系统，以东为x轴，以北为y轴，以地面垂直方向为z轴。</p></mn></div>
         
     
 </header>
@@ -89,7 +89,7 @@
 
     
     <div class="description">
-        <p>创建标记的实例。</p>
+        <mn><p>创建marker的实例。</p></mn>
     </div>
     
 
@@ -198,7 +198,7 @@
                 </td>
             
 
-            <td class="description last"><p>标记位置</p></td>
+            <td class="description last"><mn><p>marker的位置</p></mn></td>
         </tr>
 
     
@@ -233,7 +233,7 @@
                 </td>
             
 
-            <td class="description last"><p>标记附加的地球</p></td>
+            <td class="description last"><mn><p>添加marker的地球</p></mn></td>
         </tr>
 
     
@@ -307,7 +307,7 @@
                 </td>
             
 
-            <td class="description last"><p>显示标记</p></td>
+            <td class="description last"><mn><p>显示marker</p></mn></td>
         </tr>
 
     
@@ -346,7 +346,7 @@
                 </td>
             
 
-            <td class="description last"><p>标记的名称</p></td>
+            <td class="description last"><mn><p>marker的名称</p></mn></td>
         </tr>
 
     
@@ -385,7 +385,7 @@
                 </td>
             
 
-            <td class="description last"><p>这个标记是否会响应鼠标事件</p></td>
+            <td class="description last"><mn><p>这个marker是否会响应鼠标事件</p></mn></td>
         </tr>
 
     
@@ -422,7 +422,7 @@
                 </td>
             
 
-            <td class="description last"><p>标记的路线数据</p></td>
+            <td class="description last"><mn><p>marker的路线数据</p></mn></td>
         </tr>
 
     
@@ -525,12 +525,12 @@
 <dd>
     
     <div class="description">
-        <p>Eular角度表示中的方向。
+        <mn><p>Eular角度表示的方向。
 {x：绕X轴以弧度为单位的旋转角度，
  y：弧度，
  z：弧度，
- 顺序：旋转顺序，默认'XYZ'}。
- 用这个代替<code>方向</code> 如果你不熟悉数学。</p>
+ order：旋转顺序，默认'XYZ'}。
+  如果你对数学不熟悉，可以用这个概念代替下文中提到的<code>orientation</code>。</p></mn>
     </div>
     
 
@@ -693,7 +693,7 @@
 <dd>
     
     <div class="description">
-        <p>如果标记是可交互的，则设置。设置为true以响应鼠标事件。</p>
+        <mn><p>设置marker是否可以交互，设置为true则表示该marker会响应鼠标事件。</p></mn>
     </div>
     
 
@@ -775,7 +775,7 @@
 <dd>
     
     <div class="description">
-        <p>一串名字。</p>
+        <mn><p>名字构成的字符串。</p></mn>
     </div>
     
 
@@ -857,8 +857,8 @@
 <dd>
     
     <div class="description">
-        <p>通过均匀四元数{x，y，z，w}设置旋转。
-使用<code>EULAR</code> 相反，如果你不知道如何使用这个。</p>
+        <mn><p>使用quaternion四元数{x，y，z，w}设置旋转参数。
+如果你不知道如何使用这个，可以使用<code>eular</code> 代替。</p></mn>
     </div>
     
 
@@ -946,7 +946,7 @@
 <dd>
     
     <div class="description">
-        <p>改变当前位置{lng，lat，alt}。</p>
+        <mn><p>改变marker当前位置{lng 经度，lat 纬度，alt 高度}。</p></mn>
     </div>
     
 
@@ -1031,7 +1031,7 @@
 <dd>
     
     <div class="description">
-        <p>设置标记的比例。</p>
+        <mn><p>设置marker的比例。</p></mn>
     </div>
     
 
@@ -1113,7 +1113,7 @@
 <dd>
     
     <div class="description">
-        <p>设置标记的可见性。</p>
+        <mn><p>设置marker的可见性。</p></mn>
     </div>
     
 
@@ -1195,7 +1195,7 @@
 <dd>
     
     <div class="description">
-        <p>在x方向上设置标记的比例。</p>
+        <mn><p>设置marker在x方向上的比例。</p></mn>
     </div>
     
 
@@ -1277,7 +1277,7 @@
 <dd>
     
     <div class="description">
-        <p>在y方向上设置标记的比例。</p>
+        <mn><p>设置marker在y方向上的比例。</p></mn>
     </div>
     
 
@@ -1359,7 +1359,7 @@
 <dd>
     
     <div class="description">
-        <p>在z方向上设置标记的比例。</p>
+        <mn><p>设置marker在z方向上的比例。</p></mn>
     </div>
     
 
@@ -1452,7 +1452,7 @@
 
     
     <div class="description">
-        <p>传播的事件，正在渲染的新帧。</p>
+        <p>传播事件，正在渲染的新帧。</p>
     </div>
     
 
@@ -1586,7 +1586,7 @@
 
     
     <div class="description">
-        <p>从沙箱中移除该标记并释放占用的资源。</p>
+        <mn><p>从Sandbox中移除该marker并释放占用的资源。</p></mn>
     </div>
     
 
@@ -1677,7 +1677,7 @@
 
     
     <div class="description">
-        <p>分离并隐藏标记的控件小控件</p>
+        <mn><p>分离并隐藏marker的Gizmo控件</p></mn>
     </div>
     
 
@@ -1768,7 +1768,7 @@
 
     
     <div class="description">
-        <p>Un-highlight the marker. (hide the blue fence of the marker)</p>
+        <mn><p>取消突出显示marker（隐藏marker的蓝色高亮边界）。</p></mn>
     </div>
     
 
@@ -1859,7 +1859,7 @@
 
     
     <div class="description">
-        <p>Highlight the marker. (show the blue fence of the marker)</p>
+        <mn><p>突出显示marker（显示marker的蓝色高亮边界）。</p></mn>
     </div>
     
 
@@ -2482,7 +2482,7 @@
 
     
     <div class="description">
-        <p>传播的定期事件处理程序。当场景内容更新时触发。</p>
+        <mn><p>传播的定期事件处理程序，当场景内容更新时触发。</p></mn>
     </div>
     
 
@@ -2616,7 +2616,7 @@
 
     
     <div class="description">
-        <p>设置控件Gizmo的模式</p>
+        <mn><p>设置Gizmo控件的模式</p></mn>
     </div>
     
 
@@ -2668,7 +2668,7 @@
 
             
 
-            <td class="description last"><p>控件gizmo'translate'，'rotate'的模式</p></td>
+            <td class="description last"><mn><p>Gizmo控件的模式：'translate'，'rotate'</p></mn></td>
         </tr>
 
     
@@ -2758,7 +2758,7 @@
 
     
     <div class="description">
-        <p>从shapeHolder-space到地球空间的变换矩阵</p>
+        <mn><p>从shapeHolder空间到earth空间的变换矩阵</p></mn>
     </div>
     
 
@@ -2861,7 +2861,7 @@
 
     
     <div class="description">
-        <p>从shapeHolder-space到scene-root的变换矩阵</p>
+        <mn><p>从shapeHolder空间到场景根的变换矩阵</p></mn>
     </div>
     
 
@@ -2964,7 +2964,7 @@
 
     
     <div class="description">
-        <p>播放标记的{index}巡视路线</p>
+        <mn><p>播放marker的巡视动画的路线{index索引}</p></mn>
     </div>
     
 
@@ -3016,7 +3016,7 @@
 
             
 
-            <td class="description last"><p>控件gizmo的模式：'translate'，'rotate'</p></td>
+            <td class="description last"><mn><p>Gizmo控件的模式：'translate'，'rotate'</p></mn></td>
         </tr>
 
     

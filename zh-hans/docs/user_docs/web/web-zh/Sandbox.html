@@ -363,7 +363,7 @@
 
             
 
-            <td class="description last"><p>'CN'或'Inter'。默认'CN'</p></td>
+            <td class="description last"><mn><p>地区，'CN'或'Inter'，默认'CN'。</p></mn></td>
         </tr>
 
     
@@ -436,7 +436,7 @@
 
             
 
-            <td class="description last"><p>打开动画设置</p>
+            <td class="description last"><mn><p>打开动画的设置</p></mn>
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -489,7 +489,7 @@
 
             
 
-            <td class="description last"><p>动画开始相机姿势（lat，lng，alt，north，tilt）</p></td>
+            <td class="description last"><mn><p>动画开始时的相机姿态（纬度，经度，高度，方位角，俯角）</p></mn></td>
         </tr>
 
     
@@ -522,7 +522,7 @@
 
             
 
-            <td class="description last"><p>动画结束相机姿势</p></td>
+            <td class="description last"><mn><p>动画结束时的相机姿态</p></mn></td>
         </tr>
 
     
@@ -562,7 +562,7 @@
 
             
 
-            <td class="description last"><p>渲染什么</p>
+            <td class="description last"><mn><p>渲染内容</p></mn>
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -662,7 +662,7 @@
                 </td>
             
 
-            <td class="description last"><p>呈现卫星图像</p></td>
+            <td class="description last"><mn><p>渲染卫星图像</p></mn></td>
         </tr>
 
     
@@ -701,7 +701,7 @@
                 </td>
             
 
-            <td class="description last"><p>提供altizure特色项目</p></td>
+            <td class="description last"><mn><p>渲染altizure特色项目</p></mn></td>
         </tr>
 
     
@@ -779,7 +779,7 @@
                 </td>
             
 
-            <td class="description last"><p>gl背景透明</p></td>
+            <td class="description last"><mn><p>背景是否透明</p></mn></td>
         </tr>
 
     
@@ -816,7 +816,7 @@
                 </td>
             
 
-            <td class="description last"><p>gl背景不透明度</p></td>
+            <td class="description last"><mn><p>背景不透明度</p></mn></td>
         </tr>
 
     
@@ -853,7 +853,7 @@
                 </td>
             
 
-            <td class="description last"><p>gl背景颜色</p></td>
+            <td class="description last"><mn><p>背景颜色</p></mn></td>
         </tr>
 
     
@@ -890,7 +890,7 @@
                 </td>
             
 
-            <td class="description last"><p>gl背景图像</p></td>
+            <td class="description last"><mn><p>背景图像</p></mn></td>
         </tr>
 
     
@@ -929,7 +929,7 @@
                 </td>
             
 
-            <td class="description last"><p>渲染AltizureProjectMarker（森林大小）的质量，范围[1，100]</p></td>
+            <td class="description last"><mn><p>AltizureProjectMarker的渲染质量，范围为[1，100]</p></mn></td>
         </tr>
 
     
@@ -1050,7 +1050,7 @@
 <dd>
     
     <div class="description">
-        <p>获取当前姿势下矩阵的元素</p>
+        <p>获取当前姿态下矩阵的元素</p>
     </div>
     
 
@@ -1114,7 +1114,7 @@
 <dd>
     
     <div class="description">
-        <p>设置相机的姿势</p>
+        <p>设置相机的姿态</p>
     </div>
     
 
@@ -1178,7 +1178,7 @@
 <dd>
     
     <div class="description">
-        <p>设置倾斜和alt的范围</p>
+        <mn><p>设置俯角和高度的范围</p></mn>
     </div>
     
 
@@ -1242,19 +1242,19 @@
 <dd>
     
     <div class="description">
-        <p>Camera interface.</p>
-<p>camera.pose (setter and getter) set or get the pose. pose: {lng, lat, alt, north, tilt}</p>
-<p>camera.range (setter) set the range for tilt and alt. camera.range = {tilt: {max: ..., min: ...}, alt: {max: ..., min: ...}}</p>
-<p>camera.flyTo(p, duration = 2500), p is the pose, duration is fly time in ms. returns a promise which resolves when fly ends.</p>
-<p>camera.stop(), stop flying</p>
-<p>camera.lookAt(marker, north, tilt, alt, duration = 3000), marker is arbitrary marker, north is the pose north, tile is the pose tilt, alt is the alt over marker, duration is the fly time duration.</p>
-<p>or</p>
-<p>camera.lookAt(marker, pose, duration = 3000), pose is an object with three keys, north, tilt and alt. example of pose: {north: 40, tilt, 30, alt: undefined}
-the method will fly to the pose and returns a promise resolve when fly ends.</p>
-<p>camera.matToPose(mat), mat is the matrix element. returns the corresonding pose: {lng, lat, alt, north, tilt}</p>
-<p>camera.mat (getter) get the matrix element in current pose: number[]</p>
-<p>camera.flyToMat(mat, duration = 3000), mat is the matrix element, duration is fly time in ms. returns a promise which resolves when fly ends.</p>
-<p>camera.flyToCamToEarth(mat, duration = 2500), mat is the matrix element, duration is fly time in ms. returns a promise which resolves when fly ends.</p>
+        <mn><p>Camera 接口</p>
+<p>camera.pose (setter and getter) 设置或得到姿态。 pose: {lng, lat, alt, north, tilt}（north：方位角，与正北方的夹角；tilt：俯角，与水平方向向下的夹角）</p>
+<p>camera.range (setter) 设置方位角和俯角的范围。 camera.range = {tilt: {max: ..., min: ...}, alt: {max: ..., min: ...}}</p>
+<p>camera.flyTo(p, duration = 2500), p 是相机姿态, duration 是以毫秒为单位的飞行时间，飞行结束时返回promise。</p>
+<p>camera.stop(), 停止飞行。</p>
+<p>camera.lookAt(marker, north, tilt, alt, duration = 3000), marker 是任意marker, north 姿态的方位角, tile 姿态的俯角, alt 是相机距marker的相对高度, duration 飞行的持续时间。</p>
+<p>或者</p>
+<p>camera.lookAt(marker, pose, duration = 3000), pose 是有三个关键词的对象，包括方位角、俯角和高度。例如 pose: {north: 40, tilt, 30, alt: undefined}
+这个方法将使相机飞到这个姿态并在飞行结束时返回promise。</p>
+<p>camera.matToPose(mat), mat 是矩阵的元素，返回相应的姿态 pose: {lng, lat, alt, north, tilt}</p>
+<p>camera.mat (getter) 根据目前姿态得到矩阵元素 pose: number[]</p>
+<p>camera.flyToMat(mat, duration = 3000), mat 是矩阵元素, duration 是以毫秒为单位的事件，在飞行结束时返回promise。</p>
+<p>camera.flyToCamToEarth(mat, duration = 2500), mat 是矩阵元素，duration是以毫秒为单位的持续时间，在飞行结束时返回promise。</p>
     </div>
     
 
@@ -1451,7 +1451,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>启用地球小车。</p>
+        <mn><p>启用地球移动（Dolly指延屏幕中心方向前后移动相机）。</p></mn>
     </div>
     
 
@@ -1520,7 +1520,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>帆布的高度。</p>
+        <mn><p>画布的高度。</p></mn>
     </div>
     
 
@@ -1648,7 +1648,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>一个json对象描述当前场景</p>
+        <mn><p>一个描述当前场景的json对象</p></mn>
     </div>
     
 
@@ -1712,7 +1712,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>Threejs WebGLRenderer。</p>
+        <mn><p>Threejs WebGL 渲染器。</p></mn>
     </div>
     
 
@@ -1781,7 +1781,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>threejs现场</p>
+        <mn><p>threejs 场景</p></mn>
     </div>
     
 
@@ -1850,7 +1850,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>地球的现场根（地球空间）</p>
+        <mn><p>地球场景根（地球空间）</p></mn>
     </div>
     
 
@@ -1919,7 +1919,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>Threejs相机。</p>
+        <mn><p>Threejs 相机。</p></mn>
     </div>
     
 
@@ -2059,7 +2059,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>画布的宽度。</p>
+        <mn><p>画布的宽度。</p></mn>
     </div>
     
 
@@ -2123,10 +2123,10 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 <dd>
     
     <div class="description">
-        <p>屏幕空间操作。</p>
+        <mn><p>屏幕和空间的操作。</p>
 <p>window.toLngLatAlt（{x，y}）返回LngLatAlt</p>
 <p>window.fromLngLatAlt（{lng，lat，alt}）返回{x，y}</p>
-<p>window.screenshot（）返回{width：number，height：number，data：number []，值是从0到255的整数}</p>
+<p>window.screenshot（）返回{width：number，height：number，data：number []，值是从0到255的整数}</p></mn>
     </div>
     
 
@@ -2201,7 +2201,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
     
     <div class="description">
-        <p>从当前姿势飞行到输入姿势。该过程会花费持续时间（毫秒）</p>
+        <mn><p>从当前姿态飞行到输入姿态，该过程会持续一定时间（毫秒）</p></mn>
     </div>
     
 
@@ -2253,7 +2253,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
             
 
-            <td class="description last"><p>{lng，lat，all，north，tilt}</p></td>
+            <td class="description last"><mn><p>{lng经度，lat纬度，alt高度，north方位角，tilt俯角}</p></mn></td>
         </tr>
 
     
@@ -2377,7 +2377,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
     
     <div class="description">
-        <p>飞行到由矩阵元素表示的姿势</p>
+        <p>飞行到由矩阵元素表示的姿态</p>
     </div>
     
 
@@ -2487,7 +2487,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
 
 - <ul>
-<li>在航班结束时解决</li>
+<li>在飞行结束时解决</li>
 </ul>
 
 
@@ -2557,7 +2557,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
     
     <div class="description">
-        <p>飞行到由矩阵元素表示的姿势</p>
+        <p>飞行到由矩阵元素表示的姿态</p>
     </div>
     
 
@@ -2667,7 +2667,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
 
 - <ul>
-<li>在航班结束时解决</li>
+<li>在飞行结束时解决</li>
 </ul>
 
 
@@ -2737,7 +2737,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
     
     <div class="description">
-        <p>从LngLatAlt点获取屏幕空间x，y</p>
+        <mn><p>根据LngLatAlt点获取屏幕空间x，y</p></mn>
     </div>
     
 
@@ -2890,7 +2890,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
     
     <div class="description">
-        <p>look at the marker. the camera will fly to appropriate position to look at it with specified north and tilt.</p>
+        <mn><p>察看marker，相机将飞到合适的位置并以特定的俯角和方位角察看</p></mn>
     </div>
     
 
@@ -2942,8 +2942,8 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
             
 
-            <td class="description last"><p>arbitrary marker</p>
-<p>the pose can be input by each attributes</p></td>
+            <td class="description last"><mn><p>任意marker</p></mn>
+<mn><p>姿态可由输入的各个属性来确定</p></mn></td>
         </tr>
 
     
@@ -2966,7 +2966,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
             
 
-            <td class="description last"><p>姿势的北部</p></td>
+            <td class="description last"><mn><p>相机姿态的方位角（与正北方的夹角）</p></mn></td>
         </tr>
 
     
@@ -2989,7 +2989,7 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
             
 
-            <td class="description last"><p>姿势的倾斜</p></td>
+            <td class="description last"><mn><p>相机姿态的俯角（与水平方向向下的夹角）</p></mn></td>
         </tr>
 
     
@@ -3012,8 +3012,8 @@ the method will fly to the pose and returns a promise resolve when fly ends.</p>
 
             
 
-            <td class="description last"><p>the alt over the marker
-the pose may also be input as object</p></td>
+            <td class="description last"><mn><p>相机相对于marker的高度
+，相机姿态也可作为对象输入</p></mn></td>
         </tr>
 
     
@@ -3036,7 +3036,7 @@ the pose may also be input as object</p></td>
 
             
 
-            <td class="description last"><p>{north, tilt, alt}</p></td>
+            <td class="description last"><mn><p>{north方位角, tilt俯角, alt高度}</p></mn></td>
         </tr>
 
     
@@ -3059,7 +3059,7 @@ the pose may also be input as object</p></td>
 
             
 
-            <td class="description last"><p>fly time duration</p></td>
+            <td class="description last"><mn><p>飞行持续时间</p></mn></td>
         </tr>
 
     
@@ -3212,7 +3212,7 @@ the pose may also be input as object</p></td>
 
             
 
-            <td class="description last"><p>相机对地球空间</p></td>
+            <td class="description last"><mn><p>由相机到地球空间</p></mn></td>
         </tr>
 
     
@@ -3246,9 +3246,9 @@ the pose may also be input as object</p></td>
 
 
 
-- <ul>
-<li>{lng，lat，alt，up，north，tilt}</li>
-</ul>
+- <mn><ul>
+<li>{lng经度，lat纬度，alt高度，up，north方位角，tilt俯角}</li>
+</ul></mn>
 
 
 
@@ -3365,7 +3365,7 @@ the pose may also be input as object</p></td>
 
             
 
-            <td class="description last"><p>{width: required width, height: required height}</p></td>
+            <td class="description last"><mn><p>{width: 要求的宽度, height: 要求的高度}</p></mn></td>
         </tr>
 
     
@@ -3820,7 +3820,7 @@ the pose may also be input as object</p></td>
 
             
 
-            <td class="description last"><p>选项来创建标记</p></td>
+            <td class="description last"><mn><p>创建marker的选项</p></mn></td>
         </tr>
 
     
@@ -3921,7 +3921,7 @@ the pose may also be input as object</p></td>
 
     
     <div class="description">
-        <p>计算两个LngLatAlt点之间的距离（以米为单位）</p>
+        <mn><p>计算两个点之间的空间距离（以米为单位）</p></mn>
     </div>
     
 
@@ -4030,9 +4030,9 @@ the pose may also be input as object</p></td>
 
 
 
-- <ul>
-<li>以米为单位的两点之间的距离</li>
-</ul>
+- <mn><ul>
+<li>以米为单位的两点之间的空间距离</li>
+</ul></mn>
 
 
 
@@ -4303,7 +4303,7 @@ the pose may also be input as object</p></td>
 
     
     <div class="description">
-        <p>冻结地球轨道控制。 （轨道，漩涡，小车）</p>
+        <mn><p>冻结地球轨道控制。 （orbit 轨道，swirl 旋转，dolly 移动）（swirl指地球延屏幕中心垂直方向旋转，dolly指延屏幕中心方向前后移动相机）</p></mn>
     </div>
     
 
@@ -4411,7 +4411,7 @@ the pose may also be input as object</p></td>
 
     
     <div class="description">
-        <p>使用给定的标记生成快照，并将该颜色用作其快照中的ID</p>
+        <mn><p>对给定的marker生成快照，并将颜色用作其快照的ID</p></mn>
     </div>
     
 
@@ -4479,7 +4479,7 @@ the pose may also be input as object</p></td>
                 </td>
             
 
-            <td class="description last"><p>数组lngLatAlt形式点</p></td>
+            <td class="description last"><mn><p>以点的lngLatAlt(经度纬度高度)组成的数组</p></mn></td>
         </tr>
 
     
@@ -4514,7 +4514,7 @@ the pose may also be input as object</p></td>
                 </td>
             
 
-            <td class="description last"><p>高度范围以米为单位。例如{min：0，max：40}</p></td>
+            <td class="description last"><mn><p>高度范围，以米为单位。例如{min：0，max：40}</p></mn></td>
         </tr>
 
     
@@ -4549,7 +4549,7 @@ the pose may also be input as object</p></td>
                 </td>
             
 
-            <td class="description last"><p>标记阵列</p></td>
+            <td class="description last"><mn><p>marker组成的数组</p></mn></td>
         </tr>
 
     
@@ -4588,7 +4588,7 @@ the pose may also be input as object</p></td>
                 </td>
             
 
-            <td class="description last"><p>返回缓冲区的较大边的长度</p></td>
+            <td class="description last"><mn><p>返回的缓冲区的较长边的边长</p></mn></td>
         </tr>
 
     
@@ -4624,16 +4624,16 @@ the pose may also be input as object</p></td>
 
 - <ul>
 <li>{
-掩码：{
-缓冲区：UintArray8，
-分辨率：数字，
-分辨率宽度：分辨率区域的宽度，
+mask：{
+buffer：UintArray8，
+resolution：Numeric，
+ resolutionwidth：分辨率区域的宽度，
 resolutionheight：分辨率区域的高度，
-尺寸：缓冲区尺寸{宽度，高度}，
-bbox：边界框lngLatAlt形式
+dimension：缓冲区尺寸{宽度，高度}，
+bbox：lngLatAlt（经度纬度高度）形式的边界框
 }，
-映射：{
- 一些颜色标识：一些标记
+mapping：{
+ some color ids：一些marker
 }
 }</li>
 </ul>
@@ -4710,7 +4710,7 @@ bbox：边界框lngLatAlt形式
 
     
     <div class="description">
-        <p>将地球坐标空间中的LngLatAlt转换为THREE.Vector3</p>
+        <mn><p>将LngLatAlt（经度纬度高度）转换为THREE.Vector3格式</p></mn>
     </div>
     
 
@@ -4961,7 +4961,7 @@ bbox：边界框lngLatAlt形式
 
     
     <div class="description">
-        <p>拍摄指定对象进行渲染的有界区域的快照</p>
+        <mn><p>对指定渲染对象的有界区域拍摄快照</p></mn>
     </div>
     
 
@@ -5029,7 +5029,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>数组lngLatAlt形式点</p></td>
+            <td class="description last"><mn><p>以点的lngLatAlt(经度纬度高度)组成的数组</p></mn></td>
         </tr>
 
     
@@ -5064,7 +5064,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>高度范围以米为单位。例如{min：0，max：40}</p></td>
+            <td class="description last"><mn><p>高度范围，以米为单位。例如{min：0，max：40}</p></mn></td>
         </tr>
 
     
@@ -5099,7 +5099,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>要呈现的对象数组</p></td>
+            <td class="description last"><p>要渲染的对象的数组</p></td>
         </tr>
 
     
@@ -5138,7 +5138,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>其结果是深度缓冲或不</p></td>
+            <td class="description last"><mn><p>其结果是否为深度图</p></mn></td>
         </tr>
 
     
@@ -5177,7 +5177,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>返回缓冲区的较大边的长度</p></td>
+            <td class="description last"><mn><p>返回的缓冲区的较长边的边长</p></mn></td>
         </tr>
 
     
@@ -5213,12 +5213,12 @@ bbox：边界框lngLatAlt形式
 
 - <ul>
 <li>{
-缓冲区：UintArray8，
-分辨率：数字，
-分辨率宽度：分辨率区域的宽度，
+buffer：UintArray8，
+ resolution：Numeric，
+resolutionwidth：分辨率区域的宽度，
 resolutionheight：分辨率区域的高度，
-尺寸：缓冲区尺寸{宽度，高度}，
-bbox：边界框lngLatAlt形式
+dimension：缓冲区尺寸{宽度，高度}，
+bbox：lngLatAlt（经度纬度高度）形式的边界框
 }</li>
 </ul>
 
@@ -5499,7 +5499,7 @@ bbox：边界框lngLatAlt形式
 
     
     <div class="description">
-        <p>活动注册。</p>
+        <mn><p>事件注册。</p></mn>
     </div>
     
 
@@ -5656,7 +5656,7 @@ bbox：边界框lngLatAlt形式
 
     
     <div class="description">
-        <p>在指定的鼠标事件位置选取地球上的点。</p>
+        <mn><p>使用指定的鼠标事件选取地球上的点。</p></mn>
     </div>
     
 
@@ -5708,7 +5708,7 @@ bbox：边界框lngLatAlt形式
 
             
 
-            <td class="description last"><p>鼠标/触摸事件</p></td>
+            <td class="description last"><p>鼠标/触碰事件</p></td>
         </tr>
 
     
@@ -5743,7 +5743,7 @@ bbox：边界框lngLatAlt形式
 
 
 - <ul>
-<li>与地球的接触点</li>
+<li>接触点在地球上的位置</li>
 </ul>
 
 
@@ -5884,7 +5884,7 @@ domElement.addEventListener('mousedown', function (event) {
 
             
 
-            <td class="description last"><p>鼠标/触摸事件</p></td>
+            <td class="description last"><p>鼠标/触碰事件</p></td>
         </tr>
 
     
@@ -5918,9 +5918,9 @@ domElement.addEventListener('mousedown', function (event) {
 
 
 
-- <ul>
-<li>与任何AltizureProjectMarker的联络点，<code>未定义</code> 如果不与项目联系</li>
-</ul>
+- <mn><ul>
+<li>返回与任何AltizureProjectMarker的接触点，如果返回<code>undefined</code>则说明与项目没有接触</li>
+</ul></mn>
 
 
 
@@ -6170,7 +6170,7 @@ domElement.addEventListener('mousedown', function (event) {
 
     
     <div class="description">
-        <p>计算职位列表的高度。</p>
+        <mn><p>计算一系列位置的高度。</p></mn>
     </div>
     
 
@@ -6222,7 +6222,7 @@ domElement.addEventListener('mousedown', function (event) {
 
             
 
-            <td class="description last"><p>以{lng，lat}形式表示的LngLatAlt位置或位置阵列。</p></td>
+            <td class="description last"><mn><p>LngLatAlt位置或以{lng 经度，lat 纬度}形式的数组。</p></mn></td>
         </tr>
 
     
@@ -6245,7 +6245,7 @@ domElement.addEventListener('mousedown', function (event) {
 
             
 
-            <td class="description last"><p>一系列altizure项目标记。用于减少此功能的负载。</p></td>
+            <td class="description last"><mn><p>altizure项目marker的数组，用于减少此功能的负载。</p></mn></td>
         </tr>
 
     
@@ -6279,9 +6279,9 @@ domElement.addEventListener('mousedown', function (event) {
 
 
 
-- <ul>
-<li>每个职位的高度</li>
-</ul>
+- <mn><ul>
+<li>每个位置的高度</li>
+</ul></mn>
 
 
 
@@ -6503,7 +6503,7 @@ domElement.addEventListener('mousedown', function (event) {
 
     
     <div class="description">
-        <p>更改（altizureProject）标记的渲染模式。</p>
+        <mn><p>更改（altizureProject）marker的渲染模式。</p></mn>
     </div>
     
 

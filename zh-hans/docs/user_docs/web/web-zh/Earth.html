@@ -59,7 +59,7 @@
     
         <h2><span class="attribs"><span class="type-signature"></span></span>Earth<span class="signature">(divname, earthOptions<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description"><p>在指定的divElement中创建一个地球。</p></div>
+            <div class="class-description"><mn><p>在指定的divElement中创建一个地球。</p></mn></div>
         
     
 </header>
@@ -177,7 +177,7 @@
 
             
 
-            <td class="description last"><mn><p>创建地球的初始选项。</p></mn>
+            <td class="description last"><mn><p>初始化地球的选项。</p></mn>
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -289,7 +289,7 @@
 
             
 
-            <td class="description last"><p>在程度上</p></td>
+            <td class="description last"><mn><p>以度为单位</p></mn></td>
         </tr>
 
     
@@ -322,7 +322,7 @@
 
             
 
-            <td class="description last"><p>在程度上</p></td>
+            <td class="description last"><mn><p>以度为单位</p></mn></td>
         </tr>
 
     
@@ -355,7 +355,7 @@
 
             
 
-            <td class="description last"><p>米以上的地面</p></td>
+            <td class="description last"><mn><p>距地面的高度(即距WGS84椭球的高度)，以米为单位</p></mn></td>
         </tr>
 
     
@@ -452,7 +452,7 @@
 
             
 
-            <td class="description last"><p>在程度上</p></td>
+            <td class="description last"><mn><p>以度为单位</p></mn></td>
         </tr>
 
     
@@ -485,7 +485,7 @@
 
             
 
-            <td class="description last"><p>在程度上</p></td>
+            <td class="description last"><mn><p>以度为单位</p></mn></td>
         </tr>
 
     
@@ -529,7 +529,7 @@
                 </td>
             
 
-            <td class="description last"><p>项目（不）被渲染</p>
+            <td class="description last"><mn><p>项目是否被渲染</p></mn>
                 <h6>Properties</h6>
                 
 <table class="params">
@@ -629,7 +629,7 @@
                 </td>
             
 
-            <td class="description last"><p>特色项目。默认为true</p></td>
+            <td class="description last"><mn><p>视野中的特色项目，默认为true</p></mn></td>
         </tr>
 
     
@@ -675,7 +675,7 @@
                 </td>
             
 
-            <td class="description last"><p>在开发模式。默认为false。</p></td>
+            <td class="description last"><mn><p>开发模式，默认为false。</p></mn></td>
         </tr>
 
     
@@ -869,7 +869,7 @@
 <dd>
     
     <div class="description">
-        <p>启用地球小车。</p>
+        <mn><p>启用地球移动（Dolly指延屏幕中心方向前后移动相机）。</p></mn>
     </div>
     
 
@@ -933,7 +933,7 @@
 <dd>
     
     <div class="description">
-        <p>Threejs WebGLRenderer。</p>
+        <mn><p>Threejs WebGL 渲染器。</p></mn>
     </div>
     
 
@@ -997,7 +997,7 @@
 <dd>
     
     <div class="description">
-        <p>threejs现场</p>
+        <mn><p>threejs 场景</p></mn>
     </div>
     
 
@@ -1061,7 +1061,7 @@
 <dd>
     
     <div class="description">
-        <p>地球的现场根（地球空间）</p>
+        <mn><p>地球场景根（地球空间）</p></mn>
     </div>
     
 
@@ -1125,7 +1125,7 @@
 <dd>
     
     <div class="description">
-        <p>Threejs相机。</p>
+        <mn><p>Threejs 相机。</p></mn>
     </div>
     
 
@@ -1200,7 +1200,7 @@
 
     
     <div class="description">
-        <p>计算两个LngLatAlt点之间的距离（以米为单位）</p>
+        <mn><p>计算两个点之间的空间距离（以米为单位）</p></mn>
     </div>
     
 
@@ -1309,9 +1309,9 @@
 
 
 
-- <ul>
-<li>以米为单位的两点之间的距离</li>
-</ul>
+- <mn><ul>
+<li>以米为单位的两点之间的空间距离</li>
+</ul></mn>
 
 
 
@@ -1586,7 +1586,7 @@
 
     
     <div class="description">
-        <p>冻结地球轨道控制。 （轨道，漩涡，小车）</p>
+        <mn><p>冻结地球轨道控制。 （orbit 轨道，swirl 旋转，dolly 移动）（swirl指地球延屏幕中心垂直方向旋转，dolly指延屏幕中心方向前后移动相机）</p></mn>
     </div>
     
 
@@ -1689,7 +1689,7 @@
 
     
     <div class="description">
-        <p>使用给定的标记生成快照，并将该颜色用作其快照中的ID</p>
+        <mn><p>对给定的marker生成快照，并将颜色用作其快照的ID</p></mn>
     </div>
     
 
@@ -1757,7 +1757,7 @@
                 </td>
             
 
-            <td class="description last"><p>数组lngLatAlt形式点</p></td>
+            <td class="description last"><mn><p>以点的lngLatAlt(经度纬度高度)组成的数组</p></mn></td>
         </tr>
 
     
@@ -1792,7 +1792,7 @@
                 </td>
             
 
-            <td class="description last"><p>高度范围以米为单位。例如{min：0，max：40}</p></td>
+            <td class="description last"><mn><p>高度范围，以米为单位。例如{min：0，max：40}</p></mn></td>
         </tr>
 
     
@@ -1827,7 +1827,7 @@
                 </td>
             
 
-            <td class="description last"><p>标记阵列</p></td>
+            <td class="description last"><mn><p>marker组成的数组</p></mn></td>
         </tr>
 
     
@@ -1866,7 +1866,7 @@
                 </td>
             
 
-            <td class="description last"><p>返回缓冲区的较大边的长度</p></td>
+            <td class="description last"><mn><p>返回的缓冲区的较长边的边长</p></mn></td>
         </tr>
 
     
@@ -1902,16 +1902,16 @@
 
 - <ul>
 <li>{
-掩码：{
-缓冲区：UintArray8，
-分辨率：数字，
-分辨率宽度：分辨率区域的宽度，
+mask：{
+buffer：UintArray8，
+resolution：Numeric，
+ resolutionwidth：分辨率区域的宽度，
 resolutionheight：分辨率区域的高度，
-尺寸：缓冲区尺寸{宽度，高度}，
-bbox：边界框lngLatAlt形式
+dimension：缓冲区尺寸{宽度，高度}，
+bbox：lngLatAlt（经度纬度高度）形式的边界框
 }，
-映射：{
- 一些颜色标识：一些标记
+mapping：{
+ some color ids：一些marker
 }
 }</li>
 </ul>
@@ -1983,7 +1983,7 @@ bbox：边界框lngLatAlt形式
 
     
     <div class="description">
-        <p>将地球坐标空间中的LngLatAlt转换为THREE.Vector3</p>
+        <mn><p>将LngLatAlt（经度纬度高度）转换为THREE.Vector3格式</p></mn>
     </div>
     
 
@@ -2145,7 +2145,7 @@ bbox：边界框lngLatAlt形式
 
     
     <div class="description">
-        <p>拍摄指定对象进行渲染的有界区域的快照</p>
+        <mn><p>对指定渲染对象的有界区域拍摄快照</p></mn>
     </div>
     
 
@@ -2213,7 +2213,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>数组lngLatAlt形式点</p></td>
+            <td class="description last"><mn><p>以点的lngLatAlt(经度纬度高度)组成的数组</p></mn></td>
         </tr>
 
     
@@ -2248,7 +2248,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>高度范围以米为单位。例如{min：0，max：40}</p></td>
+            <td class="description last"><mn><p>高度范围，以米为单位。例如{min：0，max：40}</p></mn></td>
         </tr>
 
     
@@ -2283,7 +2283,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>要呈现的对象数组</p></td>
+            <td class="description last"><p>要渲染的对象的数组</p></td>
         </tr>
 
     
@@ -2322,7 +2322,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>其结果是深度缓冲或不</p></td>
+            <td class="description last"><mn><p>其结果是否为深度图</p></mn></td>
         </tr>
 
     
@@ -2361,7 +2361,7 @@ bbox：边界框lngLatAlt形式
                 </td>
             
 
-            <td class="description last"><p>返回缓冲区的较大边的长度</p></td>
+            <td class="description last"><mn><p>返回的缓冲区的较长边的边长</p></mn></td>
         </tr>
 
     
@@ -2397,12 +2397,12 @@ bbox：边界框lngLatAlt形式
 
 - <ul>
 <li>{
-缓冲区：UintArray8，
-分辨率：数字，
-分辨率宽度：分辨率区域的宽度，
+buffer：UintArray8，
+ resolution：Numeric，
+resolutionwidth：分辨率区域的宽度，
 resolutionheight：分辨率区域的高度，
-尺寸：缓冲区尺寸{宽度，高度}，
-bbox：边界框lngLatAlt形式
+dimension：缓冲区尺寸{宽度，高度}，
+bbox：lngLatAlt（经度纬度高度）形式的边界框
 }</li>
 </ul>
 
@@ -2521,7 +2521,7 @@ bbox：边界框lngLatAlt形式
 
     
     <div class="description">
-        <p>在指定的鼠标事件位置选取地球上的点。</p>
+        <mn><p>使用指定的鼠标事件选取地球上的点。</p></mn>
     </div>
     
 
@@ -2573,7 +2573,7 @@ bbox：边界框lngLatAlt形式
 
             
 
-            <td class="description last"><p>鼠标/触摸事件</p></td>
+            <td class="description last"><p>鼠标/触碰事件</p></td>
         </tr>
 
     
@@ -2608,7 +2608,7 @@ bbox：边界框lngLatAlt形式
 
 
 - <ul>
-<li>与地球的接触点</li>
+<li>接触点在地球上的位置</li>
 </ul>
 
 
@@ -2744,7 +2744,7 @@ domElement.addEventListener('mousedown', function (event) {
 
             
 
-            <td class="description last"><p>鼠标/触摸事件</p></td>
+            <td class="description last"><p>鼠标/触碰事件</p></td>
         </tr>
 
     
@@ -2778,9 +2778,9 @@ domElement.addEventListener('mousedown', function (event) {
 
 
 
-- <ul>
-<li>与任何AltizureProjectMarker的联络点，<code>未定义</code> 如果不与项目联系</li>
-</ul>
+- <mn><ul>
+<li>返回与任何AltizureProjectMarker的接触点，如果返回<code>undefined</code>则说明与项目没有接触</li>
+</ul></mn>
 
 
 
