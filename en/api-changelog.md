@@ -1,5 +1,29 @@
 # Changelog of Altizure GraphQL API
 
+### 1.9.0
+
+__Release data:__
+August. 10th, 2018
+
+__New features:__
+* Added options: taskType in mutation: startReconstructionWithError, for starting different task types
+* Automatically create thumbnail for every newly imported model
+* Added new fields: assetStorage, visibility, coupon and modelPerProject etc in MembershipInfo in User object, to query current membership details
+* Added query: support.membershipPlans for querying membership plans information
+* Added new field: savePaymentMethod in User object, to indicate whether to store the payment method in Braintree or not
+* Added new args: savePaymentMethod in mutation: updateMyProfile, to remove any existing payment methods stored
+* Added query: Sandbox.collaborators relay connection
+* Added super query: userTransactions
+* Added new field: lastDoneGP in Project
+* Added mutation: payMembershipBraintree to pay for membership plan via Braintree
+
+__Change:__
+* Allowed renewing membership without extending existing period in super/sales api
+* Added args: sortBy + search in query my.favouriteProjects and my.favouriteSandboxes
+
+__Fixes:__
+* Fixed setting the correct GP as last done GP in project upgrade transaction, instead of the current GP
+
 ### 1.8.6
 
 __Release data:__
