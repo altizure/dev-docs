@@ -33,7 +33,7 @@ The user token is the kind of access token that the app obtains after a user aut
 
 ## 4. GraphQL API
 
-Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.org/learn/). The API allows developers to fetch and modify the data on Altizure. Learn more at [GraphGL API](api.md)
+Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.org/learn/). The API allows developers to fetch and modify the data on Altizure. Learn more at [GraphQL API](api.md)
 
 ## 5. Javascript SDK
 
