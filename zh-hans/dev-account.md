@@ -13,34 +13,34 @@
 
 登陆或注册您的 Altizure 账号。
 
-![进入界面](img/account/dev-account-1.png)
+![进入界面](img/account/dev-account-1.PNG)
 
-![进入界面](img/account/dev-account-2.png)
+![进入界面](img/account/dev-account-2.PNG)
 
 如果您还没有注册 Altizure 账号，赶快点击 “建立新账号” ，加入 Altizure 大家庭，享受实景三维带来的乐趣。
 
-![登陆或注册 Altizure 账号](img/account/dev-account-3.png)
+![登陆或注册 Altizure 账号](img/account/dev-account-3.PNG)
 
-![注册 Altizure 新账号](img/account/dev-account-4.png)
+![注册 Altizure 新账号](img/account/dev-account-4.PNG)
 
 当然，您注册成功后还要授权给Altizure Developer，才可以进行下一步的操作。
 
-![给予 Altizure developer 账号授权](img/account/dev-account-5.png)
+![给予 Altizure developer 账号授权](img/account/dev-account-5.PNG)
 
 #### 1.2 验证注册邮箱
 为了方便我们给您提供更加强大的技术支持，一个有效的邮箱也是不可或缺的。
 
-![邮箱验证](img/account/dev-account-6.png)
+![邮箱验证](img/account/dev-account-6.PNG)
 
 一封验证邮件将发送到您注册时所使用的邮箱中。
 
 小提示：如果没有收到验证邮件，请检查一下您的垃圾箱、已删除或者广告邮件。
 
-![验证邮件](img/account/dev-account-7.png)
+![验证邮件](img/account/dev-account-7.PNG)
 
 看到这个界面，说明您的验证邮箱已经通过啦。
 
-![邮箱验证成功](img/account/dev-account-8.png)
+![邮箱验证成功](img/account/dev-account-8.PNG)
 
 ## 2. Altizure 开发者账号
 #### 2.1 申请开发者账号
@@ -49,20 +49,23 @@
 
 在这里填入您的公司信息，以加快开发者账号的审核速度。
 
-![申请开发者账号](img/account/dev-account-9.png)
+![申请开发者账号](img/account/dev-account-9.PNG)
 
 #### 2.2 等待审核通过
 
-![查看申请状态](img/account/dev-account-10.png)
+![查看申请状态](img/account/dev-account-10.PNG)
 
 提交信息后，我们将在5个工作日内回复您，并欢迎您随时与客服联系以获得最新审核进度。
 
-![待审核](img/account/dev-account-11.png)
+![待审核](img/account/dev-account-11.PNG)
 
 当您的账号状态变为“通过审核”时，说明您已获得了开发者的所有权限，您可以添加应用并获得开发所必须的“APP Key”，在此之后，您就可以在 Altizure 的世界中尽情发挥想象力了。
 
-![通过审核](img/account/dev-account-12.png)
+![通过审核](img/account/dev-account-12.PNG)
 
+在这里，您可以创建您的 APP 并得到您的 APP Key。
+
+![appkey](img/account/appkey.png)
 
 
 

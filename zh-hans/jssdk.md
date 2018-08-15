@@ -100,7 +100,7 @@ python -m SimpleHTTPServer
 
 您也可以访问[演示页面](https://altizure.github.io/sdk.examples/1-1-altizure-earth/index.html)观看这段代码的效果。
 
-![Altizure地球](img/account/jssdk.png)
+![Altizure地球](img/account/jssdk.PNG)
 
 只要三步，我们便创建出了一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
