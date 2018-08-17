@@ -1,5 +1,22 @@
 # Changelog of Altizure GraphQL API
 
+### 1.9.1
+
+__Release data:__
+August. 17th, 2018
+
+__New features:__
+* Added support for paying coins or membership plan via Alipay web and mobile
+* Added transaction types: AlipayBuyMembership
+* Added super/sales query: refundAliPay
+* Added super/sales query: allGQLEvents
+
+__Change:__
+* Renamed mutation: createAliPayOrder to createAliPayCoinsOrder
+
+__Fixes:__
+* Fixed setting OAuth apps domains to not to include the protocol
+
 ### 1.9.0
 
 __Release data:__
