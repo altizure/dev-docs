@@ -28,7 +28,7 @@ Please do not leak the App secret in frontend web development. Just use it only 
 
 ## 3. User token
 
-The user token is the kind of access token that the app obtains after a user authorizes the application. With this token, an authorized app can fetch user's information on Altizure. Altizure provides an authentication workflow based on OAuth 2.0. Hence, users' passwords are safe and never passed to any third party apps. An app should save user token if it wants to keep the login status, but it should not never induce other users to give password and save it for their own needs. On the user side, users can revoke a user token at anytime to prevent the app from accessing personal information.
+The user token is the kind of access token that the app obtains after a user authorizes the application. With this token, an authorized app can fetch user's information on Altizure. Altizure provides an authentication workflow based on OAuth 2.0. Hence, users' passwords are safe and never passed to any third party apps. An app should save user token if it wants to keep the login status, but it should not never induce other users to give password and save it for their own needs. On the user side, users can revoke a user token anytime to prevent the app from accessing personal information.
 
 
 ## 4. GraphQL API
