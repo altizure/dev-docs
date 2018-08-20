@@ -13,7 +13,7 @@ Then you can apply for [developer account](dev-account.md). All development tool
 
 App is the basic unit of application management on Altizure Development Platform. Each application also has it own unique app key, app secret, and authority level.
 
-It would be better for developers to create differnt Apps and assign them to separate businesses and workflows respectively.
+It would be better for developers to create different Apps and assign them to separate businesses and workflows respectively.
 
 
 ##### App key
@@ -28,12 +28,12 @@ Please do not leak the App secret in frontend web development. Just use it only 
 
 ## 3. User token
 
-The user token is the kind of access token that the app obtains after a user authorizes the application. With this token, an authorized app can fetch user's information on Altizure. Altizure provides an authentication workflow based on OAuth 2.0. Hence, users' passwords are safe and never passed to any third party apps. An app should save user token if it wants to keep the login status, but it should not never induce other users to give password and save it for their own needs. On the user side, users can revoke a user token at anytime to prevent the app from accessing personal information.
+The user token is the kind of access token that the app obtains after a user authorizes the application. With this token, an authorized app can fetch user's information on Altizure. Altizure provides an authentication workflow based on OAuth 2.0. Hence, users' passwords are safe and never passed to any third party apps. An app should save user token if it wants to keep the login status, but it should not never induce other users to give password and save it for their own needs. On the user side, users can revoke a user token anytime to prevent the app from accessing personal information.
 
 
 ## 4. GraphQL API
 
-Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.org/learn/). The API allows developers to fetch and modify the data on Altizure. Learn more at [GraphGL API](api.md)
+Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.org/learn/). The API allows developers to fetch and modify the data on Altizure. Learn more at [GraphQL API](api.md)
 
 ## 5. Javascript SDK
 

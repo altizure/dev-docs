@@ -21,6 +21,9 @@ Given the STS, images could be uploaded via any compatible protocol or library t
 
 In order to keep track of the state, just before an image is uploaded, call mutation `startImageUpload(id)` to signal the start of the process. When the upload is done, call mutation `doneImageUpload(id)`.
 
+flow chart:
+![flow](img/oss_en.jpg)
+
 
 ### 4. Upload to S3
 If a S3 bucket is chosen, uploading is much simpler.

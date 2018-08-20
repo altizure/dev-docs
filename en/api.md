@@ -38,7 +38,7 @@ Now please fill the following query string to the query section to calculate how
 
 ```
 query {
-  support {
+  utility {
     sizeToGigaPixel(width: 4000, height: 3000, numImg: 100)
   }
 }
@@ -65,7 +65,7 @@ $.ajax({
       altitoken: 'user token',
       key: 'app key'
     },
-    data: 'query=' + 'GraphGL query string'
+    data: 'query=' + 'GraphQL query string'
   })
 ```
 
@@ -99,7 +99,7 @@ Please follow the above tutorial and browse [api.altizure.cn/graphql](https://ap
 
 * Learn more about [GraphQL](http://graphql.org/learn/)
 * Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application
-* More tools on GraphQL: [Awesome GraphGL](https://github.com/chentsulin/awesome-graphql)
+* More tools on GraphQL: [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
 
 ---
 

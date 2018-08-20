@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Concepts](concepts.md)
 * [Developer Account](dev-account.md)
-* [GraphGL API](api.md)
+* [GraphQL API](api.md)
   * [3D Reconstruction](api-reconstruction.md)
   * [Images Upload](upload.md)
   * [API Reference](https://api.altizure.com/graphql)
