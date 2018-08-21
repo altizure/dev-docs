@@ -1,5 +1,11 @@
 {
   "title": "Altizure Open Platform Documentation",
   "description": "Altizure Development Platform. Unleash the power of realistic 3D models",
-  "author": "Altizure Team"
+  "author": "Altizure Team",
+  "links": {
+      "sidebar": {
+        "Altizure Developers": "https://developers.altizure.com",
+        "Altizure.com": "https://www.altizure.com"
+      }
+    }
 }
