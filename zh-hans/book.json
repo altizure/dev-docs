@@ -2,4 +2,10 @@
   "title": "Altizure 开发平台文档",
   "description": "关注 Altizure 开发平台，释放实景三维的无穷魅力",
   "author": "Altizure 开发团队"
+  "links": {
+      "sidebar": {
+        "Altizure 开发平台": "https://developers.altizure.cn",
+        "Altizure.cn": "https://www.altizure.cn"
+      }
+    }
 }
