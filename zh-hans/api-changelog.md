@@ -1,5 +1,28 @@
 # Altizure GraphQL API 更新日志
 
+### 1.9.2
+
+__Release data:__
+August. 24th, 2018
+
+__New features:__
+* Added initialCamPos in Project.modelTransform, for getting the initial position when rendering a project
+* Added input argument: initialCamPos in mutation.setProjectProperties for setting initial camera position
+* Added input argument: maxPolarAngle in mutation.setProjectProperties for setting maximum polar angle
+* Added input argument: onLoadTrans in mutation.setProjectProperties for setting on load transform of model
+* Added mutation: setProjectCropMask for setting crop mask
+* Added mutation: setProjectWaterMask for setting water mask
+* Added private fields: phone + phoneVerified in User object
+* Added mutation: requestPhoneVerification for sending SMS to registered phone
+* Added mutation: verifyPhone for verifying SMS code
+* Supported sending notification alerts via SMS to verified phone
+
+__Change:__
+* Allowed setting user phone number + whether to receive sms alert in mutation: updateMyProfile
+
+__Fixes:__
+* Fixed setting membership plan name
+
 ### 1.9.1
 
 __Release data:__
