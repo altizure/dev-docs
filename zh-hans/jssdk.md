@@ -122,7 +122,7 @@ python -m SimpleHTTPServer
 
 您也可以直接访问 [SDK demo](https://altizure.github.io/sdk.examples/examples.sdk.html) 来直接尝试各种范例的效果。
 
-SDK中的控件和接口的使用方法在 [SDK 文档](ref://zh-hans/docs/user_docs/web/) 中有详细的解释。
+SDK中的控件和接口的使用方法在 [SDK 文档](ref://docs/user_docs/web/) 中有详细的解释。
 
 对范例和使用方法有任何疑问可以在 [issue page](https://github.com/altizure/sdk.examples/issues) 中进行提问和交流。
 
@@ -167,7 +167,11 @@ SDK中的控件和接口的使用方法在 [SDK 文档](ref://zh-hans/docs/user_
 
 ## 3. 常见问题
 
-可以访问[常见问题](jssdk-faq.md)了解更多常见问题解答。[演示应用](jssdk-demo.md)页面展示了更加复杂的 Altizure JavaScript SDK 应用范例。访问[详细文档](ref://docs/user_docs/web/)了解更多细节。
+可以访问[常见问题](jssdk-faq.md)了解更多常见问题解答。
+
+[演示应用](jssdk-demo.md)页面展示了更加复杂的 Altizure JavaScript SDK 应用范例。
+
+访问[详细文档](ref://docs/user_docs/web/)了解更多细节。
 
 ## 4. 了解更多
 
