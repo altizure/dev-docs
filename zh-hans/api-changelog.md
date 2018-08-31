@@ -1,5 +1,25 @@
 # Altizure GraphQL API 更新日志
 
+### 1.9.3
+
+__Release data:__
+August. 31th, 2018
+
+__New features:__
+* Added new type of membership plan for upgrading between plans
+* Added trial state in user.developer.status
+* Added query: support.developerProgram for showing the details of developer program
+* Added mutation: payDeveloperBraintree for paying developer program via Braintree
+* Added mutation: createAliPayDeveloperOrder for paying developer program via Alipay
+
+__Change:__
+* Added args: filter in query: support.membershipPlans for querying `Normal` or `Upgrade` or `All` plans
+* Updated mutation: uploadImageS3 so that the `image` field no longer needed to be queried for creating the `ProjectImage`, only the url is required now
+* Updated mutation: uploadMetaFileS3 so that the `file` field no longer needed to be queried for creating the `ProjectMetaFile`, only the url is required now
+
+__Fixes:__
+* Fixed undefined error when querying User.membershipState if no user token is provided
+
 ### 1.9.2
 
 __Release data:__
