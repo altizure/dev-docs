@@ -1,5 +1,27 @@
 # Changelog of Altizure GraphQL API
 
+### 1.9.4
+
+__Release data:__
+September. 7th, 2018
+
+__New features:__
+* Added new field: importedModels in Project for querying all of the imported models of a project
+* Added Search.sandboxes for searching sandbox by names
+* Supported signing in by verified phone number and one time password sent via SMS
+* Added mutation: requestLoginCode for getting one time password over SMS
+* Added mutation: getUserTokenByLoginCode for getting self-issued user token from verified phone and one time password
+
+__Change:__
+* Each mobile phone number could only be associated with one account
+* Allowed setting logo for sandbox
+* Allowed setting visibility and logo for imported projects
+* Mutation: getUserToken would not throw GraphQL error if credentials are incorrect, would only return null instead
+
+__Fixes:__
+* Fixed type errors of Project.onEarch, SandboxEntity.pid, SandboxEntity.tid
+* Fixed sandbox mutations by respecting related membership plan
+
 ### 1.9.3
 
 __Release data:__
