@@ -1,5 +1,21 @@
 # Altizure GraphQL API 更新日志
 
+### 1.9.5
+
+__Release data:__
+September. 14th, 2018
+
+__New features:__
+* Added mutations: browseProject + unbrowseProject for tracking which projects are browsed
+* Added query: my.browsingHistory for listing all the projects that have been viewed
+
+__Change:__
+* Hide Chinese projects if user's country is not China, Hong Kong, Taiwan, Macao and Singapore
+
+__Fixes:__
+* Fixed getting the correct values of Project.initialCamPos, instead of zero values
+* Fixed normalizing phone number, all non-digit characters are stripped, e.g. +852-123456789 is equivalent to 852123456789
+
 ### 1.9.4
 
 __Release data:__
