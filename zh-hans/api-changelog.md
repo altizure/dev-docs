@@ -1,5 +1,13 @@
 # Altizure GraphQL API 更新日志
 
+### 1.9.6
+
+__Release data:__
+October. 5th, 2018
+
+__Fixes:__
+* Fixed default value of `range` of geoNearProjects
+
 ### 1.9.5
 
 __Release data:__
