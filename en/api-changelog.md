@@ -1,5 +1,22 @@
 # Changelog of Altizure GraphQL API
 
+### 1.9.7
+
+__Release data:__
+October. 12th, 2018
+
+__New features:__
+* Added new fields: error and errorCode in Project for giving the error of reconstruction or model conversion
+
+__Improvements:__
+* Non China staff-picked or paid projects are available in Cloudfront
+
+__Change:__
+* Changed type: ProjectDiagnostic.error as a list of errors instead of a single error
+
+__Fixes:__
+* Fixed getting user.freeGPQuota in super query
+
 ### 1.9.6
 
 __Release data:__
