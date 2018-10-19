@@ -1,5 +1,17 @@
 # Changelog of Altizure GraphQL API
 
+### 1.9.8
+
+__Release data:__
+October. 19th, 2018
+
+__New features:__
+* Added super mutation: removeProject
+
+__Change:__
+* .com returns cloudfront paths of thumbnails for non-logined user, while .cn returns ali-cdn
+* Lowered the minimum size of image from ~8 MegaPixel to ~2 MegaPixel for calculating the GP usage, effectively lowering the cost of projects with small images
+
 ### 1.9.7
 
 __Release data:__
