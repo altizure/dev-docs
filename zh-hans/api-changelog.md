@@ -1,5 +1,20 @@
 # Altizure GraphQL API 更新日志
 
+### 1.9.9
+
+__Release data:__
+November. 2nd, 2018
+
+__New features:__
+* Added new user setting for subscribing promotional emails
+
+__Change:__
+* Updated the design of user verification and reset password emails
+
+__Fixes:__
+* Fixed infinite pending of processing imported model
+* Fixed long waiting time for setting thumbnail via CN api
+
 ### 1.9.8
 
 __Release data:__
