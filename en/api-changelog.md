@@ -1,5 +1,21 @@
 # Changelog of Altizure GraphQL API
 
+### 1.10.0
+
+__Release data:__
+November. 9th, 2018
+
+__New features:__
+* Added User.language for storing the preferred display language
+* Added GET handler (api.altizure.com/subscribe/news?email=abc@gmail.com&locale=zh_tw) for subscribing promotional emails
+
+__Change:__
+* Added new args: language in mutation: updateMyProfile
+
+__Fixes:__
+* Fixed releasing incorrect number of membership coupons
+* Fixed auto-starting stalled projects created in mobile apps
+
 ### 1.9.9
 
 __Release data:__
