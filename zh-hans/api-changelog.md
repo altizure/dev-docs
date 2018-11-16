@@ -1,5 +1,16 @@
 # Altizure GraphQL API 更新日志
 
+### 1.10.1
+
+__Release data:__
+November. 16th, 2018
+
+__New features:__
+* Added super/sales query/mutation for getting/setting weekly recommended projects
+
+__Fixes:__
+* Caught invalid project flight id when querying Project.flight
+
 ### 1.10.0
 
 __Release data:__
