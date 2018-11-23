@@ -1,5 +1,14 @@
 # Changelog of Altizure GraphQL API
 
+### 2.0.0
+
+__Release data:__
+November. 23rd, 2018
+
+__New features:__
+* Added mutation: makeLODImage for making LOD tiles of an user uploaded image
+* Added field: lod in type: ProjectImage for showing the state and other meta info of tilings of this image
+
 ### 1.10.1
 
 __Release data:__
