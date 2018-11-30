@@ -1,5 +1,17 @@
 # Changelog of Altizure GraphQL API
 
+### 2.0.1
+
+__Release data:__
+November. 30th, 2018
+
+__New features:__
+* Added an alternative way of uploading images via direct urls using mutation: uploadImageURL
+* Supported importing images from Dropbox
+
+__Change:__
+* Updated USDCNY rate to match prices in Taoboa Shop
+
 ### 2.0.0
 
 __Release data:__
