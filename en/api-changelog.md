@@ -1,5 +1,20 @@
 # Changelog of Altizure GraphQL API
 
+### 2.0.2
+
+__Release data:__
+December. 14th, 2018
+
+__New features:__
+* Added field: isChina in type: Project to distinguish if it is a project from China
+* Supported importing images from Google Drive
+* Added query: utility.poseEstimation for estimating camera pose from 5 pairs of 2D and 3D points
+
+__Change:__
+* Hide all projects from China if user's country is not China, Hong Kong, Taiwan, Macao or Singapore
+* Supported uploading images from private links via bearer token
+* Updated mutation: browseProject to increment Project.views and not to check in the same record in browsing history within a day
+
 ### 2.0.1
 
 __Release data:__
