@@ -1,5 +1,19 @@
 # Changelog of Altizure GraphQL API
 
+### 2.0.3
+
+__Release data:__
+December. 21st, 2018
+
+__New features:__
+* Added new query: support.allDevices for listing all sample capturing devices
+* Added new query: project.relatedProjectsWithCursor for getting related projects with relay cursor
+* Added public field: membershipPlan in type: User
+
+__Change:__
+* Updated query: search.projects to search display names or descriptions for all public projects or imported models
+* Query project.relatedProjects is deprecated
+
 ### 2.0.2
 
 __Release data:__
