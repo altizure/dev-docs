@@ -1,5 +1,13 @@
 # Changelog of Altizure GraphQL API
 
+### 2.0.4
+
+__Release data:__
+December. 28th, 2018
+
+__New features:__
+* Added new mutation: uploadModelMinio for uploading models to minio server
+
 ### 2.0.3
 
 __Release data:__
