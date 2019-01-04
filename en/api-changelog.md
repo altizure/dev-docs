@@ -1,5 +1,13 @@
 # Changelog of Altizure GraphQL API
 
+### 2.0.5
+
+__Release data:__
+January. 4th, 2019
+
+__New features:__
+* Added query: utility.sim3DEstimation for estimating similarity transformation from 3 or more pairs of corresponding 3D points
+
 ### 2.0.4
 
 __Release data:__
