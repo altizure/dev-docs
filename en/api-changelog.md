@@ -1,5 +1,18 @@
 # Changelog of Altizure GraphQL API
 
+### 2.0.6
+
+__Release data:__
+January. 18th, 2019
+
+__Change:__
+* Updated calculation of user.freeGPQuota. Global GP quota is reset to zero now.
+
+__Fixes:__
+* Fixed image LOD undefined state error
+* Fixed banning user to post or update comment
+* Fixed hiding project geo-location when privacy is set
+
 ### 2.0.5
 
 __Release data:__
