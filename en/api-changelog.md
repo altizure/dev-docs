@@ -1,5 +1,23 @@
 # Changelog of Altizure GraphQL API
 
+### 2.1.0
+
+__Release data:__
+January. 25th, 2019
+
+__New features:__
+* Supported Phone, Google, Facebook and WeChat OAuth2 signins for creating new account or binding old account
+* Supported binding/unbinding Phone, Google, Facebook and WeChat account to/from existing Altizure account
+* Supported getting reset password link via sms
+
+__Change:__
+* Emails of the forms: phone.altizure.com and wechat.altizure.com are reserved and could not be used for registration
+
+__Breaking Change:__
+* Changed User.{google, facebook, wechat} from string to rich object, storing info of linked social account
+* Removed args: google, facebook and wechat in mutation: updateMyProfile
+* Renamed args: email to emailOrPhone in mutation: forgetPassword
+
 ### 2.0.6
 
 __Release data:__
