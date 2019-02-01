@@ -1,5 +1,16 @@
 # Changelog of Altizure GraphQL API
 
+### 2.1.1
+
+__Release data:__
+February. 1st, 2019
+
+__New features:__
+* New query: support.networkTest for testing if api-server could access certain urls
+
+__Change:__
+* Improved performance of all relay connection queries, e.g. allProjects and project.allImages
+
 ### 2.1.0
 
 __Release data:__
