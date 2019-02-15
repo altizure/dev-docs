@@ -1,5 +1,20 @@
 # Altizure GraphQL API 更新日志
 
+### 2.1.2
+
+__Release data:__
+February. 15th, 2019
+
+__New features:__
+* Support new task type: Dense in startReconstructionWithError
+
+__Change:__
+* Improved loading time of profile banner and picture, which are served now from CloudFront for foreign users
+* Added field: projects in Tag for querying all featured projects of a given tag
+* Added args: collectionByID in allProjects for querying collection by id
+* Added args: search in allTags for searching tags by name
+* Deprecated all solution related queries and mutations
+
 ### 2.1.1
 
 __Release data:__
