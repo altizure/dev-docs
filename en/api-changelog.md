@@ -1,5 +1,17 @@
 # Changelog of Altizure GraphQL API
 
+### 2.1.3
+
+__Release data:__
+February. 22nd, 2019
+
+__New features:__
+* Added Project.ModelType for clients to render different types of model accordingly
+* Added args: modelTransform in mutation.setProjectProperties for setting all fields in model transform
+
+__Breaking Change:__
+* Moved mutation.setProjectProperties args: initialCamPos, maxPolarAngle and onLoadTrans into modelTransform
+
 ### 2.1.2
 
 __Release data:__
