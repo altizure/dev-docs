@@ -1,5 +1,23 @@
 # Changelog of Altizure GraphQL API
 
+### 2.1.4
+
+__Release data:__
+March. 1st, 2019
+
+__New features:__
+* Country of new user is auto set by his IP
+* Added field: countryCode in type: User
+* Added args: countryCode in mutation: updateMyProfile
+* Allowed re-converting imported models in mutation: startReconstructionWithError
+
+__Breaking Change:__
+* Updated country names in type: Country, e.g. 'Bolivia__Plurinational_State_of_' to 'Bolivia', 'Czech_Republic' to 'Czechia', 'Russian_Federation' to 'Russia', to 'United States of America' to 'United States' etc
+
+__Fixes:__
+* Fixed issue of stopping task via mutation: stopReconstruction
+* Fixed issue of re-uploading the same image to an 'Invalid' image
+
 ### 2.1.3
 
 __Release data:__
