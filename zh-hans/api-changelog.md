@@ -1,5 +1,21 @@
 # Altizure GraphQL API 更新日志
 
+### 2.2.0
+
+__Release data:__
+March. 15th, 2019
+
+__New features:__
+* Supported setting model type of a project
+* Allowed superuser to set project thumb, mask and project properties of other users
+* Added query: My.activities to get all of my aggregated activities in one place
+
+__Change:__
+* Skipped the OAuth2 authorization screen if the same app has already been authorized
+
+__Breaking Change:__
+* Removed query: User.followingActivities and type: UserActivity in favour of MyActivity
+
 ### 2.1.4
 
 __Release data:__
