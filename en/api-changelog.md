@@ -1,5 +1,16 @@
 # Changelog of Altizure GraphQL API
 
+### 2.2.1
+
+__Release data:__
+March. 29th, 2019
+
+__New features:__
+* Support searching by initial partial project ids with query: Search.projectID
+
+__Fixes:__
+* Fixed issue of getting download info of OSGB format
+
 ### 2.2.0
 
 __Release data:__
