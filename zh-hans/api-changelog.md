@@ -1,5 +1,40 @@
 # Altizure GraphQL API 更新日志
 
+### 2.3.2
+
+__Release data:__
+April. 26th, 2019
+
+__New features:__
+* Added an alternative way of uploading model via direct urls using mutation: uploadModelURL
+* Added new buckets: Paris, Stockholm and HongKong in enum: BucketS3, used in mutation: uploadImageS3
+* Added query: support.supportedCloud for getting list of supported cloud for uploading
+
+__Fixes:__
+* Fixed issue of task of single model upload not auto starting
+
+### 2.3.1
+
+__Release data:__
+April. 18th, 2019
+
+__New features:__
+* Supported multipart model upload in mutation: uploadModelS3 and uploadModelMinio
+* Added mutation: doneModelUpload for signaling when all the multiparts are uploaded
+
+### 2.3.0
+
+__Release data:__
+April. 12th, 2019
+
+__New features:__
+* Provided reasons for getting a particular newsfeed
+* Supported sandbox in newsfeed
+* Added super/sales query/mutation for getting/setting CI build releases
+
+__Breaking Change:__
+* Changed my.newsfeed return type from ProjectsConnection to NewsfeedsConnection
+
 ### 2.2.1
 
 __Release data:__
