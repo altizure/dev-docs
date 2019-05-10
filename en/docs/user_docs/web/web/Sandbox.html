@@ -1288,7 +1288,7 @@ and multiple imported gl elements.</p></div>
     <div class="description">
         <p>Camera interface.</p>
 <p>camera.pose (setter and getter) set or get the pose. pose: {lng, lat, alt, north, tilt}</p>
-<p>camera.range (setter) set the range for tilt and alt. camera.range = {tilt: {max: ..., min: ...}, alt: {max: ..., min: ...}}</p>
+<p>camera.range (setter) set the range for alt. camera.range = {alt: {max: ..., min: ...}}</p>
 <p>camera.flyTo(p, duration = 2500), p is the pose, duration is fly time in ms. returns a promise which resolves when fly ends.</p>
 <p>camera.stop(), stop flying</p>
 <p>camera.lookAt(marker, north, tilt, alt, duration = 3000), marker is arbitrary marker, north is the pose north, tile is the pose tilt, alt is the alt over marker, duration is the fly time duration.</p>

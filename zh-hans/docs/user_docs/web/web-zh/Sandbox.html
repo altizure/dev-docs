@@ -1286,19 +1286,19 @@
 <dd>
     
     <div class="description">
-        <mn><p>Camera 接口</p>
-<p>camera.pose (setter and getter) 设置或得到姿态。 pose: {lng, lat, alt, north, tilt}（north：方位角，与正北方的夹角；tilt：俯角，与水平方向向下的夹角）</p>
-<p>camera.range (setter) 设置方位角和俯角的范围。 camera.range = {tilt: {max: ..., min: ...}, alt: {max: ..., min: ...}}</p>
-<p>camera.flyTo(p, duration = 2500), p 是相机姿态, duration 是以毫秒为单位的飞行时间，飞行结束时返回promise。</p>
-<p>camera.stop(), 停止飞行。</p>
-<p>camera.lookAt(marker, north, tilt, alt, duration = 3000), marker 是任意marker, north 姿态的方位角, tile 姿态的俯角, alt 是相机距marker的相对高度, duration 飞行的持续时间。</p>
-<p>或者</p>
-<p>camera.lookAt(marker, pose, duration = 3000), pose 是有三个关键词的对象，包括方位角、俯角和高度。例如 pose: {north: 40, tilt, 30, alt: undefined}
-这个方法将使相机飞到这个姿态并在飞行结束时返回promise。</p>
-<p>camera.matToPose(mat), mat 是矩阵的元素，返回相应的姿态 pose: {lng, lat, alt, north, tilt}</p>
-<p>camera.mat (getter) 根据目前姿态得到矩阵元素 pose: number[]</p>
-<p>camera.flyToMat(mat, duration = 3000), mat 是矩阵元素, duration 是以毫秒为单位的事件，在飞行结束时返回promise。</p>
-<p>camera.flyToCamToEarth(mat, duration = 2500), mat 是矩阵元素，duration是以毫秒为单位的持续时间，在飞行结束时返回promise。</p>
+        <p>Camera interface.</p>
+<p>camera.pose (setter and getter) set or get the pose. pose: {lng, lat, alt, north, tilt}</p>
+<p>camera.range (setter) set the range for alt. camera.range = {alt: {max: ..., min: ...}}</p>
+<p>camera.flyTo(p, duration = 2500), p is the pose, duration is fly time in ms. returns a promise which resolves when fly ends.</p>
+<p>camera.stop(), stop flying</p>
+<p>camera.lookAt(marker, north, tilt, alt, duration = 3000), marker is arbitrary marker, north is the pose north, tile is the pose tilt, alt is the alt over marker, duration is the fly time duration.</p>
+<p>or</p>
+<p>camera.lookAt(marker, pose, duration = 3000), pose is an object with three keys, north, tilt and alt. example of pose: {north: 40, tilt, 30, alt: undefined}
+the method will fly to the pose and returns a promise resolve when fly ends.</p>
+<p>camera.matToPose(mat), mat is the matrix element. returns the corresonding pose: {lng, lat, alt, north, tilt}</p>
+<p>camera.mat (getter) get the matrix element in current pose: number[]</p>
+<p>camera.flyToMat(mat, duration = 3000), mat is the matrix element, duration is fly time in ms. returns a promise which resolves when fly ends.</p>
+<p>camera.flyToCamToEarth(mat, duration = 2500), mat is the matrix element, duration is fly time in ms. returns a promise which resolves when fly ends.</p>
     </div>
     
 
