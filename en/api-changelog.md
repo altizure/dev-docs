@@ -1,5 +1,28 @@
 # Changelog of Altizure GraphQL API
 
+### 2.5.0
+
+__Release data:__
+May. 10th, 2019
+
+__New features:__
+* Refactored mutation.recommended so that it returns both project and sandbox
+
+__Breaking Change:__
+* Renamed mutation.recommendedProjects to mutation.recommended
+
+
+### 2.4.0
+
+__Release data:__
+May. 3rd, 2019
+
+__New features:__
+* Added mutation.recommendedProjects to give a list of recommended projects
+
+__Breaking Change:__
+* Moved query.recommendedProjects to mutation.recommendedProjects for mutating internal stats of recommendation engine
+
 ### 2.3.2
 
 __Release data:__
