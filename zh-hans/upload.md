@@ -52,7 +52,11 @@
 
 开发者也可以不等待 Altizure 服务器对图像进行验证，在图像上传完后，便调用 mutation `preStartReconstruction(id, options)`。如果这样，服务器在验证完所有图像后，就会用已有的有效图像开始三维重建。
 
-## 5. 了解更多
+## 5. 范例
+
+https://github.com/altizure/oss-upload-minimal
+
+## 6. 了解更多
 
 * 了解更多关于 [STS](https://www.alibabacloud.com/help/doc-detail/31953.htm?spm=a3c0i.o31952en.b99.284.7ab2aa72OYaf6D) 的信息
 * 阿里云 [ OSS JavaScript SDK](https://github.com/ali-sdk/ali-oss)
