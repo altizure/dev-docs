@@ -1,5 +1,22 @@
 # Changelog of Altizure GraphQL API
 
+### 2.5.1
+
+__Release data:__
+May. 24th, 2019
+
+__New features:__
+* Added query.search.altiID for searching project, planet or collection ids
+* Added new fields: user.stats for getting total number of stars, project, planet, followers and followings
+
+__Change:__
+* Added new args: kind in query.support.supportedCloud for querying different kinds of upload types
+* Allowed super or sales to query private fields of other users
+
+__Fixes:__
+* Fixed issue of handling Chinese name model zip
+* Fixed issue of generating invalid email verification link
+
 ### 2.5.0
 
 __Release data:__
