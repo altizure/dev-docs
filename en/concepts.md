@@ -35,9 +35,9 @@ The user token is the kind of access token that the app obtains after a user aut
 
 Altizure GraphQL API is a set of API in the syntax of [GraphQL](http://graphql.org/learn/). The API allows developers to fetch and modify the data on Altizure. Learn more at [GraphQL API](api.md)
 
-## 5. Javascript SDK
+## 5. Javascript 3D SDK
 
-Altizure Javascript SDK allows you to integrate rich 3D experience with our realistic 3D models to your business workflow. Learn more at [Javascript SDK](jssdk.md)
+Altizure Javascript 3D SDK allows you to integrate rich 3D experience with our realistic 3D models to your business workflow. Learn more at [Javascript 3D SDK](jssdk.md)
 
 ---
 

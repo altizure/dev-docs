@@ -1,4 +1,4 @@
-# Altizure JavaScript SDK
+# Altizure JavaScript 3D SDK
 
 这是一个以 JavaScript 为开发语言的 SDK。提供了丰富的三维浏览和编辑的功能。SDK 的主要目的是：
 
@@ -104,7 +104,7 @@ python -m SimpleHTTPServer
 
 只要三步，我们便创建出了一个可以加载全球实景三维模型的视图。惊不惊喜？激不激动？
 
-相信您已经被 Altizure SDK 多彩有趣的内容深深吸引了，接下来我们将直接通过范例代码来学习 SDK 的丰富功能。
+相信您已经被 Altizure Javascript 3D SDK 多彩有趣的内容深深吸引了，接下来我们将直接通过范例代码来学习 SDK 的丰富功能。
 
 ## 2. 范例
 
@@ -169,7 +169,7 @@ SDK中的控件和接口的使用方法在 [SDK 文档](ref://docs/user_docs/web
 
 可以访问[常见问题](jssdk-faq.md)了解更多常见问题解答。
 
-[演示应用](jssdk-demo.md)页面展示了更加复杂的 Altizure JavaScript SDK 应用范例。
+[演示应用](jssdk-demo.md)页面展示了更加复杂的 Altizure JavaScript 3D SDK 应用范例。
 
 访问[详细文档](ref://docs/user_docs/web/)了解更多细节。
 

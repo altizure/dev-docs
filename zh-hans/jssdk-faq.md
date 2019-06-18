@@ -13,7 +13,7 @@
 * 是否已经启动一个 http 服务器？最方便的方法是参考 [altizure.github.io/sdk.examples/](https://altizure.github.io/sdk.examples/) 教程中用 python 建立 http 服务器的方法。
 * 本地测试请用 `127.0.0.1` 作为地址来访问，而不要使用 `localhost`。
 
-#### 1.3 无法访问 SDK script 链接？
+#### 1.3 无法访问 3D SDK script 链接？
 
 如果无法访问 `https://www.altizure.com/sdk` 或 `https://beta.altizure.com/sdk`，请使用中国站点 `https://www.altizure.cn/sdk` 或 `https://beta.altizure.cn/sdk`。
 
@@ -29,11 +29,11 @@
 
 开发语言是 JavaScript，最底层三维的接口是 WebGL。但是我们并不经常直接访问 WebGL 底层接口，我们更多的模块是搭建在 [ThreeJS](https://threejs.org/) 之上。
 
-#### 1.7 能否自定义一些 three.js 的对象然后插入到 Altizure JavaScript SDK 的场景里？
+#### 1.7 能否自定义一些 three.js 的对象然后插入到 Altizure JavaScript 3D SDK 的场景里？
 
 暂时不能。因为实景模型的数据量非常巨大，我们的 SDK 对数据的加载和内存管理做了许多优化，暂时未能允许插入任意的 three.js 对象。我们会逐步实现这一点，但现在并无具体上线这个功能的时间表。
 
-#### 1.8 我是否需要学习图形学的知识才能用 Altizure JavaScript SDK 编程？
+#### 1.8 我是否需要学习图形学的知识才能用 Altizure JavaScript 3D SDK 编程？
 
 基本不需要，我们尝试把这些复杂的技术实现都进行了封装。您只需要懂得网页编程所需要的 JavaScript 和 HTML 就可以进行开发。更重要的是要清晰知道实景三维模型和您的业务是如何结合的。
 
@@ -212,7 +212,7 @@ marker.scale 比例尺
 
 * [基础范例列表](https://altizure.github.io/sdk.examples/examples.sdk.html)
 * [演示应用](jssdk-demo.md) 中展示了更加复杂的应用范例
-* [Altizure JavaScript SDK 详细文档](ref://docs/user_docs/web/)
+* [Altizure JavaScript 3D SDK 详细文档](ref://docs/user_docs/web/)
 
 —
 

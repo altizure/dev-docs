@@ -1,6 +1,6 @@
-# Altizure JavaScript SDK 演示应用
+# Altizure JavaScript 3D SDK 演示应用
 
-这里我们会演示如何用 Altizure JavaScript SDK 解决一些实际应用场景的问题，让 Altizure 的实景模型可以更好地结合到您的商业场景中，发挥实景三维模型的无穷潜力。
+这里我们会演示如何用 Altizure JavaScript 3D SDK 解决一些实际应用场景的问题，让 Altizure 的实景模型可以更好地结合到您的商业场景中，发挥实景三维模型的无穷潜力。
 
 您对这些演示有任何问题都欢迎到 [issue page](https://github.com/altizure/experimental-demo/issues) 留言，我们会尽力解答。
 
@@ -64,9 +64,9 @@ python -m SimpleHTTPServer
 
 ## 6. 了解更多
 
-* [Altizure JavaScript SDK](jssdk.md)
-* [Altizure JavaScript SDK 常见问题](jssdk-faq.md)
-* [Altizure JavaScript SDK 详细文档](ref://docs/user_docs/web/)
+* [Altizure JavaScript 3D SDK](jssdk.md)
+* [Altizure JavaScript 3D SDK 常见问题](jssdk-faq.md)
+* [Altizure JavaScript 3D SDK 详细文档](ref://docs/user_docs/web/)
 
 —
 

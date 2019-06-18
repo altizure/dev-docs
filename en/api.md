@@ -98,7 +98,7 @@ Please follow the above tutorial and browse [api.altizure.cn/graphql](https://ap
 ## 7. Learn More
 
 * Learn more about [GraphQL](http://graphql.org/learn/)
-* Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application
+* Use [Altizure Javascript 3D SDK](jssdk.md) to developer rich 3D application
 * More tools on GraphQL: [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
 
 ---

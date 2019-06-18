@@ -1,6 +1,6 @@
-# Altizure JavaScript SDK Demo
+# Altizure JavaScript 3D SDK Demo
 
-Here we show how to use Altizure Javascript SDK to solve some real applications to demonstrate how to integrate realistic 3D models to business application.
+Here we show how to use Altizure Javascript 3D SDK to solve some real applications to demonstrate how to integrate realistic 3D models to business application.
 
 If you have any questions, please feel free to write on our [issue page](https://github.com/altizure/experimental-demo/issues).
 
@@ -58,9 +58,9 @@ Open your browser and access `http://127.0.0.1:8000/` to run and check the demos
 
 # 5. Learn More
 
-* [Altizure Javascript SDK](jssdk.md)
-* [Altizure Javascript SDK FAQ](jssdk-faq.md)
-* [Altizure Javascript SDK Reference](ref://docs/user_docs/web/)
+* [Altizure Javascript 3D SDK](jssdk.md)
+* [Altizure Javascript 3D SDK FAQ](jssdk-faq.md)
+* [Altizure Javascript 3D SDK Reference](ref://docs/user_docs/web/)
 
 —
 

@@ -35,9 +35,9 @@
 
 GraphQL API 是一组以 GraphQL 为协议提供的在线 API。这套 API，提供了获取和修改 Altizure 上基础数据的能力。详情可以浏览：[GraphQL API](api.md)
 
-## 5. JavaScript SDK
+## 5. JavaScript 3D SDK
 
-这是一个以 JavaScript 为开发语言的 SDK。提供了丰富的三维浏览和编辑的功能。详情可以浏览：[JavaScript SDK](jssdk.md)
+这是一个以 JavaScript 为开发语言的 SDK。提供了丰富的三维浏览和编辑的功能。详情可以浏览：[JavaScript 3D SDK](jssdk.md)
 
 ---
 
