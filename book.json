@@ -11,7 +11,11 @@
     ],
     "pluginsConfig": {
         "ga": {
-            "token": "UA-70332606-7"
+            "token": "UA-70332606-7",
+            "configuration": {
+              "cookieName": "docs_altizure",
+              "cookieDomain": "docs.altizure.com"
+            }
         },
         "language-redirect": {
             "baseurl": "https://docs.altizure.com/"

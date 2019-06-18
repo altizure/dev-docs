@@ -10,12 +10,16 @@ Let's start the journey.
 
 * [Concepts](concepts.md)
 * [Developer Account](dev-account.md)
-* [GraphGL API](api.md)
+* [GraphQL API](api.md)
+  * [3D Reconstruction](api-reconstruction.md)
   * [Images Upload](upload.md)
+  * [API Reference](https://api.altizure.com/graphql)
+  * [API Changelog](api-changelog.md)
 * [Javascript SDK](jssdk.md)
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
-  * [Reference](ref://docs/user_docs/web/index.html)
+  * [SDK Reference](ref://docs/user_docs/web/index.html)
+  * [SDK Changelog](jssdk-changelog.md)
 
 Learn more about Altizure at:
 
@@ -26,7 +30,7 @@ Learn more about Altizure at:
 
 
 
-Contact us [support@altizure.com](mailto:support@altizure.com)
+Contact us [developers@altizure.com](mailto:developers@altizure.com)
 
 ---
 

@@ -25,9 +25,10 @@ In the `<head>` section of the html page, include our SDK as
 
 Here we provide three links for our SDK.
 
-* Latest：`<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
-* Stable：`<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
-* Mainland China：`<script type="text/javascript" src="https://www.altizure.cn/sdk"></script>`
+* Latest: `<script type="text/javascript" src="https://beta.altizure.com/sdk"></script>`
+* Stable: `<script type="text/javascript" src="https://www.altizure.com/sdk"></script>`
+* Latest for Mainland China: `<script type="text/javascript" src="https://beta.altizure.cn/sdk"></script>`
+* Stable for Mainland China: `<script type="text/javascript" src="https://www.altizure.cn/sdk"></script>`
 
 ##### Create a div as a container for 3D rendering
 
@@ -100,7 +101,7 @@ In the following, you can learn more about our SDK via samples and demos.
 
 ## 2. Samples
 
-Up-to-date live samples are at [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html).
+
 
 #### 2.1 Concepts
 
@@ -108,11 +109,15 @@ Here we start with some concepts in our SDK.
 
 * Sandbox: altizure.Sandbox is the core of the 3D engine. It is the entry point of the development and handles all 3D rendering and data management.
 
+#### 2.2 List of Samples
+
+Up-to-date live samples are at [altizure.github.io/sdk.examples/examples.sdk.html](https://altizure.github.io/sdk.examples/examples.sdk.html).
+
 The source code of these samples can be downloaded at [github.com/altizure/sdk.examples](https://github.com/altizure/sdk.examples/). You can easily setup your server and run these samples following the tutorial.
 
 Any questions and bugs, please feel free to write on our [issue page](https://github.com/altizure/sdk.examples/issues).
 
-#### 2.2 List of Samples
+<!-- #### 2.2 List of Samples
 
 * 2.2.1 Sandbox setting
     * [Default loading](https://altizure.github.io/sdk.examples/1-1-altizure-earth)
@@ -148,7 +153,7 @@ Any questions and bugs, please feel free to write on our [issue page](https://gi
     * [Camera matrix](https://altizure.github.io/sdk.examples/5-5-camera-mat)
 * 2.2.6 Others
     * [Cropping models](https://altizure.github.io/sdk.examples/6-1-crop-project)
-    * [Volume measurement](https://altizure.github.io/sdk.examples/6-2-measurement-volume)
+    * [Volume measurement](https://altizure.github.io/sdk.examples/6-2-measurement-volume) -->
 
 ## 3. FAQ
 

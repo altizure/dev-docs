@@ -14,6 +14,8 @@ API endpoints and documentations: [api.altizure.com/graphql](https://api.altizur
 
 ## 3. Try out API in your browser
 
+The above endpoint shows detailed documentation. However, you cannot execute the query or mutation that require your own app key and user token. Here is a tutorial on how to modify the http header in your browser to use your own app key and user token.
+
 It is very convenience to test the API in browsers, because it provides instant feedback on the query results and detailed inline documentations. After the testing, you can easily copy and paste the query string to your code and trigger the API call.
 
 We take Google Chrome as an example. Other browsers supporting extensions, e.g. Firefox, should work too.
@@ -36,7 +38,7 @@ Now please fill the following query string to the query section to calculate how
 
 ```
 query {
-  support {
+  utility {
     sizeToGigaPixel(width: 4000, height: 3000, numImg: 100)
   }
 }
@@ -63,7 +65,7 @@ $.ajax({
       altitoken: 'user token',
       key: 'app key'
     },
-    data: 'query=' + 'GraphGL query string'
+    data: 'query=' + 'GraphQL query string'
   })
 ```
 
@@ -97,7 +99,7 @@ Please follow the above tutorial and browse [api.altizure.cn/graphql](https://ap
 
 * Learn more about [GraphQL](http://graphql.org/learn/)
 * Use [Altizure Javascript SDK](jssdk.md) to developer rich 3D application
-* More tools on GraphQL: [Awesome GraphGL](https://github.com/chentsulin/awesome-graphql)
+* More tools on GraphQL: [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
 
 ---
 
