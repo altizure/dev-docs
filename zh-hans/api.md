@@ -2,7 +2,7 @@
 
 GraphQL API 是一组以 [GraphQL](http://graphql.org/learn/) 为协议提供的在线 API。这套 API 提供了获取和修改 Altizure 上基础数据的能力。
 
-**您如果在寻找如何快速加载和渲染 Altizure 上的三维数据，请查看我们的 [JavaScript SDK](jssdk.md) 页面，可以方便您快速上手。**
+**您如果在寻找如何快速加载和渲染 Altizure 上的三维数据，请查看我们的 [JavaScript 3D SDK](jssdk.md) 页面，可以方便您快速上手。**
 
 ## 1. 使用前的准备
 
@@ -105,7 +105,7 @@ $.ajax({
 ## 6. 了解更多
 
 * 深入学习 [GraphQL](http://graphql.org/learn/)
-* 通过 [Altizure JavaScript SDK](jssdk.md) 实现丰富的三维浏览编辑功能
+* 通过 [Altizure JavaScript 3D SDK](jssdk.md) 实现丰富的三维浏览编辑功能
 * 更多 GraphQL 相关工具 [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
 
 ---

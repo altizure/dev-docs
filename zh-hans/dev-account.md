@@ -84,7 +84,7 @@
 • 全年4次的电话会议⽀持。每次会议时⻓ 1 ⼩时。需要更多的电话会议⽀持可以购买更多的服务。（RMB 5000元/4次）
 • 每年参加⼀次官⽅组织的开发者培训。
 **开发⼈员需具备的基本能⼒**
-* 熟悉开发网站中的所有基本概念，GraphQL API 和 Javascript SDK 的作用。
+* 熟悉开发网站中的所有基本概念，GraphQL API 和 Javascript 3D SDK 的作用。
 * 熟悉 https://altizure.github.io/sdk.examples/examples.sdk.html 里面每个范例所展示的功能，以及如何将这些功能组合成更复杂的功能。
 
 **账号申请所需资料**

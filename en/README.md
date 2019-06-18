@@ -15,11 +15,11 @@ Let's start the journey.
   * [Images Upload](upload.md)
   * [API Reference](https://api.altizure.com/graphql)
   * [API Changelog](api-changelog.md)
-* [Javascript SDK](jssdk.md)
+* [Javascript 3D SDK](jssdk.md)
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
-  * [SDK Reference](ref://docs/user_docs/web/index.html)
-  * [SDK Changelog](jssdk-changelog.md)
+  * [3D SDK Reference](ref://docs/user_docs/web/index.html)
+  * [3D SDK Changelog](jssdk-changelog.md)
 
 Learn more about Altizure at:
 

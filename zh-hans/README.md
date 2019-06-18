@@ -15,11 +15,11 @@
   * [上传图像](upload.md)
   * [API 文档](https://api.altizure.cn/graphql)
   * [API 更新日志](api-changelog.md)
-* [JavaScript SDK](jssdk.md)
+* [JavaScript 3D SDK](jssdk.md)
   * [演示应用](jssdk-demo.md)
   * [常见问题](jssdk-faq.md)
-  * [SDK 文档](ref://docs/user_docs/web/)
-  * [SDK 更新日志](jssdk-changelog.md)
+  * [3D SDK 文档](ref://docs/user_docs/web/)
+  * [3D SDK 更新日志](jssdk-changelog.md)
 
 
 更多了解 Altizure 欢迎访问：

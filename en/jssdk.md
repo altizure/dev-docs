@@ -1,6 +1,6 @@
-# Altizure Javascript SDK
+# Altizure Javascript 3D SDK
 
-Altizure Javascript SDK allows you to integrate rich 3D experience with our realistic 3D models to your business workflow.
+Altizure Javascript 3D SDK allows you to integrate rich 3D experience with our realistic 3D models to your business workflow.
 
 * Simplify the loading and rendering of large-scale realistic 3D models.
 * Simplify the fusion and rendering data from different sources.
