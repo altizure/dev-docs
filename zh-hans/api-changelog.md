@@ -1,5 +1,24 @@
 # Altizure GraphQL API 更新日志
 
+### 2.5.2
+
+__Release data:__
+June. 14th, 2019
+
+__New features:__
+* Added query: support.errorCodeInfo for querying project error codes and their suggested solutions
+* Added mutation: cleanupImportedModel for cleaning up uploaded model zip or multipart files
+
+__Change:__
+* Added new NewsfeedReason: FeaturedSandbox + FeaturedCollection
+* Added new error codes in Project.errorCode, old codes were updated to new ones
+
+__Fixes:__
+* Fixed missing `Uploaded` state in `UPLOAD_FILE_STATE`
+* Fixed issues of uploading model zip that has space in its filename
+* Fixed issues of duplicated obj conversion tasks triggered by uploading small multipart model zip
+* Fixed issues of setting visibility of free project by user with membership
+
 ### 2.5.1
 
 __Release data:__
