@@ -1,5 +1,22 @@
 # Altizure GraphQL API 更新日志
 
+### 2.5.3
+
+__Release data:__
+June. 21st, 2019
+
+__New features:__
+* Added mutation: removeImages for removing multiple images under the same project
+* Supported uploading simple binary split of obj zip
+* Added additional fields: GCPInfo + GCPValidation in type: Project
+
+__Change:__
+* Added new args: merge in mutation: doneModelUpload for indicating it is a binary split
+
+__Fixes:__
+* Fixed re-calculating free user quota of a featured project
+* Fixed issue of browsing /graphql without a key on AltiOne
+
 ### 2.5.2
 
 __Release data:__
