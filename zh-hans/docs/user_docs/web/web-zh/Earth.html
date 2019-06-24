@@ -2188,7 +2188,8 @@ bbox：lngLatAlt（经度纬度高度）形式的边界框
    {min: 0, max 40}, // altitude range
    [altizureProjectMarker.contentHolder],
    // here an altizureProjectMarker is rendered
-   true // so that this will returns a depth snapshot
+   true, // so that this will returns a depth snapshot
+   0 // this is a median filter size for depth, should be an odd integer or 0, which means no filter (default)
  )
  // depthSnapshot.dimension: {width: width of the snapshot, height: height of the snapshot}
  // depthSnapshot.buffer: UintArray8 with size dimension.width * dimension.height. Higher place should be darker (smaller values)
