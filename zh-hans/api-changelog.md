@@ -1,5 +1,16 @@
 # Altizure GraphQL API 更新日志
 
+### 2.5.4
+
+__Release data:__
+June. 28th, 2019
+
+__New features:__
+* Added mutation: recommendedUsers to give a list of recommended users tailored for each user
+
+__Fixes:__
+* Fixed issue of dispatching duplicated model conversion tasks by calling mutation: doneModelUpload in multiple times
+
 ### 2.5.3
 
 __Release data:__
