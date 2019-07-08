@@ -1,5 +1,20 @@
 # Changelog of Altizure GraphQL API
 
+### 2.5.5
+
+__Release data:__
+June. 5th, 2019
+
+__New features:__
+* Added new query field: Project.metaFile for checking state of individual meta file
+* Added new field: Project.sfmState + Project.tasks.taskType for determining project state
+* Supported importing meta file: initial.xms or initial.xms.zip
+
+__Fixes:__
+* Fixed issue of setting app icon in AltiOne
+* Fixed issue of uploading meta file via Hong Kong bucket that would always result in a failed state
+* Fixed issue of older version of meta file being ignored
+
 ### 2.5.4
 
 __Release data:__
