@@ -4,10 +4,9 @@
 To speed up data transfer, images are uploaded directly from clients to Amazon
 or Aliyun. Your images are protected securely. Others could not read or modify your images. That is why you need to obtain the authorizations from our api. As filename is the only identifier in the buckets, the image is required to be uploaded to a specific url (S3) or prefix (OSS) so that Altizure knows which image is which.
 
-
 ### 1. Choose bucket
 Choose one of the fastest S3 or OSS buckets. This is largely correlated to your network zone with the edge-points.
-You may simply query `GeoIPInfo.nearestBuckets` for hints for auto selecting the best edge for your clients.
+You may simply query `getGeoIPInfo.nearestBuckets` for hints for auto selecting the best edge for your clients.
 
 ### 2. Compute image checksum
 Compute the sha1sum hash for each image.
@@ -27,14 +26,13 @@ flow chart:
 
 - Minimal Example with Javascript in Browser: https://github.com/altizure/oss-upload-minimal
 
-
 ### 4. Upload to S3
 If a S3 bucket is chosen, uploading is much simpler.
-For each image, call the mutation `uploadImageS3(pid, bucket, filename, type, checksum)` to obtain a temporary (3 hours) signed url and the related meta image info.
+For each image, call the mutation `uploadImageS3(pid, bucket, filename, type, checksum)` to obtain a temporary (3 hours) signed url and the related meta image info. You are recommended to get the `image.id` from this mutation because it is required for the next mutation.
 
 Given the signed url, use the standard HTTP put to put the file to this url with `Content-type: JPEG` or other formats accordingly.
 
-Just before each upload, it is required to call mutation `startImageUpload(id)`. There is no need to signal the end of uploading.
+Just before each upload, it is required to call mutation `startImageUpload(id)`. `id` is `image.id`, which is fetched previously. There is no need to signal the end of uploading.
 
 - Minimal Example with NodeJS: https://github.com/altizure/s3-upload-minimal-example
 
