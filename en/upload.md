@@ -49,8 +49,8 @@ After images are processed. you could start a [reconstruction](api-reconstructio
 
 ## Example
 
-OSS: https://github.com/altizure/oss-upload-minimal
-S3: https://github.com/altizure/s3-upload-minimal-example
+- OSS: https://github.com/altizure/oss-upload-minimal
+- S3: https://github.com/altizure/s3-upload-minimal-example
 
 ## Learn more
 
