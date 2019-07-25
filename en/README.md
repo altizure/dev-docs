@@ -10,16 +10,17 @@ Let's start the journey.
 
 * [Concepts](concepts.md)
 * [Developer Account](dev-account.md)
-* [GraphQL API](api.md)
-  * [3D Reconstruction](api-reconstruction.md)
-  * [Images Upload](upload.md)
-  * [API Reference](https://api.altizure.com/graphql)
-  * [API Changelog](api-changelog.md)
 * [Javascript 3D SDK](jssdk.md)
   * [Demo](jssdk-demo.md)
   * [FAQ](jssdk-faq.md)
   * [3D SDK Reference](ref://docs/user_docs/web/index.html)
   * [3D SDK Changelog](jssdk-changelog.md)
+* [GraphQL API](api.md)
+  * [3D Reconstruction](api-reconstruction.md)
+  * [Images Upload](upload.md)
+  * [API Reference](https://api.altizure.com/graphql)
+  * [API Changelog](api-changelog.md)
+
 
 Learn more about Altizure at:
 

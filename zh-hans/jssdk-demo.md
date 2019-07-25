@@ -1,4 +1,4 @@
-# Altizure JavaScript 3D SDK 演示应用
+# Altizure JavaScript 3D SDK 进阶应用
 
 这里我们会演示如何用 Altizure JavaScript 3D SDK 解决一些实际应用场景的问题，让 Altizure 的实景模型可以更好地结合到您的商业场景中，发挥实景三维模型的无穷潜力。
 
