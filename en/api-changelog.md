@@ -1,9 +1,23 @@
 # Changelog of Altizure GraphQL API
 
+### 2.5.6
+
+__Release data:__
+July. 19th, 2019
+
+__New features:__
+* Added an alternative way of uploading meta file via direct urls using mutation: uploadMetaURL
+
+__Change:__
+* Upgraded GraphiQL interface
+
+__Fixes:__
+* Fixed issue of translating image names in meta file when meta file contains un-trimmed whitespace
+
 ### 2.5.5
 
 __Release data:__
-June. 5th, 2019
+July. 5th, 2019
 
 __New features:__
 * Added new query field: Project.metaFile for checking state of individual meta file
