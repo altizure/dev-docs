@@ -1,5 +1,17 @@
 # Changelog of Altizure GraphQL API
 
+### 2.5.7
+
+__Release data:__
+July. 26th, 2019
+
+__New features:__
+* Added new User field: activities
+* Added new Project fields: tileType + gsd
+
+__Fixes:__
+* Fixed query: supported cloud of meta files
+
 ### 2.5.6
 
 __Release data:__
