@@ -1,11 +1,11 @@
-# 3D SDK 教程 3.添加 marker
+# 3D SDK 教程 3.添加、删除 Marker
 
 Altizure SDK 为开发者提供了多种多样的 marker 来丰富您的应用，为了防止过多的内容打扰您使用的兴趣，本章节将分为小白部分和进阶部分，小白部分仅介绍如何添加最基础的 marker ，之后在进阶部分会对 marker 更加丰富的功能和更加多样的种类进行说明和列举。
 
 众所周知，数据可以分为点、线、面，因此我们也有相对应的 marker 来帮助您实现应用。
 ## 1. 小白部分
 
-#### 1.1 点数据 -- TagMarker
+#### 1.1 添加点数据 -- TagMarker
 
 Tag Marker 是最基础的点数据的添加
 
@@ -26,7 +26,7 @@ Tag Marker 是最基础的点数据的添加
 
 相关部分请参考范例 2.2
 
-#### 1.2 线数据 -- PolyLineMarker
+#### 1.2 添加线数据 -- PolyLineMarker
 
 ![PolylineMarker效果展示](img/tutorial/3.2.png)
 ```js
@@ -50,7 +50,7 @@ Tag Marker 是最基础的点数据的添加
 这里需要设置 polyline marker 的点、颜色、线的高度等。
 相关代码请参考范例2.4
 
-#### 1.3 面/体数据 -- PolygonMarker
+#### 1.3 添加面/体数据 -- PolygonMarker
 
 ![PolygonMarker效果展示](img/tutorial/3.3.png)
 ```js
@@ -88,9 +88,16 @@ Tag Marker 是最基础的点数据的添加
 
 相关代码请参考范例2.3
 
+#### 1.4 删除 Marker
 
-#### 1.4 小结
-至此，最基础的点、线、面的数据和相应 marker 如何显示已经介绍完了。
+所有的 Marker 都可用 duxtruct 进行删除
+```js
+  marker.destruct()
+```
+删除后此 Makrer 将不存在并释放所有占用的资源。
+
+#### 1.5 小结
+至此，最基础的点、线、面的数据和相应 marker 如何显示和删除已经介绍完了。
 
 建议您先完成其他教程的小白部分，之后在尝试进阶部分。
 

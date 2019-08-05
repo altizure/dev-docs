@@ -1,8 +1,11 @@
 # 3D SDK 教程 2.如何加载 Altizure 项目
 
+Altizure SDK 为开发者提供了多种多样的功能来丰富您的应用，为了防止过多的内容打扰您使用的兴趣，本章节及之后的章节将分为小白部分和进阶部分，小白部分仅介绍如何快速上手最基础的应用功能，方便您在短时间内搭起框架；进阶部分会在小白部分的基础之上做拓展和深化，帮助您精心打磨您的产品。
 
-## 1. 获得pid
+**强烈建议您优先完成所有章节的小白部分，如果没有得到满意的答案，再去相应章节的进阶部分寻找答案。**
 
+## 1. 小白部分
+#### 1.1 获得pid
 ```js
   sandbox.add('AltizureProjectMarker', {pid: '5849104597b73e0b090c01e8'})
 ```
@@ -22,10 +25,9 @@
 
 此外，在相片数量足够、位置合适等条件下，正常生成的模型的大小、位置、姿态是不需要做额外调整的。如需调整，请参考Altizure SDK 文档相关内容。
 
-非Altizure重建出的模型，比如说上传的obj模型，还是需要设置各种参数的，具体怎样调整推荐您是用我们的 Altizure 星球，里面可以进行可视化的调整。
+相关部分请参考范例 2.1
 
-
-## 2. 加载裁切和水面
+#### 1.2 加载裁切和水面
 
 
 如需裁剪多余的模型和添加水面效果，需要先在Altizure主站对模型进行设置。
@@ -43,9 +45,14 @@
   marker.water.import()
 ```
 
-## 3. 小结
+相关部分请参考范例 2.1.1
+
+#### 1.3 小结
 
 在本教程中展示了如何使用 pid 在 SDK 中导入模型，并如何导入模型的裁切和水面效果。
+
+所有可以上传到 Altizure 主站的模型均有 pid ，也均可使用上述方法加载，包括 Altizure 实景模型、点云模型、第三方 OBJ 模型等。
+
 完整代码如下：
 ```js
   sandbox.add('AltizureProjectMarker', {pid: '5993d8e65cbfaf1d4eba995d'})
@@ -64,8 +71,39 @@
   })
 
 ```
+## 2. 进阶部分
+#### 2.1 加载第三方 OBJ 模型
+首先请保证您要加载的模型可以在 MeshLab 中打开。
 
-## 4. 了解更多
+非Altizure重建出的模型，有时需要设置各种参数，具体怎样调整推荐您使用我们的 Altizure 星球，里面可以进行可视化的调整，也可以在上传以前使用 MeshLab进行调整。
+
+首先第三方 OBJ 模型可以按照 “上传 Altizure 主站”=》“使用 pid 加载” 的流程操作
+
+相关部分请参考范例 2.5.1
+
+另外，您也可以使用加载本地模型的方式加载
+```js
+      // add obj models
+      let obj = new altizure.OBJMarker({
+        position: {lng: 113.93916035952945, lat: 22.536167496052556, alt: 28.976462667429363},
+        sandbox: sandbox,
+        name: 'arbor',
+        shape: 'CUSTOMIZE',
+        objUrl: '../public/assets/object/2/bian.obj',
+        mtlUrl: '../public/assets/object/2/bian.mtl',
+        upDir: {x: 0,y: 1,z: 0},
+        "scale": 2
+      })
+```
+
+相关部分请参考范例 2.5
+
+#### 2.2 加载点云模型
+可以按照 “使用 pid 加载” 的流程操作
+
+相关部分请参考范例 2.15
+
+## 3. 了解更多
 
 * [Altizure SDK 文档](https://docs.altizure.com/zh-hans/docs/user_docs/web/)
 * [演示范例](https://developers.altizure.com/demo)
