@@ -1,5 +1,14 @@
 # Altizure GraphQL API 更新日志
 
+### 2.5.8
+
+__Release data:__
+August. 23rd, 2019
+
+__New features:__
+* Added new Project field: SyncProgress for showing the cloud sync progress and error
+* Added query.support.endpoints for getting various altizure service endponts
+
 ### 2.5.7
 
 __Release data:__
