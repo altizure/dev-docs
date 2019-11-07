@@ -1,5 +1,42 @@
 # Changelog of Altizure GraphQL API
 
+### 2.6.2
+
+__Release data:__
+November. 1st, 2019
+
+__Fixes:__
+* Fixed cloud syncing Chinese name project to s3
+
+### 2.6.1
+
+__Release data:__
+October. 18th, 2019
+
+__Change:__
+* Disallowed uploading obj zip with non-english name
+        
+### 2.6.0
+
+__Release data:__
+October. 11th, 2019
+
+__New features:__
+* Auto set phone code in phone login form
+* Supported importing meta file via minio
+
+__Fixes:__
+* Fixed duplicated coupon awards and notifications
+
+### 2.5.9
+
+__Release data:__
+September. 13th, 2019
+
+__New features:__
+* Added new field: Project.modelTransform.modelToSRS for transforming from model space to SRS space
+* Added filter: [Read, Unread, All] in my.notification
+
 ### 2.5.8
 
 __Release data:__
