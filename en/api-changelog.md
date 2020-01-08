@@ -1,5 +1,76 @@
 # Changelog of Altizure GraphQL API
 
+### 2.7.4
+
+__Release data:__
+December. 27th, 2019
+
+__New features:__
+* Added mutation: addAnnotation + updateAnnotation for adding and modifying project annotations
+
+__Change:__
+* removeAnnotation returns additional error
+
+### 2.7.3
+
+__Release data:__
+December. 13th, 2019
+
+__New features:__
+* Added ProjectImage.thumbs for getting cloud synced thumbnails of individual image
+
+### 2.7.2
+
+__Release data:__
+December. 6th, 2019
+
+__New features:__
+* Added mutation: setProjectGeoInfo for setting custom geoinfo of a project
+
+__Change:__
+* Support searching subscribers and developers by name or email or user id in super/sales api
+
+__Fixes:__
+* Fixed calculation of free quota after a featured project is transferred
+
+### 2.7.1
+
+__Release data:__
+November. 29th, 2019
+
+__New features:__
+* Added args: returnURL in mutations: createAliPay* for returning to desired url after successful payment
+* Added query: Project.imageByFilename to get an image from its hashed filename
+
+__Change:__
+* Added fields: modelx, modely and modelz in type: alignmentPoint for storing 3d position of alignment point
+* Skipped re-doing image LOD if already done previously
+
+__Fixes:__
+* Fixed issues of thumb generation in AltiOne
+* Fixed url of pending downloadable items of a project
+* Fixed inconsistent states of task and Project.importedState
+
+### 2.7.0
+
+__Release data:__
+November. 15th, 2019
+
+__New features:__
+* Added super query: triggerCloudToGFS for downloading images from cloud to gfs
+* Added new Project field: alignmentPoints for use cases related to GCP
+* Added mutation: addAlignmentPoint, updateAlignmentPoint and removeAlignmentPoint for GCP
+* Added query: getGeoIPInfo.nearestMetaBuckets for suggesting nearest metafile bucket
+* Added new ProjectImage field: grounded, to indicate whether an image is downloaded back from cloud to gfs
+
+__Change:__
+* Removed User.totalProjectViews and User.totalSandboxViews for performance reasons
+* Would not hash user uploaded image filename if uploaded via Minio
+
+__Fixes:__
+* Fixed issue of importing meta file
+* Fixed issue of changing image states shortly after a new image is registered
+
 ### 2.6.2
 
 __Release data:__
